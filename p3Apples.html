@@ -64,7 +64,7 @@
                             <div class="subnav-content">
                                 <a href="#link1">Product List</a>
                                 <a href="#link2">User List</a>
-                                <a href="#link3">Order List</a>
+                                <a href="backStoreOrderList.html">Order List</a>
 
                             </div>
                         </div>
@@ -84,6 +84,11 @@
 
         </div>
     </div>
+
+
+
+
+
     <div class="footer">
         <!-- <p>Footer</p>
         <p>Footer</p> -->
@@ -97,13 +102,15 @@
 
         </ul>
     </div>
+
+
     <div class="row">
 
         <div class="card">
             <img src="AppleEmpire.webp" class="apple-image">
             <h3>Apple</h3>
 
-            <div class="popup" onclick="myFunction()"> <button class="More Description"> More Description <img id="test"
+            <div class="popup" onclick="myFunction2()"> <button class="More Description"> More Description <img id="test"
                         src="more-info.png">
                     <span class="popuptext" id="myPopup">
                         <p>We provide organic apples directly from the farm</p>
@@ -115,7 +122,7 @@
 
             <script>
                 // When the user clicks on div, open the popup
-                function myFunction() {
+                function myFunction2() {
                     var popup = document.getElementById("myPopup");
                     popup.classList.toggle("show");
                 }
@@ -143,8 +150,45 @@
     </div>
 
     </div>
+    <div class="row">
+        <div class="column">
+            <img src="appleGala.webp" alt="Gala" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="appleSmith.jpeg" alt="Smith" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="appleSpartan.jpeg" alt="Spartan" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="AppleEmpire.webp" alt="Empire" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
 
-<br><br>
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+    </script>
+
+    <br><br>
 </body>
 
 </html>
