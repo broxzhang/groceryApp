@@ -1,7 +1,7 @@
 /* The navigation menu */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:#477cdd;
   }
   
   /* Navigation links */
@@ -34,7 +34,7 @@
   
   /* Add a red background color to navigation links on hover */
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
+    background-color: #5b8cd5;
   }
   
   /* Style the subnav content - positioned absolute */
@@ -42,7 +42,7 @@
     display: none;
     position: absolute;
     left: 0;
-    background-color: red;
+    background-color: #5b8cd5;
     width: 100%;
     z-index: 1;
   }
@@ -222,4 +222,15 @@ input[type=text], select, textarea {
   a:visited {
     text-decoration: none;
   }
-  
+
+h1{
+	background: rgba (0,0, 0, 0.5);
+  background-image: url("backStore.webp");
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+}
