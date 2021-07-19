@@ -1,0 +1,52 @@
+html body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.seafood-container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background-color: #f2f2f2;
+}
+
+.main-container {
+    max-width: 1180px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-flow: row;
+}
+
+.menu-container {
+    margin-top: 2rem;
+
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+}
+
+.products-container {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    flex: 4;
+}
+
+.product {
+    border-top: 1px solid rgb(37, 37,37);
+    border-bottom: 1px solid rgb(37, 37,37);
+    width: 240px;
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.product-img {
+    margin: 20px 0 5px 20px;
+    height: 200px;
+    width: 200px;
+}
