@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+     <title>Concordia Store</title>
+     <link rel="stylesheet" type="text/css" href="p2Style.css" />
+     <style type="text/css">
+        header{
+            background-image: url("beveragesbg.jpg");
+            height: max-content;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .item-price{
+            margin-top: 5px;
+        }
+        .item-image{
+            height: 200px;
+            width: 200px;
+            border-radius: 0 0 50px 50px;
+            padding: 10px;
+        }
+        .shopcart{
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    </style>
+
+ </head>
+ <header>
+     <h1>Beverages</h1>
+ </header>
+
+ <body>
+     <div class="parallax">
+
+         <div class="menu" id="sticky">
+             <ul class="menu-ul">
+                 <a href="home.html" class="a-menu">
+
+                     <li> <img id="test" src="home.png"> Home </li>
+
+                 </a>
+                 <a href="#" class="a-menu">
+
+                     <li>
+                         <div class="subnav">
+                             <button class="subnavbtn"> AISLE <img id="test" src="arrow_down.png"><i
+                                     class="fa fa-caret-down"></i></button>
+                             <div class="subnav-content">
+                                 <a href="FruitsPage2.html">Fruits</a>
+                                 <a href="#link2">Vegetables</a>
+                                 <a href="BeveragesPage2.html">Beverages</a>
+                                 <a href="#link4">Dairy & Eggs</a>
+                                 <a href="#link4"> Meat</a>
+                                 <a href="#link4"> Snacks </a>
+                             </div>
+                         </div>
+
+
+                 </a>
+                 <a href="page4.html" class="a-menu">
+                     <li><img id="test" src="shopping_cart.png">Shopping cart</li>
+
+                 </a>
+                 <a href="#" class="a-menu">
+                     <li> <img id="test" src="sign up.png"> Sign Up</li>
+
+                 </a>
+                 <a href="log.html" class="a-menu">
+                     <li> Login <img id="test" src="login.png"> </li>
+
+                 </a>
+                 <a href="#" class="a-menu">
+
+                     <li>
+                         <div class="subnav">
+                             <button class="subnavbtn"> Admin <img id="test" src="admin.png"><i
+                                     class="fa fa-caret-down"></i></button>
+                             <div class="subnav-content">
+                                 <a href="#link1">Product List</a>
+                                 <a href="#link2">User List</a>
+                                 <a href="#link3">Order List</a>
+
+                             </div>
+                         </div>
+
+
+                 </a>
+
+             </ul>
+             <div class="search-box">
+                 <form>
+                     <input type="text" placeholder="Search...." name="search" class="search-input" />
+                     <button type="submit">
+                         <img src="search.png">
+                     </button>
+                 </form>
+             </div>
+
+         </div>
+     </div>
+
+     <!-- -product begining -->
+
+     <div class="container">
+         <a href="#cocacola">
+             <div class="catgegories">
+                 <img src="cocacola.jpeg" class="item-image">
+                 <div class="iamge-title"> Coca-cola </div>
+                 <div class="item-price"> $1.99 </div>
+                 <img src="addToCart.png" class="shopcart">
+             </div>
+         </a>
+         <a href="PepsiPage3.html">
+            <div class="catgegories">
+                 <img src="pepsi.jpg" class="item-image">
+                 <div class="iamge-title"> Pepsi </div>
+                 <div class="item-price"> $3.99 </div>
+                 <img src="addToCart.png" class="shopcart">
+            </div>
+         </a>
+         <a href="#orangecrush">
+            <div class="catgegories">
+                 <img src="orangecrush.jpg" class="item-image">
+                 <div class="iamge-title"> Orange Crush </div>
+                 <div class="item-price"> $3.99 </div>
+                 <img src="addToCart.png" class="shopcart">
+            </div>
+         <a href="#creamsoda">
+            <div class="catgegories">
+                <img src="creamsoda.jpg" class="item-image">
+                <div class="iamge-title"> Cream Soda Crush </div>
+                <div class="item-price"> $7.99 </div>
+                <img src="addToCart.png" class="shopcart" >
+            </div>
+        </a>
+        <a href="#nestea">
+            <div class="catgegories">
+                <img src="nestea.jpg" class="item-image">
+                <div class="iamge-title"> Nestea </div>
+                <div class="item-price"> $2.50 </div>
+                <img src="addToCart.png" class="shopcart">
+            </div>
+        </a>
+        <a href="#orangejuice">
+            <div class="catgegories">
+                <img src="orangejuice.jpg" class="item-image">
+                <div class="iamge-title"> Oasis Orange Juice </div>
+                <div class="item-price"> $1.50 </div>
+                <img src="addToCart.png" class="shopcart">
+            </div>
+        <a href="#pineapplejuice">
+            <div class="catgegories">
+                <img src="pineapplejuice.jpg" class="item-image">
+                <div class="iamge-title"> Oasis Pineapple Juice </div>
+                <div class="item-price"> $1.50 </div>
+                <img src="addToCart.png" class="shopcart">
+            </div>
+        </a>
+        <a href="#sprite">
+            <div class="catgegories">
+                <img src="sprite.jpg" class="item-image">
+                <div class="iamge-title"> Sprite </div>
+                <div class="item-price"> $1.99 </div>
+                <img src="addToCart.png" class="shopcart">
+            </div>
+        </a>
+        <a href="#water">
+            <div class="catgegories">
+                <img src="water.jpg" class="item-image">
+                <div class="iamge-title"> Eska Water Bottles </div>
+                <div class="item-price"> $1.99 </div>
+                <img src="addToCart.png" class="shopcart">
+            </div>
+        <a href="#mangojuice">
+            <div class="catgegories">
+                <img src="mangojuice.jpg" class="item-image">
+                <div class="iamge-title"> Oasis Mango Juice </div>
+                <div class="item-price"> $1.50 </div>
+                <img src="addToCart.png" class="shopcart">
+            </div>
+        </a>
+         
+ 
+     </div>
+
+
+     <!-- -product end -->
+
+     <div class="footer">
+         <!-- <p>Footer</p>
+         <p>Footer</p> -->
+         <ul class="footer">
+             <a href="#link1">
+                 <li>About/Mission
+             </a>
+             <a href="#link2">
+                 <li>contact Us
+             </a>
+
+         </ul>
+     </div>
+ </body>
+
+ </html> 
