@@ -8,12 +8,11 @@ html body {
     display: flex;
     width: 100vw;
     height: auto;
-    background-color: #f2f2f2;
 }
 
 .main-container {
     max-width: 1180px;
-    height: 100vh;
+    width: 1180px;
     display: flex;
     margin: auto;
     flex-flow: row;
@@ -49,4 +48,38 @@ html body {
     margin: 20px 0 5px 20px;
     height: 200px;
     width: 200px;
+}
+
+.img-container {
+    display: flex;
+    flex: 2;
+}
+
+.product-info-container {
+    display: flex;
+    flex-flow: column;
+    flex: 3;
+    justify-content: start;
+}
+
+.product-des-container {
+    height: 50px;
+    width: 500px;
+    overflow: hidden;
+    transition: height .7s ease;
+}
+
+.product-des-container:hover {
+    height: 200px;
+}
+
+.ingredients-container {
+    height: 50px;
+    width: 500px;
+    overflow: hidden;
+    transition: height .7s ease;
+}
+
+.ingredients-container:hover {
+    height: 100px;
 }
