@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concordia Store</title>
+    <link rel="stylesheet" type="text/css" href="Dairy&EggsP3Style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Eggs</h1>
+
+
+
+    </header>
+    <div class="parallax">
+
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="home.html" class="a-menu">
+
+                    <li> <img id="test" src="home.png"> Home </li>
+
+                </a>
+                <a href="#" class="a-menu">
+
+                    <li>
+                        <div class="subnav">
+                            <button class="subnavbtn"> AISLE <img id="test" src="arrow_down.png"><i
+                                    class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a href="FruitsPage2.html">Fruits</a>
+                                <a href="#link2">Vegetables</a>
+                                <a href="#link3">Beverages</a>
+                                <a href="Dairy&EggsP2.html">Dairy & Eggs</a>
+                                <a href="#link4"> Meat</a>
+                                <a href="#link4"> Snacks </a>
+                            </div>
+                        </div>
+
+
+                </a>
+                <a href="#" class="a-menu">
+                    <li><img id="test" src="shopping_cart.png">Shopping cart</li>
+
+                </a>
+                <a href="#" class="a-menu">
+                    <li> <img id="test" src="sign up.png"> Sign Up</li>
+
+                </a>
+                <a href="log.html" class="a-menu">
+                    <li> Login <img id="test" src="login.png"> </li>
+
+                </a>
+                <a href="#" class="a-menu">
+
+                    <li>
+                        <div class="subnav">
+                            <button class="subnavbtn"> Admin <img id="test" src="admin.png"><i
+                                    class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a href="#link1">Product List</a>
+                                <a href="#link2">User List</a>
+                                <a href="backStoreOrderList.html">Order List</a>
+
+                            </div>
+                        </div>
+
+
+                </a>
+
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search...." name="search" class="search-input" />
+                    <button type="submit">
+                        <img src="search.png">
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <!-- <p>Footer</p>
+        <p>Footer</p> -->
+        <ul class="footer">
+            <a href="aboutMission.html">
+                <li>About/Mission
+            </a>
+            <a href="ContactUs.html">
+                <li>Contact Us
+            </a>
+
+        </ul>
+    </div>
+
+
+    <div class="row">
+
+        <div class="card">
+            <img src="Eggs.jpeg " class="egg-image" style="width:25%;">
+            <h3>Please Select Your Preference
+            </h3>
+
+            <div class="popup" onclick="myFunction2()"> <button class="More Description"> More Description <img id="test"
+                        src="more-info.png">
+                    <span class="popuptext" id="myPopup">
+                        <p>All of our milk products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet!</p>
+                        
+                    </span>
+            </div>
+
+            <script>
+                // When the user clicks on div, open the popup
+                function myFunction2() {
+                    var popup = document.getElementById("myPopup");
+                    popup.classList.toggle("show");
+                }
+            </script>
+
+            <br>
+
+            <br>
+            <label for="type">Type</label>
+            <select id="type" name="type">
+                <option value="Brown">Brown</option>
+                <option value="White">White</option>
+                <option value="eggs_brown_pastureRaised">Brown (Pasture Raised)</option>
+                <option value="eggs_white_pastureRaised">White (Pasture Raised)</option>
+
+            </select>
+            <a href="#" class="b-menu">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+
+                <img id="test" src="addToCart.png">
+            </a>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="eggs_brown.jpeg" alt="Brown" style="width:100%;" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="eggs_white.jpeg" alt="White" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="eggs_brown_pastureRaised.jpeg" alt="eggs_brown_pastureRaised" style="width:100%" onclick="myFunction(this);">
+        </div><div class="column">
+            <img src="eggs_white_pastureRaised.jpeg" alt="eggs_white_pastureRaised" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+    </div>
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+    </script>
+
+    <br><br>
+</body>
+
+</html>
