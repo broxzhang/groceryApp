@@ -3,7 +3,7 @@ body{
     font-family: system-ui;
 }
 .parallax{ 
-    background-image: url("test.jpeg");
+    background-image: url("img/test.jpeg");
     /* <img src="Schedule.png" height="50%" width="50%"> */
     height: max-content;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body{
 }
 header{
 
-	background-image: url("Dairy\ Eggs.jpeg");
+	background-image: url("img/Dairy\ Eggs.jpeg");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;
@@ -34,6 +34,12 @@ h1{
     font-family: fantasy;
     letter-spacing: 20px;
 
+}
+
+h4{
+  margin-left: 200px;
+  margin-right: 200px;
+  line-height: 28px;
 }
 
 .page-title{
@@ -202,6 +208,7 @@ button{
     display: inline-block;
     list-style: none;
     font-size: 17px;
+
     
 }
 
@@ -260,3 +267,183 @@ input[type=text], select, textarea {
     background-size: cover;
     margin-top: 100px;
 }
+
+.parallax{ 
+    
+    height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+header{
+
+	  /* put your background here */
+    
+	background-image: url("fruits.gif");
+	height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 40px;
+    background-size:auto; */
+    border-radius: 30px;
+}
+#sticky{
+    position:fixed;
+    top:0;
+    width: 100%;
+
+}
+.menu{
+    background: #477cdd;
+    text-align: center;
+}
+.menu-ul{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.menu-ul li{
+    font-size: 17px;
+    padding: 25px 25px 0px 25px;
+    display: inline-block;
+    list-style: none;
+    font-size: 17px;
+    
+}
+.a-menu{
+text-decoration: none;
+color: white;
+}
+.menu-ul li:hover{
+    background: none;
+    transform: scale(1.1);
+
+}
+
+.search-box{
+    border: 1px  solid white;
+border-radius: 50px;
+background: white;
+width: max-content;
+display: inline-block;
+margin: 8px;
+}
+.search-box:hover{
+    box-shadow: white;
+    border: 1px solid #5b8cd5;
+
+}
+.search-input{
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 15px  0 0 10px;
+    
+}
+
+i{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+button{
+    
+    background: none;
+    border: none;
+    outline: none;
+
+}
+ /* The subnavigation menu */
+ .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0;
+    background-color: none;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color:none;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:white;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: rgb(36, 169, 187);
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: white;
+    color:rgb(112, 99, 233);
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display:grid;
+	
+  }
+/* ======footer========== */
+#footer{
+	background-color: #2691d9;
+	color: whitesmoke;
+    position:relative ;
+    min-height: 100px;
+    margin-top: -100px;
+    clear: both;
+    margin-bottom: 0px;
+    margin-top: 50px;
+	/* text-align: left; */
+	
+	text-decoration: none;
+}
+
+ a:link {
+  text-decoration: none;
+}
+#end{
+  color: #fff;
+}
+
+.column {
+  text-align:left;
+    float: left;
+    width: 23%;
+    padding: 10px;
+    /* height: 300px; Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
