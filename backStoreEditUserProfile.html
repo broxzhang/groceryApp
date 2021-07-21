@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Concordia Store</title>
+    <link rel="stylesheet" type="text/css" href="backStoreUserList.css">
+  <style>
+      .lable {
+  display: inline-block;
+  width:200px;}
+  </style>  
+    
+</head>
+
+<body>
+ 
+  <h1>Back Store Mangement</h1>
+
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="#">Product List</a>
+    <a href="backStoreUserList.html">User List</a>
+    <a href="backStoreOrderList.html">Order List</a>
+    <div class="subnav">
+      <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#company">Company</a>
+        <a href="#team">Team</a>
+        <a href="#">Careers</a>
+        <a href="#">HR</a>
+      </div>
+    </div>
+
+
+    <a href="#contact">Contact</a>
+  </div>
+
+
+
+<!-- editing from here -->
+    <h2>Edit User profile</h2>
+
+    <hr>
+    <div class="label" action="" method="post">
+        
+        <!-- Form for user details -->
+        <label for="firstname" >First name</label>
+        <input id="firstname" type="text" name="firstname">
+
+        <label for="lastname">Last name</label>
+        <input id="lastname" type="text" name="lasttname">
+        <br>
+        <hr>
+
+        <h4>Gender:</h4>
+        <input id="male" type="radio" name="Gender" value="Male">
+        <label for="male">Male</label>
+        <br>
+        <input id="female" type="radio" name="Gender" value="Female">
+        <label for="female">Female</label>
+        <br>
+        <hr>
+
+        <h4>Address:</h4>
+        <label for="streetnum">St. No.    </label>
+        <input id="streetnum" type="text" name="streetnum" >
+        <label for="apt">Apt.</label>
+        <input id="apt" type="text" name="apt" placeholder="Optional">
+        <br>
+        <label for="street">Street</label>
+        <input id="street" type="text" name="street" >
+        <br>
+        <label for="city">City</label>
+        <input id="city" type="text" name="city" >
+        <br>
+        <label for="province">Province</label>
+        <input id="province" type="text" name="province" >
+        <br>
+        <label for="postcode">Post Code</label>
+        <input id="postcode" type="text" name="postcode" >
+        <br>
+
+        <hr>
+        <label for="phone">Phone No:</label>
+        <input id="phone" type="text" name="phone" placeholder="(XXX)XXX-XXXX">
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="email" placeholder="someone@example.com">
+        <br>
+
+        <hr>
+        <input type="submit" name="submit" value="Save">
+        <input type="cancel" name="cancel" value="Cancel">
+    </div>
+
+</body>
+
+<hr>
+<footer style="background-color: #477cdd; text-align: right;" >
+	all rights reserved.
+</footer>
+
+</html>
