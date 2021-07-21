@@ -16,8 +16,6 @@ html body {
     display: flex;
     margin: auto;
     flex-flow: row;
-    background-color: #f2f2f2;
-
 }
 
 .menu-container {
@@ -68,8 +66,20 @@ html body {
     height: 50px;
     width: 500px;
     overflow: hidden;
+    transition: height .7s ease;
 }
 
 .product-des-container:hover {
     height: 200px;
+}
+
+.ingredients-container {
+    height: 50px;
+    width: 500px;
+    overflow: hidden;
+    transition: height .7s ease;
+}
+
+.ingredients-container:hover {
+    height: 100px;
 }
