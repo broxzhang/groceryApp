@@ -12,17 +12,6 @@ body{
     background-size: cover;
      
 }
-header{
-
-	background-image: url("img/dairy\ and\ eggs_header.jpeg");
-	height: 600px;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
 
 h1{
 	background: rgba (0,0, 0, 0.5);
@@ -390,20 +379,17 @@ button{
     background-size: cover;
      
 }
-header{
-
+.header{
 	  /* put your background here */
     
-	background-image: url("fruits.gif");
+	background-image: url("/img/Dairy\ Eggs.jpeg");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 40px;
-    background-size:auto; */
     border-radius: 30px;
-}
+} 
 #sticky{
     position:fixed;
     top:0;
