@@ -1,114 +1,263 @@
-<html lang ="en">
-  
-<head>
-  
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+}
+#content2{
+min-height: 100%;
+}
+#sami{
+overflow: auto;
+padding-bottom: 100px;
+}
 
-  <link rel="stylesheet" type="text/css" href="employeesLoginStyle.css"> 
-  <title>login form</title>
-  <meta charset="utf-8">
-  <header>
+.video{
+  pointer-events: none;
+margin-top: 1vmin;
+  width: 100%;
+  height: 85%;
+  border-radius: 30px;
+  /* border-radius: 30px; */
+} 
+body{
+  margin: 0;
+  font-family: system-ui;
+}
+.parallax{ 
+  
+  height: max-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
    
+}
+
+#footer{
+background-color: #2691d9;
+color: whitesmoke;
+  position:relative ;
+  min-height: 100px;
+  margin-top: -100px;
+  clear: both;
+/* text-align: left; */
+
+text-decoration: none;
+}
+
+a:link {
+text-decoration: none;
+}
+#end{
+color: #fff;
+}
+
+.column {
+text-align:left;
+  float: left;
+  width: 23%;
+  padding: 10px;
+  /* height: 300px; Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1{
+background: rgba (0,0, 0, 0.5);
+  text-align: center;
+  color: white;
+  padding: 50px;
+  font-variant: small-caps;
+  font-size: 50px;
+  font-family: fantasy;
+  letter-spacing: 20px;
+}
+h3{
+color: #fff;
+}
+#sticky{
+  position:fixed;
+  top:0;
+  width: 100%;
+/* <=================PRODUCTS PICS============================ --> */
+}
+.menu{
+  background: #477cdd;
+  text-align: center;
+}
+.menu-ul{
+     background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.menu-ul li{
+  background-color: transparent;
+  font-size: 17px;
+  padding: 25px 25px 0px 25px;
+  display: inline-block;
+  list-style: none;
+  font-size: 17px;
   
-    
-	</header>
-</head>
-<body>
-  <div id="content2">
-    <div id="sami">
+}
+.a-menu{
+  background-color: transparent;
+text-decoration: none;
+color: white;
+}
+.menu-ul li:hover{
+  background:transparent;
+  transform: scale(1.2);
 
-    
-  <div class="content">
-    <div class="menu" id="sticky">
-    <ul class="menu-ul">
-      <a href="home.html" class="menu">
-          <li> <img id="test" src="home.png"> Home </li></a>
-         
-   </ul></div>
-        <video class="video" width= 100%  hight =100% controls muted  autoplay loop >
+}
 
-          <source src="videoBanana.mp4">
-          Your browser does not support the video tag.
-          </video>
-
-
-
-
-
-
-<div class ="center">
+.search-box{
   
-<h1>Employees Login</h1>
-<form>
-  <div class="txt_field">
-<input type="text" required>
-<label>Username</label>
-</div>
- <div class="txt_field">
-<input type="Password" required>
-<label>Password</label>
-</div>
-<div class ="pass">Forgot Password?</div>
+  border: 1px  solid white;
+border-radius: 50px;
+background: white;
+width: max-content;
+display: inline-block;
+margin: 8px;
+}
+.search-box:hover{
+  box-shadow:rgb(234, 245, 244);
+  border: 1px solid #5b8cd5;
 
-  <a href="backstoreMain.html"><input type="button" value="Login">  </a>
-</form></div>
-
-
-</div>
-	
-
-
-
-
-
-</div> </div>
-<footer class="footer">
-
-   
-    <div class="row">
-                           
-      
-     <div class="column" style="background-color:none;">
-      <h3>Get to Know Us</h3>
-      <p> <br> 
-     <a href="employees.html"> Supplier Relations</a><br><br>
-     <a href="employees.html"> Corporate Site</a><br><br>
-     <a href="employees.html"> Careers</a> <br><br>
-     <a href="employees.html"> About Us</a>
-  </p></div>
-    <div class="column" style="background-color:none;">
-      <h3>What we offer?</h3>
-      <p><br>
-          <a href="employees.html"> Gift Card<br><br>
-              <a href="employees.html">  Online grocery<br><br>
-                  <a href="employees.html"> Our partners<br><br>
-                      <a href="employees.html"> Our Private Brands
-                      </p></div>
-                      <div class="column" style="background-color:none;">
-                          <h3>My concordia</h3>
-                          <p><br>
-                            <a href="employees.html">  Products to Discover<br><br>
-                                <a href="employees.html"> Online Grocery Services<br><br>
-                                    <a href="employees.html">  Flyer<br><br>
-                                        <a href="employees.html">  Coupons
-                                        </p> </div>
-                      <div class="column" style="background-color:none;">
-                        <h3>Like us on social media</h3>
-                        <p><br>
-                            <a href="employees.html">   <img id="test" src="facebook.png">  Facebook<br>
-                                <a href="employees.html">  <img id="test" src="instagram.png"> Instagram<br>
-                                    <a href="employees.html"><img id="test" src="twitter.png">   twitter<br>
-                                        <a href="employees.html">  <img id="test" src="tiktok.png">  tiktok
-                        </p>  </div>
+}
+.search-input{
+  width: 250px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  margin: 15px  0 0 10px;
   
-</div>
-<div id="end">
-  <p>&nbsp;&nbsp;&nbsp; Newsletter<br>
-&nbsp; &nbsp;  Sign up to Concordia.ca to receive offers and much more! Learn more
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;  All rights resrved    <img id="test" src="copyrights.png"> <br><br>
+}
 
-</p></div>
-</footer>
-</body>
+i{
+  font-size: 20px;
+  margin: 0 10px 0 0;
+}
+button{
+ 
+  background: transparent;
+  border: none;
+  outline: none;
 
-</html>
+}
+/* The subnavigation menu */
+.subnav {
+
+  background-color: transparent;
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  background-color: transparent;
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: transparent;
+
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:white;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    background-color: transparent;
+  float: left;
+  color: #2691d9;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: white;
+  color:rgb(45, 214, 236);
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display:grid;
+
+}
+/* <=================PRODUCTS PICS============================ --> */
+.container{
+  margin: 50px 50px 50px 5%;
+  width: 90%;
+  text-align: center;
+}
+.catgegories{
+  width: max-content;
+  margin: 25px;
+  border: 2px solid #eff1f1;
+  border-radius: 0 0 0 0;
+  display:inline-block;
+}
+.catgegories:hover{
+  box-shadow: 0 0 10px 3px #a2bae7;
+
+}
+.item-image{
+  height: 170px;
+  width: 170px;
+  border-radius: 0 0 50px 50px;
+  padding: 40px;
+}
+/* <=================OFFERS VIDEO============================ --> */
+
+.container2{
+margin: 50px 50px 50px 5px;
+width:100%;
+text-align: center;
+}
+.catgegories2{
+background-color: #a2bae7;
+width:fit-content;
+margin: 25px;
+border: 3px solid #eff1f1;
+border-radius: 25px 25px  25px  25px;
+display:inline-block;
+}
+.catgegories2:hover{
+box-shadow: 0 0 10px 3px #a2bae7;
+
+}
+.item-image2{
+
+height: 120px;
+width: 300px;
+border-radius: 0 0 50px 50px;
+padding: 70px;}
+#vid{
+
+pointer-events: none;
+border-radius: 25px 25px  25px  25px ;
+}
