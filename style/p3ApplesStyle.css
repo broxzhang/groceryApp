@@ -3,7 +3,7 @@ body{
     font-family: system-ui;
 }
 .parallax{ 
-    background-image: url("test.jpeg");
+    
     /* <img src="Schedule.png" height="50%" width="50%"> */
     height: max-content;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body{
 }
 header{
 
-	background-image: url("applesBG.webp");
+	background-image: url("/img/applesBG.webp");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;
@@ -22,16 +22,7 @@ header{
     background-size: cover;
 
 }
-header{
 
-	background-image: url("applesBG.webp");
-	height: max-content;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
 
 h1{
 	background: rgba (0,0, 0, 0.5);
