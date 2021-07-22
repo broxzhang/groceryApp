@@ -4,7 +4,7 @@ const seafood = [
         productName: 'Fresh Canadian Atlantic Salmon Fillet',
         aisles: 'seafood',
         price: 10.99,
-        category: 'fish'
+        category: 'fish',
         isFresh: true,
         avg: 7.93,
         photo: 'img/salmon_fillet.jpeg'
@@ -14,7 +14,7 @@ const seafood = [
         productName: 'Crab flavoured pollock flakes',
         aisles: 'seafood',
         price: 8.99,
-        category: 'fish'
+        category: 'fish',
         isFresh: true,
         avg: null,
         photo: 'img/crab-flavored.jpeg'
@@ -24,7 +24,7 @@ const seafood = [
         productName: 'Fresh Atlantic Salmon Steak',
         aisles: 'seafood',
         price: 15.99,
-        category: 'fish'
+        category: 'fish',
         isFresh: true,
         avg: 8.81,
         photo: 'img/fresh_atlantic.jpeg'
