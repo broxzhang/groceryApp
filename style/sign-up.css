@@ -1,0 +1,16 @@
+html body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.main-container {
+    max-width: 1180px;
+    width: 1180px;
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    justify-content: start;
+}
