@@ -13,31 +13,38 @@
 
 <body>
     <form class="main-container">
-        <div style="display: flex; background-color: #f2f2f2; flex-flow: column;">
-            <div style="display: flex; flex-flow: row;">
-                <div>First Name</div>
-                <input type="text" />
+        <div style="display: flex; flex-flow: column;">
+            <div class="input-container">
+                <h1>Create Account</h1>
             </div>
-            <div style="display: flex; flex-flow: row;">
-                <div>Last Name</div>
-                <input type="text" />
+            <div class="input-container">
+                <input type="text" placeholder="First Name">
             </div>
-            <div style="display: flex; flex-flow: row;">
-                <div>Email</div>
-                <input type="text" />
+            <div class="input-container">
+                <input type="text" placeholder="Last Name">
             </div>
-            <div style="display: flex; flex-flow: row;">
-                <div>Password: </div>
-                <input type="password" />
+            <div class="input-container">
+                <input type="text" placeholder="Email Address">
             </div>
-            <div style="display: flex; flex-flow: row;">
-                <div>Comfirm Password:</div>
-                <input type="password" />
+            <div class="input-container">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Comfirm Password">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Street No. and Street Name">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Post Code">
             </div>
         </div>
-        <button type="submit">
-            Create Account
-        </button>
+        <div class="input-container">
+            <button type="submit">
+                Create Account
+            </button>
+        </div>
+
     </form>
 </body>
 
