@@ -47,7 +47,7 @@ function displayFood(seafood) {
 
         const avgStr = item.avg? item.avg + ' avg. ea. ' : (pizKg/10).toFixed(2) + '/100g';
         return `
-        <div style="cursor: pointer;" class="product">
+        <a style="cursor: pointer;" class="product" href="seafood-detail.html">
         <img class="product-img" src="${item.photo}" />
         <h3>${item.productName}</h3>
         <h4><b>${avgStr}</b></h4>
@@ -55,7 +55,7 @@ function displayFood(seafood) {
         <span>${pizKg}/kg ${item.price}/lb</span>
         <!-- <img style="width: 40px; height: 40px; color: black;" src="shopping_cart.png" /> -->
         <i class="fas fa-shopping-cart"></i>
-    </div>`
+    </a>`
     })
     displayFood = displayFood.join("");
     seafoodSection.innerHTML = displayFood;
@@ -111,7 +111,11 @@ document.querySelectorAll(".filter").forEach(item => {
     })
 })
 
-
+const product = document.querySelector(".product")
+console.log(product)
+// .addEventListener('click', function (){
+//     document.location = 'seafood-detail.html'
+// })
 // filterAnchor.addEventListener('click', function(){
 //     console.log('here')
 // })
