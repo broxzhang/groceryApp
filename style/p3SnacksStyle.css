@@ -3,7 +3,7 @@ body{
     font-family: system-ui;
 }
 .parallax{ 
-    background-image: url("test.jpeg");
+    background-image: url("img/test.jpeg");
     /* <img src="Schedule.png" height="50%" width="50%"> */
     height: max-content;
     background-attachment: fixed;
@@ -14,7 +14,7 @@ body{
 }
 header{
 
-	background-image: url("Snacks.jpg");
+	background-image: url("img/Snacks.jpg");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;
