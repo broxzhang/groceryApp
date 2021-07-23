@@ -1,95 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Concordia Store</title>
-        <link rel="stylesheet" type="text/css" href="style/p3SnacksStyle.css" />
-        <style type="text/css">
-            .current-item{
-                width:300px;
-                height:300px;
-            }
-            header{
-                background-image: url("img/Snacks.jpg");
-                height: max-content;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Snacks</h1>
-        </header>
-        <div class="parallax">
-            <div class="menu" id="sticky">
-                <ul class="menu-ul">
-                    <a href="home.html" class="a-menu">
-                        <li> <img id="test" src="img/home.png"> Home </li>
-                    </a>
-                    <a href="#" class="a-menu">
-                        <li>
-                            <div class="subnav">
-                                <button class="subnavbtn"> AISLE <img id="test" src="img/rrow_down.png"><i
-                                        class="fa fa-caret-down"></i></button>
-                                <div class="subnav-content">
-                                    <a href="FruitsPage2.html">Fruits</a>
-                                    <a href="VegetablesPage2.html">Vegetables</a>
-                                    <a href="BeveragesPage2.html">Beverages</a>
-                                    <a href="Dairy&EggsP2.html">Dairy & Eggs</a>
-                                    <a href="seafood.html"> Seafood</a>
-                                    <a href="SnacksPage2.html"> Snacks </a>
-                                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concordia Store</title>
+    <link rel="stylesheet" type="text/css" href="style/p3SnacksStyle.css" />
+    <style type="text/css">
+        .current-item {
+            width: 300px;
+            height: 300px;
+        }
+
+        header {
+            background-image: url("img/Snacks.jpg");
+            height: max-content;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Snacks</h1>
+    </header>
+
+    <div class="parallax">
+
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="home.html" class="a-menu">
+
+                    <li> <img id="test" src="img/home.png"> Home </li>
+
+                </a>
+                <a href="#" class="a-menu">
+
+                    <li>
+                        <div class="subnav">
+                            <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i
+                                    class="fa fa-caret-down"></i></button>
+
+                            <div class="subnav-content">
+                                <a href="FruitsPage2.html">Fruit</a>
+                                <a href="VegetablesPage2.html">Vegetables</a>
+                                <a href="BeveragesPage2.html">Beverages</a>
+                                <a href="Dairy&EggsP2.html">Dairy & Eggs</a>
+                                <a href="seafood.html"> Seafood</a>
+                                <a href="SnacksPage2.html"> Snacks </a>
                             </div>
-                    </a>
-                    <a href="page4.html" class="a-menu">
-                        <li><img id="test" src="img/shopping_cart.png">Shopping cart</li>
-                    </a>
-                    <a href="#" class="a-menu">
-                        <li> <img id="test" src="img/sign up.png"> Sign Up</li>
-                    </a>
-                    <a href="log.html" class="a-menu">
-                        <li> Login <img id="test" src="img/login.png"> </li>
-                    </a>
-                    <a href="#" class="a-menu">
-                        <li>
-                            <div class="subnav">
-                                <button class="subnavbtn"> Admin <img id="test" src="img/admin.png"><i
-                                        class="fa fa-caret-down"></i></button>
-                                <div class="subnav-content">
-                                    <a href="product-list.html">Product List</a>
-                                    <a href="backStoreUserList.html">User List</a>
-                                    <a href="backStoreOrderList.html">Order List</a>
-                                </div>
+                        </div>
+                </a>
+
+                <a href="#" class="a-menu">
+
+                    <li>
+                        <div class="subnav">
+                            <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i
+                                    class="fa fa-caret-down"></i></button>  
+                            <div class="subnav-content">
+                                <a href="log.html">User login</a>
+                                <a href="employees.html">employees login</a>
+                                
                             </div>
-                    </a>
-                </ul>
-                <div class="search-box">
-                    <form>
-                        <input type="text" placeholder="Search...." name="search" class="search-input" />
-                        <button type="submit">
-                            <img src="img/search.png">
-                        </button>
-                    </form>
-                </div>
+                        </div>
+                </a>
+                <a href="shoppingcart.html" class="a-menu">
+                    <li><img id="test" src="img/shopping_cart.png">Shopping cart</li>
+
+                </a>
+                <a href="sign-up.html" class="a-menu">
+                    <li> <img id="test" src="img/sign up.png"> Sign Up</li>
+
+                </a>
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search...." name="search" class="search-input" />
+                    <button type="submit">
+                        <img src="img/search.png">
+                    </button>
+                </form>
             </div>
+
         </div>
+    </div>
+
+
     <div class="row">
         <div class="card">
             <img src="img/popcorn.jpg" class="current-item">
             <h3>Cracker Jack Caramel and Peanuts Coated Popcorn</h3>
             <h3>$3.99</h3>
-            
-            <div class="popup" onclick="myFunction2()"> <button class="More Description"> More Description <img id="test"
-                        src="img/more-info.png">
+
+            <div class="popup" onclick="myFunction2()"> <button class="More Description"> More Description <img
+                        id="test" src="img/more-info.png">
                     <span class="popuptext" id="myPopup">
                         <p>Caramel coated popcorn and peanuts with 0 trans fat.</p>
-                        <p>SUGAR, CORN SYRUP, POPCORN, PEANUTS, BLACKSTRAP MOLASSES, SALT, VEGETABLE OIL, SOY LECITHIN, ASPARAGINASE, CITRIC ACID, SULPHITES. CONTAINS PEANUTS, SOY AND SULPHITE INGREDIENTS. MAY CONTAIN TREE NUTS.</p>
+                        <p>SUGAR, CORN SYRUP, POPCORN, PEANUTS, BLACKSTRAP MOLASSES, SALT, VEGETABLE OIL, SOY LECITHIN,
+                            ASPARAGINASE, CITRIC ACID, SULPHITES. CONTAINS PEANUTS, SOY AND SULPHITE INGREDIENTS. MAY
+                            CONTAIN TREE NUTS.</p>
                     </span>
             </div>
             <script>
@@ -109,7 +123,7 @@
         </div>
     </div>
     </div>
-    
+
     <div class="container">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
         <img id="expandedImg" style="width:100%">
@@ -178,5 +192,7 @@
       
       </p></div>
       </footer>
+
 </body>
+
 </html>
