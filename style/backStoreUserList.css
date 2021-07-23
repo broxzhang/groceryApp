@@ -257,3 +257,14 @@ h1{
   width: 300px;
   padding: 50px;
 }
+h1{
+	background: rgba (0,0, 0, 0.5);
+  background-image: url("/img/backStore.webp");
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+}
