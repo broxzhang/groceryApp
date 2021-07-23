@@ -83,3 +83,15 @@ html body {
 .ingredients-container:hover {
     height: 100px;
 }
+
+.filter {
+    font-weight: 100;
+    color: black;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.filter:hover {
+    margin-left: 5px;
+    color: red
+}
