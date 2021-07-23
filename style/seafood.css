@@ -16,8 +16,6 @@ html body {
     display: flex;
     margin: auto;
     flex-flow: row;
-    background-color: #f2f2f2;
-
 }
 
 .menu-container {
@@ -68,8 +66,218 @@ html body {
     height: 50px;
     width: 500px;
     overflow: hidden;
+    transition: height .7s ease;
 }
 
 .product-des-container:hover {
     height: 200px;
+}
+
+.ingredients-container {
+    height: 50px;
+    width: 500px;
+    overflow: hidden;
+    transition: height .7s ease;
+}
+
+.ingredients-container:hover {
+    height: 100px;
+}
+
+.filter {
+    font-weight: 100;
+    color: black;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.filter:hover {
+    margin-left: 5px;
+    color: red
+}
+.parallax{ 
+  
+  height: max-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+header{
+
+background-image: url("/img/background.webp") ;
+  margin-top: 40px;
+  background-size:contain;
+  border-radius: 30px;
+}
+.footer {
+  /* margin-top: -20px; */
+  background-color: #2184c2;
+  color: whitesmoke;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+h1{
+background: rgba (0,0, 0, 0.5);
+  text-align: center;
+  color: whitesmoke;
+  padding: 50px;
+  font-variant: small-caps;
+  font-size: 50px;
+  font-family: fantasy;
+  letter-spacing: 20px;
+}
+a:link {
+  text-decoration: none;
+}
+ h3{
+    
+   color: azure;
+ }
+ #end{
+  text-align:left ;
+  color: #fff;
+}
+#sticky{
+  position:fixed;
+  top:0;
+  width: 100%;
+
+}
+.menu{
+  background: #477cdd;
+  text-align: center;
+}
+.menu-ul{
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.menu-ul li{
+  font-size: 17px;
+  padding: 25px 25px 0px 25px;
+  display: inline-block;
+  list-style: none;
+  font-size: 17px;
+  
+}
+.a-menu{
+text-decoration: none;
+color: white;
+}
+.menu-ul li:hover{
+  background: none;
+  transform: scale(1.1);
+
+}
+
+.search-box{
+  border: 1px  solid white;
+border-radius: 50px;
+background: white;
+width: max-content;
+display: inline-block;
+margin: 8px;
+}
+.search-box:hover{
+  box-shadow: white;
+  border: 1px solid #5b8cd5;
+
+}
+.search-input{
+  width: 250px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  margin: 15px  0 0 10px;
+  
+}
+
+i{
+  font-size: 20px;
+  margin: 0 10px 0 0;
+}
+button{
+  
+  background: none;
+  border: none;
+  outline: none;
+
+}
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+  background-color: none;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:none;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:white;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: rgb(36, 169, 187);
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: white;
+  color:rgb(112, 99, 233);
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display:grid;
+
+}
+
+.container{
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    text-align: center;
+}
+.catgegories{
+    width: max-content;
+    margin: 25px;
+    border: 2px solid #eff1f1;
+    border-radius: 0 0 0 0;
+    display:inline-block;
+}
+.catgegories:hover{
+    box-shadow: 0 0 10px 3px #a2bae7;
+
+}
+.item-image{
+    height: 170px;
+    width: 170px;
+    border-radius: 0 0 50px 50px;
+    padding: 40px;
 }
