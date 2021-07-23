@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/backStore.css">
     <style type="text/css">
-        .info{
+        .info {
             background-color: lavender;
             margin: 20px;
             padding: 15px;
             border-radius: 10px;
         }
-        .buttons{
-            margin:20px;
+
+        .buttons {
+            margin: 20px;
         }
+
         input[type=reset] {
             background-color: #4d52509c;
             color: white;
@@ -24,108 +27,107 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         input[type=reset]:hover {
             background-color: #2b2c2baf;
         }
     </style>
-    
+
 </head>
 
 <body>
- 
-  <h1>Back Store Mangement</h1>
 
-  <div class="navbar">
-    <a href="home.html">Home</a>
-    <a href="#">Product List</a>
-    <a href="#link2">User List</a>
-    <a href="backStoreOrderList.html">Order List</a>
-    <div class="subnav">
-      <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
-      <div class="subnav-content">
-        <a href="#company">Company</a>
-        <a href="#team">Team</a>
-        <a href="#">Careers</a>
-        <a href="#">HR</a>
-      </div>
+    <h1>Back Store Mangement</h1>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">Product List</a>
+        <a href="#link2">User List</a>
+        <a href="backStoreOrderList.html">Order List</a>
+        <div class="subnav">
+            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#company">Company</a>
+                <a href="#team">Team</a>
+                <a href="#">Careers</a>
+                <a href="#">HR</a>
+            </div>
+        </div>
+
+
+        <a href="#contact">Contact</a>
     </div>
-
-
-    <a href="#contact">Contact</a>
-  </div>
-  <h2>
-      Edit a product
-        <hr/>
+    <h2>
+        Edit a product
+        <hr />
     </h2>
-<div class="info">
-    <h4>
-        <p>
-        Product Name
-        <form action="">
+    <div class="info">
+        <h4>
             <p>
-                <textarea name="nme" rows="3" cols="60">
+                Product Name
+            <form action="">
+                <p>
+                    <textarea name="nme" rows="3" cols="60">
                 Pepsi
                 </textarea>
+                </p>
+            </form>
             </p>
-        </form>
-        </p>
-        <p>
-        Product Price (CAD$)
-        <form action="">
             <p>
-                <textarea name="price" rows="2" cols="30">
+                Product Price (CAD$)
+            <form action="">
+                <p>
+                    <textarea name="price" rows="2" cols="30">
                 3.99
                 </textarea>
+                </p>
+            </form>
             </p>
-        </form>
-        </p>
-        <p>
-        Product Size (if applicable)
-        <form action="">
             <p>
-                <textarea name="size" rows="2" cols="30">
+                Product Size (if applicable)
+            <form action="">
+                <p>
+                    <textarea name="size" rows="2" cols="30">
                 1L
                 </textarea>
+                </p>
+            </form>
             </p>
-        </form>
-        </p>
-        <p>
-            Product Image
+            <p>
+                Product Image
             <form action="">
                 <p>
                     <img src="img/pepsi.jpg" style="width:500px;height:500px">
                 </p>
             </form>
             </p>
-        <p>
-        Product Description
-        <form action="">
             <p>
-                <textarea name="dscrption" rows="20" cols="60">
+                Product Description
+            <form action="">
+                <p>
+                    <textarea name="dscrption" rows="20" cols="60">
                 Classic soft drink
                 $0.39 per ml
                 </textarea>
+                </p>
+            </form>
             </p>
-        </form>
-        </p>
-    </h3>
-</div>
-<div class="buttons">
-<div class="save">
-    <input type="submit"
-    value="Save">
-</div>
-<div class="reset">
-    <input type="reset"
-    value="Reset">
-</div>
-</div>
+            </h3>
+    </div>
+    <div class="buttons">
+        <div class="save">
+            <input type="submit" value="Save">
+        </div>
+        <div class="reset">
+            <input type="reset" value="Reset">
+        </div>
+    </div>
 
 
 </body>
 
 <footer>
-	all rights reserved.
+    all rights reserved.
 </footer>
 
 </html>
