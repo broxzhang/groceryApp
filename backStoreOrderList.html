@@ -40,11 +40,11 @@
 
 
 
-  <a href="backStoreOrderProfile.html"><button class="btn Add"> Add </button></a>
+  <a href="backStoreOrderProfile.html"><button class="btn Add" > Add </button></a>
 
-  <a href="backStoreOrderProfile.html"><button class="btn Edit"> Edit </button></a>
+  <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit onclick="check()"> Edit </button></a>
 
-  <button class="btn Delete"> Delete</button>
+  <button class="btn Delete" id="btn" input value="Check" type=submit onclick="check()"> Delete</button>
   <br><br>
 
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names, products, orders.."
@@ -75,7 +75,7 @@
 
 
   <div style="overflow-x:auto;">
-    <table>
+    <table id="order">
       <tr>
         <th>
         <th>Order #</th>
@@ -92,7 +92,7 @@
       <tr>
         <th>
           <label>
-            <input type="checkbox" name="remember">
+            <input type="checkbox" name="remember" value="csf234dfs" id="order1">
         </th>
         <td>csf234dfs</td>
         <td>apples</td>
@@ -107,7 +107,7 @@
       <tr>
         <th>
           <label>
-            <input type="checkbox" name="remember">
+            <input type="checkbox" name="remember" value="asf2sddfs" id="order2">
         </th>
         <td>asf2sddfs</td>
         <td>milk</td>
@@ -120,7 +120,7 @@
       <tr>
         <th>
           <label>
-            <input type="checkbox" name="remember">
+            <input type="checkbox" name="remember" value="edd32fad" id="order3">
         </th>
         <td>edd32fad</td>
         <td>eggs</td>
@@ -135,11 +135,12 @@
 
 
 
+<!-- javascript -->
+<script src="js/backStoreOrderList.js"></script>
 
 
 
 </body>
-
 
 
 

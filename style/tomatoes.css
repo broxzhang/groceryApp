@@ -279,3 +279,7 @@ button{
 .ingredients-container:hover {
    height: 100px;
 }
+.iamge-title{
+   font-weight: bolder;
+   color: red;
+}

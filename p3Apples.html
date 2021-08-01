@@ -119,13 +119,13 @@
                     </span>
             </div>
 
-            <script>
+            <!-- <script>
                 // When the user clicks on div, open the popup
                 function myFunction2() {
                     var popup = document.getElementById("myPopup");
                     popup.classList.toggle("show");
                 }
-            </script>
+            </script> -->
 
             <br>
 
@@ -139,26 +139,10 @@
 
             </select>
             
-                <label for="quantity">Quantity:</label>
-                <!-- <input type="number" class="quantity" id="quantity" name="quantity" min="0" max="99" value="1" onchange="calculateAmount(this.value) > -->
-                <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-                
-            
-            <br><br>
-            <label>Total Price $</label>
-        <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
+            <lable for=""  > Quantity: </lable> 
+            <input type="text" name ="" id="input" onkeyup="mult(this.value);">
+            <label for="">Total Price $</label>
+            <input  type="text" id="totalPrice" name="">
 
         <a href= "shoppingcart.html" class="b-menu">
             <img id="test" src="img/addToCart.png"> </a>

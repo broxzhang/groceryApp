@@ -98,7 +98,14 @@
                             Product Number: 230120
                         </p>
                     </div>
-                    <lable for="Quantity"> Quantity: </lable> <input type="text" id="number">&nbsp;&nbsp;Add to card
+
+                    <lable for=""> Quantity: </lable>
+                    <input type="text" name="" id="input" onkeyup="mult(this.value);">&nbsp;&nbsp;
+
+                    <label for="">Total Price $</label>
+                    <input type="text" id="totalPrice" name="">
+
+
                     <ul class="menu-ul">
                         <a href="index.html" class="a-menu">
                             <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
@@ -127,12 +134,18 @@
 
 
 
-                    <lable for="Quantity"> Quantity: </lable> <input type="text" id="number">&nbsp;&nbsp;Add to card
+                    <lable for=""> Quantity: </lable>
+                    <input type="text" name="" id="input" onkeyup="mult2(this.value);">&nbsp;&nbsp;
+
+                    <label for="">Total Price $</label>
+                    <input type="text" id="totalPrice2" name="">
+
                     <ul class="menu-ul">
                         <a href="index.html" class="a-menu">
                             <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
                         </a>
                     </ul>
+
                     <img src="/img/tomatoes-roma.jpg" class="item-image">
 
                 </div>
@@ -153,7 +166,13 @@
                             Product Number: 575120
                         </p>
                     </div>
-                    <lable for="Quantity"> Quantity: </lable> <input type="text" id="number">&nbsp;&nbsp;Add to card
+                    <lable for=""> Quantity: </lable>
+                    <input type="text" name="" id="input" onkeyup="mult3(this.value);">&nbsp;&nbsp;
+
+                    <label for="">Total Price $</label>
+                    <input type="text" id="totalPrice3" name="">
+
+
                     <ul class="menu-ul">
                         <a href="index.html" class="a-menu">
                             <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
@@ -177,22 +196,29 @@
                             Product Number: 755120
                         </p>
                     </div>
-                    <lable for="Quantity"> Quantity: </lable> <input type="text" id="number">&nbsp;&nbsp;Add to card
-                    <ul class="menu-ul">
-                        <a href="index.html" class="a-menu">
-                            <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
-                        </a>
-                    </ul>
-                    <img src="/img/tomatoes-black-zebra.jpg" class="item-image">
+                    
+                
+                <lable for=""> Quantity: </lable>
+                <input type="text" name="" id="input" onkeyup="mult4(this.value);">&nbsp;&nbsp;
 
-                </div>
-                </a>
-                <hr>
+                <label for="">Total Price $</label>
+                <input type="text" id="totalPrice4" name="">
+
+                <ul class="menu-ul">
+                    <a href="index.html" class="a-menu">
+                        <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
+                    </a>
+                </ul>
+                <img src="/img/tomatoes-black-zebra.jpg" class="item-image">
+
             </div>
-
-            <!-- -end -->
-
+            </a>
+            <hr>
         </div>
+
+        <!-- -end -->
+
+    </div>
     </div>
     <footer class="footer">
 
@@ -247,6 +273,8 @@
             </p>
         </div>
     </footer>
+    <!-- javascript -->
+    <script src="js/tomatoes.js"></script>
 </body>
 
 </html>
