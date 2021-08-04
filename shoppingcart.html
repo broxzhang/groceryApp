@@ -98,7 +98,23 @@
             padding: 5px;
             text-align: center;
         }
+        .refresh {
+            text-align: center;
+            font-size: medium;
+            padding: 10px 25px;
+            height: 40px;
+            background-color:grey;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
+        .refresh:hover {
+            background-color: rgba(128, 128, 128, 0.171);
+            color: grey;
+            font-weight: 600px;
+            border: 1px solid grey;
+        }
         .total {
             margin: 20px 20px 20px 20px;
             padding: 20px 20px 20px 20px;
@@ -271,6 +287,9 @@
                 </div>
             </div>
         </div>
+        <button type="button" class="refresh" onclick="updateTotal()" style="margin-left: 20px;">
+            Refresh the total
+        </button>
         <div class="total">
             <p class="t">
                 <span>
