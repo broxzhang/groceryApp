@@ -10,14 +10,16 @@ function myFunction2() {
     popup.classList.toggle("show");
 }
 
-//calculate the total price
 
+
+
+//calculate the total price
 var tp;
 var value;
 
 function mult(value) {
 
-    x = 1.23 * value
+    var x = 1.23 * value
 
     tp = parseFloat(x).toFixed(2);
 
@@ -32,7 +34,18 @@ function mult(value) {
 
 }
 
-window.onload=function(){
-	document.getElementById('input').value = localStorage.value;
+window.onload = function () {
+    
+    document.getElementById('input').value = localStorage.value;
     document.getElementById('totalPrice').value = localStorage.tp;
+
 }
+
+const mySel = document.getElementById("type"); 
+mySel.addEventListener("change",function() { 
+  localStorage.setItem("selValue",this.value); // save it 
+}); 
+let val = localStorage.getItem("selValue"); 
+if (val) mySel.value=val; // set the dropdown 
+// trigger the change in case there are other events on the select 
+mySel.onchange(); 
