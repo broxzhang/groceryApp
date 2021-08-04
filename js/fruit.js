@@ -14,14 +14,8 @@ function myFunction2() {
 
 
 //calculate the total price
-
 var tp;
 var value;
-var type;
-
-
-
-
 
 function mult(value) {
 
@@ -41,7 +35,7 @@ function mult(value) {
 }
 
 window.onload = function () {
-    //  document.getElementById('type').value = localStorage.type;
+    
     document.getElementById('input').value = localStorage.value;
     document.getElementById('totalPrice').value = localStorage.tp;
 
