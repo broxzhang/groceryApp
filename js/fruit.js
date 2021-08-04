@@ -11,20 +11,28 @@ function myFunction2() {
 }
 
 //calculate the total price
+
+var tp;
+var value;
+
 function mult(value) {
-    var x;
+
     x = 1.23 * value
-    x=parseFloat(x).toFixed(2);
-    document.getElementById('totalPrice').value = x;
+
+    tp = parseFloat(x).toFixed(2);
+
+    // Store
+    localStorage.tp = tp;
+    localStorage.value = value;
+
+    // Retrieve
+    document.getElementById('input').value = localStorage.value;
+    document.getElementById('totalPrice').value = localStorage.tp;
+
+
 }
 
-// cockies store the number after refreshing
-function WriteCookie() {
-    if( document.myform.customer.value == "" ) {
-       alert("Enter some value!");
-       return;
-    }
-    cookievalue = escape(document.myform.customer.value) + ";";
-    document.cookie = "name=" + cookievalue;
-    document.write ("Setting Cookies : " + "name=" + cookievalue );
- }
+window.onload=function(){
+	document.getElementById('input').value = localStorage.value;
+    document.getElementById('totalPrice').value = localStorage.tp;
+}
