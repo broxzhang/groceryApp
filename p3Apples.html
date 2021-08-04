@@ -109,15 +109,15 @@
             <br>
 
             <br>
-            <label for="type">Type</label>
-            <select id="type" name="type">
-                <option value="Gala">Gala</option>
-                <option value="Empire">Empire</option>
-                <option value="Spartan">Spartan</option>
-                <option value="Smith">Smith</option>
+            <label for=""> Type </label>
+            <select id="type" name="type" onselect="readType(this.value);">
+                <option id="frt_1" value="Gala">Gala</option>
+                <option id="frt_2" value="Empire">Empire</option>
+                <option id="frt_3" value="Spartan">Spartan</option>
+                <option id="frt_4" value="Smith">Smith</option>
 
-            </select>
-            <br>
+            </select >
+            <br><br>
             <lable for=""  > Quantity: </lable> 
             <input type="number" name ="" id="input" onkeyup="mult(this.value); ">
             <br>
