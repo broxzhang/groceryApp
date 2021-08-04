@@ -7,6 +7,28 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/p2Style.css" />
+    <script>
+
+        function removeItem(event){
+            var butclicked=event.target;
+            butclicked.parentElement.parentElement.remove();
+            updateTotal();
+        }
+        function updateTotal(){
+            var itemList=document.getElementsByClassName('list')[0];
+            var items=itemList.getElementsByClassName('product');
+            var totoal=0;
+            for(var i=0;i<items.length;i++){
+                var item=items[i];
+                var price=item.getElementsByClassName('price')[0];
+                var qty=item.getElementsByClassName('qty')[0];
+                var p=parseFloat(price.innerText.replace('$', ''));
+                var q=qty.nodeValue;
+                total=total+(p*q);
+            }
+            document.getElementsByClassName('tot').innerText=total;
+        }
+    </script>
     <style type="text/css">
         h1 {
             background: rgba (0, 0, 0, 0.5);
@@ -20,22 +42,14 @@
         }
 
         .cart {
-            display: flex;
             margin-bottom: 200px;
         }
 
-        .list {
-            flex: 0.75;
-        }
 
         .product {
             display: flex;
-            width: 750px;
-            height: 200px;
-            overflow: hidden;
             border: 1px solid silver;
-            margin-bottom: 20px;
-            margin-left: 30px;
+            margin: 20px 20px 20px 20px;
             border-radius: 10px;
         }
 
@@ -48,7 +62,6 @@
         .info {
             padding: 20px;
             width: 100%;
-            position: relative;
         }
 
         .name,
@@ -57,15 +70,13 @@
         }
 
         .button {
-            position: absolute;
             font-size: small;
             bottom: 20px;
             right: 20px;
             padding: 10px 25px;
             background-color: red;
             color: white;
-            cursor: pointer;
-            border-radius: 5px;
+            border-radius: 5px;        
         }
 
         .button:hover {
@@ -82,10 +93,7 @@
         }
 
         .total {
-            flex: 0.25;
-            margin-left: 20px;
-            margin-right: 30px;
-            height: 350px;
+            margin: 20px 20px 20px 20px;
             padding: 20px 20px 20px 20px;
             border: 1px solid silver;
             border-radius: 10px;
@@ -118,7 +126,8 @@
 
         .continue {
             display: block;
-            margin-left: 30px;
+            margin-right: 20px;
+            text-align: right;
         }
 
         .contshop {
@@ -212,55 +221,50 @@
     </h1>
 
     <div class="cart">
-        <div class="list">
-            <div class="product">
+        <div id="list">
+            <div class="product" id="product">
                 <img src="img/pepsi.jpg" />
                 <div class="info">
                     <h3 class="name">
                         Pepsi
                     </h3>
                     <h3 class="price">
-                        CAD $3.99
+                        3.99
                     </h3>
-                    <p class="qty">
+                    <p>
                         Qty:
-                        <input value="1" name="">
+                        <input class="qty" value="1">
                     </p>
-                    <button type="button" class="button">
+                    <button class="button" type="button" onclick="removeItem(event)">
                         Remove this item
                     </button>
                 </div>
             </div>
-            <div class="product">
+            <div class="product" id="product">
                 <img src="img/nestea.jpg" />
                 <div class="info">
                     <h3 class="name">
                         Nestea
                     </h3>
                     <h3 class="price">
-                        CAD $2.50
+                        2.50
                     </h3>
-                    <p class="qty">
+                    <p>
                         Qty:
-                        <input value="3" name="">
+                        <input class="qty" value="3">
                     </p>
-                    <button type="button" class="button">
+                    <button type="button" class="button" onclick="removeItem(event)">
                         Remove this item
                     </button>
                 </div>
             </div>
-            <div class="continue">
-                <button type="button" class="contshop">
-                    Continue shopping
-                </button>
-            </div>
         </div>
         <div class="total">
-            <p>
+            <p class="t">
                 <span>
                     Total before tax:
                 </span>
-                <span>
+                <span class="tot">
                     $11.49
                 </span>
             </p>
@@ -276,15 +280,15 @@
                 <span>
                     GST:
                 </span>
-                <span>
+                <span class="gst">
                     $0.57
-                </span>
+                <span>
             </p>
             <p>
                 <span>
                     QST:
                 </span>
-                <span>
+                <span class="qst">
                     $1.15
                 </span>
             </p>
@@ -292,12 +296,17 @@
                 <span>
                     Total:
                 </span>
-                <span>
+                <span class="totaltaxed">
                     CAD $13.21
                 </span>
             </p>
             <button type="button" class="checkout">
                 Proceed to checkout
+            </button>
+        </div>
+        <div class="continue">
+            <button type="button" class="contshop">
+                Continue shopping
             </button>
         </div>
 
