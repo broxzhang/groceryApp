@@ -15,18 +15,16 @@
             updateTotal();
         }
         function updateTotal(){
-            var itemList=document.getElementsByClassName('list')[0];
-            var items=itemList.getElementsByClassName('product');
-            var totoal=0;
-            for(var i=0;i<items.length;i++){
-                var item=items[i];
-                var price=item.getElementsByClassName('price')[0];
-                var qty=item.getElementsByClassName('qty')[0];
-                var p=parseFloat(price.innerText.replace('$', ''));
-                var q=qty.nodeValue;
-                total=total+(p*q);
-            }
-            document.getElementsByClassName('tot').innerText=total;
+            const total=[];
+            const items=document.querySelectorAll(".price");
+            items.forEach(function(item){
+                total.push(parseFloat(item.textContent));
+            });
+            const tot=total.reduce(function(total,item){
+                total+=item;
+                return total;
+            }, 0);
+            document.getElementById('tot').textContent=final;
         }
     </script>
     <style type="text/css">
@@ -264,7 +262,7 @@
                 <span>
                     Total before tax:
                 </span>
-                <span class="tot">
+                <span id="tot">
                     $11.49
                 </span>
             </p>
