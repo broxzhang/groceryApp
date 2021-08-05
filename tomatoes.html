@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>CS Store</title>
     <link rel="stylesheet" type="text/css" href="style/tomatoes.css" />
+    <style>  #more {display: none;}</style>
 
 </head>
-<header>
-    <h1>TOMATOES</h1>
-
-</header>
 
 <body>
+    <header>
+        <h1>Tomatoes</h1>
+    
+    </header>
+    
     <div id="content2">
         <div id="sami">
 
@@ -68,158 +70,150 @@
 
                         </a>
                     </ul>
-                    <div class="search-box">
+                    <!-- <div class="search-box">
                         <form>
                             <input type="text" placeholder="Search...." name="search" class="search-input" />
                             <button type="submit">
                                 <img src="img/search.png">
                             </button>
                         </form>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
 
             <!-- -begining -->
-
+<!--  ======================================================1==============================================================    -->
             <div class="container">
 
-                <div class="catgegories">
-                    <div class="iamge-title"> Cherry Grape<br><br> </div>
-                    <p> price$0.39 / 100 g<br>
-                        $3.90 /kg.</p>
-                    <div class="product-des-container ">
-                        <h2>More details &#709;</h2>
-                        <p>
-                            Cherry and grape tomatoes are easy to grow and small, which is one of the reasons they are
-                            recommended for those who have never before planted tomatoes. They usually get no more than
-                            one inch in diameter
-                            <br><br>
-                            Product Number: 230120
-                        </p>
-                    </div>
+                
 
-                    <lable for=""> Quantity: </lable>
-                    <input type="text" name="" id="input" onkeyup="mult(this.value);">&nbsp;&nbsp;
+                <div class="catgegories">
+                    <div class="iamge-title"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Cherry Grape </h2> <br>
+                    <h5> price$0.39 /1</h5></div>
+
+                    <div class="Quantity-title">
+                   <br> <lable for=""> Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </lable>
+                    <input type="number" min="0" max="99" name="" id="input" onkeyup="mult(this.value);">&nbsp;&nbsp;
 
                     <label for="">Total Price $</label>
-                    <input type="text" id="totalPrice" name="">
-
+                    <input type="text" id="totalPrice" name="" disabled></div>
 
                     <ul class="menu-ul">
-                        <a href="index.html" class="a-menu">
+                        <a href="shoppingcart.html" class="a-menu">
                             <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
                         </a>
                     </ul>
 
-                    <img src="/img/tomatoes-cherry-grape.jpg" class="item-image">
+                   <br> <div class="popup" onclick="myFunction()"> <button class="More Description"> &nbsp;&nbsp;&nbsp;&nbsp;Detailed Description <img
+                        id="test" src="img/more-info.png">
+                    <span class="popuptext" id="myPopup">
+                        Cherry and grape tomatoes are easy to grow and small, which is one of the reasons they are
+                        recommended for those who have never before planted tomatoes. They usually get no more than
+                        one inch in diameter
+                        <br><br>
+                        Product Number: 230120
+                    </span>
+                     </div>
 
-                </div>
-                </a>
-                <div class="catgegories">
-                    <div class="iamge-title"> Roma <br><br> </div>
-                    price$0.49 / 100 g<br>
-                    $4.90 /kg.<br>
-                    <div class="product-des-container ">
-                        <h2>More details &#709;</h2>
-                        <p>
-                            Cherry and grape tomatoes are easy to grow and small, which is one of the reasons they are
-                            recommended for those who have never before planted tomatoes. They usually get no more than
-                            one inch in diameter.
-                            <br><br>
-                            Product Number: 345120
-                        </p>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                     <div class ="gallery">
+                      <img src="/img/tomatoes-cherry-grape.jpg" class="item-image"></div>
+
                     </div>
+                   
+<!--  =======================================================2===============================================================    -->     
 
 
+<div class="catgegories">
+    <div class="iamge-title"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Black Cherry </h2> <br>
+    <h5> price$0.35 /1</h5></div>
 
+    <div class="Quantity-title">
+   <br> <lable for="">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </lable>
+    <input type="number" name="" id="input2" onkeyup="mult2(this.value);">&nbsp;&nbsp;
 
-                    <lable for=""> Quantity: </lable>
-                    <input type="text" name="" id="input" onkeyup="mult2(this.value);">&nbsp;&nbsp;
+    <label for="">Total Price $</label>
+    <input type="number" id="totalPrice2" name="" disabled></div>
 
-                    <label for="">Total Price $</label>
-                    <input type="text" id="totalPrice2" name="">
+    <ul class="menu-ul">
+        <a href="shoppingcart.html" class="a-menu">
+            <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
+        </a>
+    </ul>
 
-                    <ul class="menu-ul">
-                        <a href="index.html" class="a-menu">
-                            <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
-                        </a>
-                    </ul>
-
-                    <img src="/img/tomatoes-roma.jpg" class="item-image">
-
-                </div>
-                </a>
-
-                <div class="catgegories">
-                    <div class="iamge-title"> Black Cherry <br><br> </div>
-                    price$0.35 / 100 g<br>
-                    $3.50 /kg.<br>
-
-                    <div class="product-des-container ">
-                        <h2>More details &#709;</h2>
-                        <p>
-                            The black cherry tomatoes are disease resistant and a type of heirloom tomato. It has
+   <br> <div class="popup" onclick="myFunction2()"> <button class="More Description"> &nbsp;&nbsp;&nbsp;&nbsp; Detailed Description <img
+        id="test" src="img/more-info.png">
+    <span class="popuptext" id="myPopup3">
+        The black cherry tomatoes are disease resistant and a type of heirloom tomato. It has
                             purplish-red fruit that grows in clusters of one inch, and it is known not for sweetness,
                             but for its true tomato taste.
                             <br><br>
                             Product Number: 575120
-                        </p>
-                    </div>
-                    <lable for=""> Quantity: </lable>
-                    <input type="text" name="" id="input" onkeyup="mult3(this.value);">&nbsp;&nbsp;
+    </span>
+     </div>
 
-                    <label for="">Total Price $</label>
-                    <input type="text" id="totalPrice3" name="">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <div class ="gallery">
+      <img src="/img/tomatoes-black-cherry.jpg" class="item-image">
 
+    </div></div>
+         
+    <!-- <div class ="gallery">
 
-                    <ul class="menu-ul">
-                        <a href="index.html" class="a-menu">
-                            <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
-                        </a>
-                    </ul>
-                    <img src="/img/tomatoes-black-cherry.jpg" class="item-image">
+        <img src="/img/tomatoes-black-cherry.jpg"></div> -->
+<!--  ======================================================3==============================================================    -->
+<div class="catgegories">
+    <div class="iamge-title"><h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Black Zebra </h2> <br>
+    <h5> price$0.40 /1</h5></div>
 
-                </div>
-                </a>
-                <div class="catgegories">
-                    <div class="iamge-title"> Black Zebra <br><br> </div>
-                    price$0.40 / 100 g<br>
-                    $4.00 /kg.<br>
+    <div class="Quantity-title">
+   <br> <lable for="">Quantity: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </lable>
+    <input type="number" name="" id="input3" onkeyup="mult3(this.value);">&nbsp;&nbsp;
 
-                    <div class="product-des-container ">
-                        <h2>More details &#709;</h2>
-                        <p>
-                            Black Zebras are indeterminate heirlooms that taste great and have purplish-black flesh and
+    <label for="">Total Price $</label>
+    <input type="text" id="totalPrice3" name="" disabled> </div>
+
+    <ul class="menu-ul">
+        <a href="shoppingcart.html" class="a-menu">
+            <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
+        </a>
+    </ul>
+
+   <br> <div class="popup" onclick="myFunction3()"> <button class="More Description">  &nbsp;&nbsp;&nbsp;&nbsp;Detailed Description <img
+        id="test" src="img/more-info.png">
+    <span class="popuptext" id="myPopup4">
+         Black Zebras are indeterminate heirlooms that taste great and have purplish-black flesh and
                             green streaks. They are also resistant to many types of diseases.
                             <br><br>
                             Product Number: 755120
-                        </p>
-                    </div>
-                    <!-- comment -->
-                
-                <lable for=""> Quantity: </lable>
-                <input type="text" name="" id="input" onkeyup="mult4(this.value);">&nbsp;&nbsp;
+    </span>
+     </div>
 
-                <label for="">Total Price $</label>
-                <input type="text" id="totalPrice4" name="">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <div class ="gallery">
+       <img src="/img/tomatoes-black-zebra.jpg" class="item-image">
 
-                <ul class="menu-ul">
-                    <a href="index.html" class="a-menu">
-                        <li> <img id="test" src="/img/shopping_cart_black.png"> </li>
-                    </a>
-                </ul>
-                <img src="/img/tomatoes-black-zebra.jpg" class="item-image">
+    </div></div>
+    <!-- <div class ="gallery">
+        <img src="/img/tomatoes-black-zebra.jpg"></div> -->
+<!--  ====================================================================================================================    -->
 
-            </div>
-            </a>
-            <hr>
+
         </div>
 
         <!-- -end -->
 
     </div>
     </div>
+
+
+
     <footer class="footer">
 
 
