@@ -97,18 +97,6 @@
  .menu{
     background: #477cdd;
     text-align: center;
-<<<<<<< HEAD
- }
- .menu-ul{
-    margin: 0;
-    padding: 0;
-    display: inline;
- }
- .menu-ul li{
-    float: left;
-    padding: 25px 25px 0px 25px;
-    display: inline-block;
-=======
  }
  .menu-ul{
     margin: 0;
@@ -119,7 +107,6 @@
     float: left;
     padding: 25px 25px 0px 25px;
     /* display: inline-block; */
->>>>>>> bran1
     list-style: none;
     font-size: 17px;
     
@@ -222,7 +209,6 @@
   
   }
   
-<<<<<<< HEAD
  
   .container{
       margin: 2px 50px 50px 20px;
@@ -251,36 +237,6 @@
       
     }
  
-=======
- 
-  .container{
-      margin: 2px 50px 50px 20px;
-      width: 100%;
-      text-align:center;
-  }
-  .catgegories{
-  
-      width:350px;
-      margin: 9px;
-      border: 2px solid #eff1f1;
-      border-radius:25px 25px 25px 25px;
-      display:inline-block;
-  }
-  .catgegories:hover{
-      box-shadow: 0 0 10px 4px #a2bae7;
- 
-  }
-  .item-image{
-     align-items: flex-start;
-      height:70px;
-      width: 70px;
-      border-radius: 0 0 0 0;
-      padding: 10px;
-     
-      
-    }
- 
->>>>>>> bran1
  
   /* ======product=description===================== */
  
@@ -372,20 +328,12 @@
        animation: fadeIn 1s;
      }
      
-<<<<<<< HEAD
-     /* Add animation (fade in the popup) */
-     @-webkit-keyframes fadeIn {
-       from {opacity: 0;} 
-       to {opacity: 1;}
-     }
-=======
      /* Add animation (fade in the popup)
      @-webkit-keyframes fadeIn {
    
        from {opacity: 0;} 
        to {opacity: 1;}
      } */
->>>>>>> bran1
  #input,#input2,#input3{
     width: 50px;
     background-color: rgb(233, 238, 243);
