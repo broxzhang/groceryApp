@@ -55,6 +55,7 @@ window.onload=function(){
     document.getElementById('totalPrice3').value = localStorage.tp3;}
 // =======================================================================
 
+<<<<<<< HEAD
 // function mult4 (value){
 //     var x;
 //     x= 0.40*value
@@ -62,6 +63,8 @@ window.onload=function(){
 //     document.getElementById('totalPrice4').value=x;
 // }
 // =======================================================================
+=======
+>>>>>>> bran1
 function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
