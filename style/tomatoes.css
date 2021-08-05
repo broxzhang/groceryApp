@@ -51,6 +51,7 @@
     color: whitesmoke;
     text-align: center;
     flex-shrink:inherit;
+    margin-bottom: 0px;
   }
  
  h1{
