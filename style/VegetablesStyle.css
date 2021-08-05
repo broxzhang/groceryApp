@@ -12,6 +12,31 @@ min-height: 100%;
 overflow: auto;
 padding-bottom: 100px;
 }
+
+.parallax{ 
+  
+  height: max-content;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+
+header{
+  font-size: small;
+   margin-top:120px;
+background-image: url("/img/background.webp") ;
+  background-size:contain;
+  border-radius: 25px;
+}
+.footer {
+  /* margin-top: -20px; */
+  background-color: #2184c2;
+  color: whitesmoke;
+  text-align: center;
+  flex-shrink: 0;
+}
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
@@ -27,39 +52,16 @@ padding-bottom: 100px;
   display: table;
   clear: both;
 }
-.parallax{ 
-  
-  height: max-content;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   
-}
-header{
-
-background-image: url("/img/background.webp") ;
-  margin-top: 40px;
-  background-size:contain;
-  border-radius: 30px;
-}
-.footer {
-  /* margin-top: -20px; */
-  background-color: #2184c2;
-  color: whitesmoke;
-  text-align: center;
-  flex-shrink: 0;
-}
-
 h1{
-background: rgba (0,0, 0, 0.5);
-  text-align: center;
-  color: whitesmoke;
-  padding: 50px;
-  font-variant: small-caps;
-  font-size: 50px;
-  font-family: fantasy;
-  letter-spacing: 20px;
+   
+  background: rgba (0,0, 0, 0.5);
+    text-align: center;
+    color: whitesmoke;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 40px;
+    font-family: fantasy;
+    letter-spacing: 15px;
 }
 a:link {
   text-decoration: none;
@@ -73,6 +75,7 @@ a:link {
   color: #fff;
 }
 #sticky{
+  z-index: 3;
   position:fixed;
   top:0;
   width: 100%;
@@ -83,12 +86,13 @@ a:link {
   text-align: center;
 }
 .menu-ul{
+ 
   margin: 0;
   padding: 0;
-  display: inline;
+  display:inline;
 }
 .menu-ul li{
-  font-size: 17px;
+   float: left;
   padding: 25px 25px 0px 25px;
   display: inline-block;
   list-style: none;
@@ -101,11 +105,11 @@ color: white;
 }
 .menu-ul li:hover{
   background: none;
-  transform: scale(1.1);
+  transform: scale(1.2);
 
 }
 
-.search-box{
+/* .search-box{
   border: 1px  solid white;
 border-radius: 50px;
 background: white;
@@ -126,7 +130,7 @@ margin: 8px;
   background: transparent;
   margin: 15px  0 0 10px;
   
-}
+} */
 
 i{
   font-size: 20px;
@@ -182,7 +186,7 @@ button{
 /* Add a grey background color on hover */
 .subnav-content a:hover {
   background-color: white;
-  color:rgb(112, 99, 233);
+  color:rgb(36, 169, 187);
 }
 
 /* When you move the mouse over the subnav container, open the subnav content */
@@ -190,6 +194,7 @@ button{
   display:grid;
 
 }
+/* <=================PRODUCTS PICS============================ --> */
 
 .container{
     margin: 50px 50px 50px 5%;
@@ -213,3 +218,42 @@ button{
     border-radius: 0 0 50px 50px;
     padding: 40px;
 }
+/* ======gallery===================== */
+.gallery{
+  margin: 10px 50px;
+}
+.gallery img{
+  width:170px;
+  padding: 5px;
+ filter: grayscale(50%);
+ transition: 1s;
+}
+.gallery img:hover{
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+/* <======delete me later===========OFFERS VIDEO============================ --> */
+
+.container2{
+  margin: 50px 50px 50px 5px;
+  width:100%;
+  text-align: center;
+  }
+  .catgegories2{
+  background-color: #a2bae7;
+  width:fit-content;
+  margin: 25px;
+  border: 3px solid #eff1f1;
+  border-radius: 25px 25px  25px  25px;
+  display:inline-block;
+  }
+  .catgegories2:hover{
+  box-shadow: 0 0 10px 3px #a2bae7;
+  
+  }
+  #vid{
+
+    pointer-events: none;
+    border-radius: 25px 25px  25px  25px ;
+    }
+    /* <======delete me later===========OFFERS VIDEO============================ --> */
