@@ -10,6 +10,7 @@ const fakeUser = {
     province: 'QC',
     currency: 'CAD'
     country: 'CA',
+    role: 'customer',
     cart: [
         Product1,
         Product2

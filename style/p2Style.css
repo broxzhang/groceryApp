@@ -386,3 +386,25 @@ button{
   }
 
 
+  .container{
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    text-align: center;
+}
+.catgegories{
+    width: max-content;
+    margin: 25px;
+    border: 2px solid #eff1f1;
+    border-radius: 0 0 0 0;
+    display:inline-block;
+}
+.catgegories:hover{
+    box-shadow: 0 0 10px 3px #a2bae7;
+
+}
+.item-image{
+    height: 170px;
+    width: 170px;
+    border-radius: 0 0 50px 50px;
+    padding: 40px;
+}
