@@ -16,8 +16,8 @@
         }
         function updateTotal(){
             var itemList=document.getElementsByClassName('list')[0];
-            var items=itemList.getElementsByClassName('product');
-            var totoal=0;
+            var items=document.getElementsByClassName('product');
+            let total=0;
             for(var i=0;i<items.length;i++){
                 var item=items[i];
                 var price=item.getElementsByClassName('price')[0];
@@ -32,7 +32,7 @@
             document.getElementById('tot').textContent='$'+total;
             document.getElementById('gst').textContent='$'+gst;
             document.getElementById('qst').textContent='$'+qst;
-            document.getElementById('totaltaxed').textContent='CAD $'+totattaxed;
+            document.getElementById('totaltaxed').textContent='CAD $'+totaltaxed;
 
         }
     </script>
