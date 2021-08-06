@@ -19,7 +19,7 @@ var value;
 
 function mult(value) {
 //x is your price;
-    var x = 1.23 * value
+    var x = 2.50 * value
 
     tp = parseFloat(x).toFixed(2);
 
