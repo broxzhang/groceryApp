@@ -87,7 +87,7 @@ const products = {
       photo: "img/Frozen-Uncooked-Pacific-White-Shrimp.jpeg",
     },
   ],
-  beverages=[
+  beverages: [
     {
       id: 8,
       productName: "Coca-cola",
@@ -151,21 +151,23 @@ const products = {
       price: 10.99,
       category: "soda",
       photo: "img/sprite.JPG",
-    },{
+    },
+    {
       id: 16,
       productName: "Eska Water Bottles",
       aisles: "beverages",
       price: 10.99,
       category: "water",
       photo: "img/water.jpg",
-    },{
+    },
+    {
       id: 17,
       productName: "Oasis Mango Juice",
       aisles: "beverages",
       price: 10.99,
       category: "juice",
       photo: "img/mangojuice.jpg",
-    }
+    },
   ],
 };
 

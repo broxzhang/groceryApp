@@ -8,6 +8,7 @@ html body {
   display: flex;
   width: 100vw;
   height: auto;
+  flex-flow: column;
 }
 
 .main-container {
@@ -129,9 +130,7 @@ h1 {
 a:link {
   text-decoration: none;
 }
-h3 {
-  color: azure;
-}
+
 #end {
   text-align: left;
   color: #fff;

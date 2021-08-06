@@ -51,16 +51,30 @@ function displayFood(seafood) {
     const avgStr = item.avg
       ? item.avg + " avg. ea. "
       : (pizKg / 10).toFixed(2) + "/100g";
+    // return `
+    //     <a style="cursor: pointer;" class="product" href="seafood-detail.html">
+    //     <img class="product-img" src="${item.photo}" />
+    //     <h3>${item.productName}</h3>
+    //     <h4><b>${avgStr}</b></h4>
+    //     <span>(200 g avg.)</span>
+    //     <span>${pizKg}/kg ${item.price}/lb</span>
+    //     <!-- <img style="width: 40px; height: 40px; color: black;" src="shopping_cart.png" /> -->
+    //     <i class="fas fa-shopping-cart"></i>
+    // </a>`;
     return `
-        <a style="cursor: pointer;" class="product" href="seafood-detail.html">
-        <img class="product-img" src="${item.photo}" />
-        <h3>${item.productName}</h3>
-        <h4><b>${avgStr}</b></h4>
-        <span>(200 g avg.)</span>
-        <span>${pizKg}/kg ${item.price}/lb</span>
-        <!-- <img style="width: 40px; height: 40px; color: black;" src="shopping_cart.png" /> -->
-        <i class="fas fa-shopping-cart"></i>
-    </a>`;
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="${item.photo}" alt="seafood image" >
+        <div class="card-body">
+          <h5 class="card-title">${item.productName}</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">${avgStr}</li>
+            <li class="list-group-item">${pizKg}/kg ${item.price}/lb</li>
+          </ul>
+          </div>
+        <div class="card-body">
+         <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>`;
   });
   displayFood = displayFood.join("");
   seafoodSection.innerHTML = displayFood;
