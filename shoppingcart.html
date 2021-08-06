@@ -26,9 +26,10 @@
                 var q=qty.value;
                 total=total+(p*q);
             }
-            var gst=total*0.05;
-            var qst=total*0.0975;
-            var totaltaxed=total*0.1475;
+            total=(total).toFixed(2);
+            var gst=(total*0.05).toFixed(2);
+            var qst=(total*0.09975).toFixed(2);
+            var totaltaxed=(total*1.14975).toFixed(2);
             document.getElementById('tot').textContent='$'+total;
             document.getElementById('gst').textContent='$'+gst;
             document.getElementById('qst').textContent='$'+qst;
