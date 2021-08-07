@@ -8,34 +8,75 @@
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/p2Style.css" />
     <script>
-
-        function removeItem(event){
-            var butclicked=event.target;
+        var total;
+        var gst;
+        var qst;
+        var totaltaxed;
+        var p;
+        var q;
+        
+        function removeItem(event) {
+            var butclicked = event.target;
             butclicked.parentElement.parentElement.remove();
             updateTotal();
         }
-        function updateTotal(){
-            var itemList=document.getElementsByClassName('list')[0];
-            var items=document.getElementsByClassName('product');
-            let total=0;
-            for(var i=0;i<items.length;i++){
-                var item=items[i];
-                var price=item.getElementsByClassName('price')[0];
-                var qty=item.getElementsByClassName('qty')[0];
-                var p=parseFloat(price.innerText.replace('$', ''));
-                var q=qty.value;
-                total=total+(p*q);
+        function updateTotal() {
+            var itemList = document.getElementsByClassName('list')[0];
+            var items = document.getElementsByClassName('product');
+            let total = 0;
+            let  numOfItems=0;
+            for (var i = 0; i < items.length; i++) {
+                var item = items[i];
+                var price = item.getElementsByClassName('price')[0];
+                var qty = item.getElementsByClassName('qty')[0];
+                var p = parseFloat(price.innerText.replace('$', ''));
+                var q = qty.value;
+                total = total + (p * q);
+                numOfItems = numOfItems + q;
             }
-            total=(total).toFixed(2);
-            var gst=(total*0.05).toFixed(2);
-            var qst=(total*0.09975).toFixed(2);
-            var totaltaxed=(total*1.14975).toFixed(2);
-            document.getElementById('tot').textContent='$'+total;
-            document.getElementById('gst').textContent='$'+gst;
-            document.getElementById('qst').textContent='$'+qst;
-            document.getElementById('totaltaxed').textContent='CAD $'+totaltaxed;
+            total = (total).toFixed(2);
+            var gst = (total * 0.05).toFixed(2);
+            var qst = (total * 0.09975).toFixed(2);
+            var totaltaxed = (total * 1.14975).toFixed(2);
+            // var numOfItems;
+            // document.getElementById('tot').textContent = '$' + total;
+            // document.getElementById('gst').textContent = '$' + gst;
+            // document.getElementById('qst').textContent = '$' + qst;
+            // document.getElementById('totaltaxed').textContent = 'CAD $' + totaltaxed;
+
+            // Store
+
+            localStorage.total = total;
+            localStorage.gst = gst;
+            localStorage.qst = qst;
+            localStorage.totaltaxed = totaltaxed;
+            localStorage.p = p;
+            localStorage.q = q;
+            localStorage.numOfItems = numOfItems.slice(1);
+        
+            // Retrieve
+
+            document.getElementById('tot').textContent = '$' + localStorage.total;
+            document.getElementById('gst').textContent = '$' + localStorage.gst;
+            document.getElementById('qst').textContent = '$' + localStorage.qst;
+            document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
+            document.getElementById('qty').value = localStorage.q;
+            document.getElementById('numOfItems').textContent = localStorage.numOfItems;
 
         }
+        window.onload = function () {
+
+            document.getElementById('tot').textContent = '$' + localStorage.total;
+            document.getElementById('gst').textContent = '$' + localStorage.gst;
+            document.getElementById('qst').textContent = '$' + localStorage.qst;
+            document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
+            document.getElementById('qty').value = localStorage.q;
+            document.getElementById('numOfItems').textContent = localStorage.numOfItems;
+
+
+        }
+
+
     </script>
     <style type="text/css">
         h1 {
@@ -84,7 +125,7 @@
             padding: 10px 25px;
             background-color: red;
             color: white;
-            border-radius: 5px;        
+            border-radius: 5px;
         }
 
         .button:hover {
@@ -99,12 +140,13 @@
             padding: 5px;
             text-align: center;
         }
+
         .refresh {
             text-align: center;
             font-size: medium;
             padding: 10px 25px;
             height: 40px;
-            background-color:grey;
+            background-color: grey;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -116,6 +158,7 @@
             font-weight: 600px;
             border: 1px solid grey;
         }
+
         .total {
             margin: 20px 20px 20px 20px;
             padding: 20px 20px 20px 20px;
@@ -173,15 +216,15 @@
         }
 
         .qty {
-            width: 30px;
+            width: 70px;
             text-align: center;
         }
     </style>
 
 </head>
-<header>
+<!-- <header>
     Your cart
-</header>
+</header> -->
 
 <body>
     <div class="parallax">
@@ -233,14 +276,14 @@
 
                 </a>
             </ul>
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <form>
                     <input type="text" placeholder="Search...." name="search" class="search-input" />
                     <button type="submit">
                         <img src="img/search.png">
                     </button>
                 </form>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -262,14 +305,14 @@
                     </h3>
                     <p>
                         Qty:
-                        <input class="qty" value="1">
+                        <input class="qty" id="qty" value="1" type="number" onkeyup="updateTotal()">
                     </p>
                     <button class="button" type="button" onclick="removeItem(event)">
                         Remove this item
                     </button>
                 </div>
             </div>
-            <div class="product" id="product">
+            <!-- <div class="product" id="product">
                 <img src="img/nestea.jpg" />
                 <div class="info">
                     <h3 class="name">
@@ -280,17 +323,17 @@
                     </h3>
                     <p>
                         Qty:
-                        <input class="qty" value="3">
+                        <input class="qty" id ='qty' value="3">
                     </p>
                     <button type="button" class="button" onclick="removeItem(event)">
                         Remove this item
                     </button>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <button type="button" class="refresh" onclick="updateTotal()" style="margin-left: 20px;">
+        <!-- <button type="button" class="refresh" onclick="updateTotal()" style="margin-left: 20px;">
             Refresh the total
-        </button>
+        </button> -->
         <div class="total">
             <p class="t">
                 <span>
@@ -314,7 +357,7 @@
                 </span>
                 <span id="gst">
                     $0.57
-                <span>
+                    <span>
             </p>
             <p>
                 <span>

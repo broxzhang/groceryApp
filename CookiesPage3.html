@@ -37,7 +37,7 @@ head>
                 <a href="#" class="a-menu">
                     <li>
                         <div class="subnav">
-                            <button class="subnavbtn"> AISLE <img id="test" src="img/rrow_down.png"><i
+                            <button class="subnavbtn"> AISLE <img id="test" src="img/arrow_down.png"><i
                                     class="fa fa-caret-down"></i></button>
                             <div class="subnav-content">
                                 <a href="FruitsPage2.html">Fruits</a>
@@ -71,14 +71,14 @@ head>
                         </div>
                 </a>
             </ul>
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <form>
                     <input type="text" placeholder="Search...." name="search" class="search-input" />
                     <button type="submit">
                         <img src="img/search.png">
                     </button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="row">
@@ -103,11 +103,16 @@ head>
             </script>
             <br>
             <br>
-            <a href="#" class="b-menu">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
-                <img id="test" src="img/addToCart.png">
-            </a>
+
+            <lable for=""> Quantity: </lable>
+            <input type="number" name="" id="input" onkeyup="mult(this.value); ">
+            <br>
+            <label for="">Total Price $</label>
+            <input type="text" id="totalPrice" name="" disabled>
+
+            <a href="shoppingcart.html" class="b-menu">
+                <img id="test" src="img/addToCart.png"> </a>
+
         </div>
     </div>
     </div>
@@ -131,7 +136,7 @@ head>
             popup.classList.toggle("show");
         }
     </script>
-    <br><br>
+    <br><br><br><br><br><br><br><br>
     <footer id="footer">
 
         <div class="row">
@@ -185,5 +190,6 @@ head>
         </div>
     </footer>
 </body>
-
+ <!-- javascript -->
+ <script src="js/snacks.js"></script>
 </html>

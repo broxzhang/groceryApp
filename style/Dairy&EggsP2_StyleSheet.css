@@ -35,6 +35,25 @@ background: rgba (0,0, 0, 0.5);
   letter-spacing: 20px;
 
 }
+p{
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h5{
+  background: rgba (0,0, 0, 0.5);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-family: fantasy;
+    letter-spacing: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
 
 h4{
 margin-left: 200px;
@@ -293,7 +312,7 @@ height: max-content;
   /* margin-top: 40px;
   background-size:auto; */
   border-radius: 30px;
-  margin-top: 100px;
+  margin-top: 120px;
 
 
   
