@@ -44,26 +44,18 @@ window.addEventListener("DOMContentLoaded", function () {
   displayFood(seafood);
 });
 
-function displayFood(seafood) {
-  let displayFood = seafood.map((item) => {
+const displayFood = (seafood) => {
+  let displayFood = seafood.map((item, i) => {
     const pizKg = calculateKg(item.price);
 
     const avgStr = item.avg
       ? item.avg + " avg. ea. "
       : (pizKg / 10).toFixed(2) + "/100g";
-    // return `
-    //     <a style="cursor: pointer;" class="product" href="seafood-detail.html">
-    //     <img class="product-img" src="${item.photo}" />
-    //     <h3>${item.productName}</h3>
-    //     <h4><b>${avgStr}</b></h4>
-    //     <span>(200 g avg.)</span>
-    //     <span>${pizKg}/kg ${item.price}/lb</span>
-    //     <!-- <img style="width: 40px; height: 40px; color: black;" src="shopping_cart.png" /> -->
-    //     <i class="fas fa-shopping-cart"></i>
-    // </a>`;
     return `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem">
+        <a href="seafood-detail.html?itemid=${item.id}">
         <img class="card-img-top" src="${item.photo}" alt="seafood image" >
+        </a>
         <div class="card-body">
           <h5 class="card-title">${item.productName}</h5>
           <ul class="list-group list-group-flush">
@@ -72,13 +64,13 @@ function displayFood(seafood) {
           </ul>
           </div>
         <div class="card-body">
-         <i class="fas fa-shopping-cart"></i>
+         <i class="fas fa-shopping-cart">Add To Cart</i>
         </div>
       </div>`;
   });
   displayFood = displayFood.join("");
   seafoodSection.innerHTML = displayFood;
-}
+};
 
 function calculateKg(price) {
   return (price * 2.205).toFixed(2);
