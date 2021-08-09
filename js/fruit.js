@@ -49,3 +49,5 @@ let val = localStorage.getItem("selValue");
 if (val) mySel.value=val; // set the dropdown 
 // trigger the change in case there are other events on the select 
 mySel.onchange(); 
+
+

@@ -410,3 +410,44 @@ button{
     border-radius: 0 0 50px 50px;
     padding: 40px;
 }
+
+
+/* bottom */
+.intro {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 15px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Green */
+#onsale {
+  border-color: #04AA6D;
+  color: green;
+
+    /* padding: 15px 40px; */
+  
+}
+
+#onsale:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+#all {
+  border-color: #2196F3;
+  color: dodgerblue;
+/* padding: 15px 40px; */
+}
+
+#all:hover {
+  background: #2196F3;
+  color: white;
+}
+
+

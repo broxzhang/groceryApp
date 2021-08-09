@@ -176,6 +176,7 @@ const products = {
       aisles: "fruit",
       price: 1.23,
       category: "apple",
+      type: "onsale",
       photo: "img/AppleEmpire.webp",
     },
     {
@@ -200,6 +201,7 @@ const products = {
       aisles: "fruit",
       price: 3.50,
       category: "Avocado",
+      type: "onsale",
       photo: "img/Avocado.webp",
     },
     {
@@ -224,6 +226,7 @@ const products = {
       aisles: "fruit",
       price: 0.50,
       category: "Oranges",
+      type: "onsale",
       photo: "img/oranges.jpg",
     },
     {
@@ -232,6 +235,7 @@ const products = {
       aisles: "fruit",
       price: 0.50,
       category: "Plums",
+      type: "onsale",
       photo: "img/plums.jpg",
     },
 
