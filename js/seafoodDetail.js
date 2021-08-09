@@ -4,14 +4,22 @@ const { seafood } = products;
 
 let seafoodId = null;
 
+const addToCart = () => {
+  window.location.href = "shoppingcart.html";
+};
+
 $(document).ready(() => {
   const queryString = window.location.search;
-  seafoodId = queryString.replace("?itemid=", "");
+  seafoodId = queryString.replace("?itemid=", "")
+    ? queryString.replace("?itemid=", "")
+    : 1;
 
-  let seafoodToShow = seafood.filter((item) => item.id == seafoodId);
+  let seafoodToShow = seafood.find((item) => item.id == seafoodId);
   const seafoodContainer = document.querySelector("#seafood-detail-container");
-  seafoodContainer.innerHTML = displaySeaFood(seafoodToShow[0]);
-  console.log(seafoodToShow[0]);
+  seafoodContainer.innerHTML = displaySeaFood(seafoodToShow);
+
+  const button = document.querySelector("#btnAddToCart");
+  button.addEventListener("click", addToCart);
 });
 
 const displaySeaFood = (seafood) => {
@@ -32,7 +40,7 @@ const displaySeaFood = (seafood) => {
           <b>${avgStr}</b>
       </h4>
       <h4 class="mt-4">${pizKg}/kg $${seafood.price}/lb</h4>
-      <button type="button" class="btn btn-danger mt-5">
+      <button type="button" class="btn btn-danger mt-5" id="btnAddToCart">
           <i class="fa fa-shopping-cart" ></i>Add
       </button>
       <hr />

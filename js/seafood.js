@@ -34,7 +34,7 @@
 import products from "./product.js";
 // import seafood from './product.js';
 
-const seafoodSection = document.querySelector(".products-container");
+const seafoodSection = document.querySelector("#seafoodSection");
 
 const { seafood } = products;
 
@@ -52,7 +52,7 @@ const displayFood = (seafood) => {
       ? item.avg + " avg. ea. "
       : (pizKg / 10).toFixed(2) + "/100g";
     return `
-    <div class="card" style="width: 18rem">
+  <div class="card col-md-4" style="min-width: 250px">
         <a href="seafood-detail.html?itemid=${item.id}">
         <img class="card-img-top" src="${item.photo}" alt="seafood image" >
         </a>
@@ -64,17 +64,19 @@ const displayFood = (seafood) => {
           </ul>
           </div>
         <div class="card-body">
-         <i class="fas fa-shopping-cart">Add To Cart</i>
+        <a href="shoppingCart.html?itemid=${item.id}"> 
+          <i class="fas fa-shopping-cart">Add To Cart</i>
+        </a>
         </div>
       </div>`;
   });
   displayFood = displayFood.join("");
   seafoodSection.innerHTML = displayFood;
-};
 
-function calculateKg(price) {
-  return (price * 2.205).toFixed(2);
-}
+  function calculateKg(price) {
+    return (price * 2.205).toFixed(2);
+  }
+};
 
 document.querySelectorAll(".filter").forEach((item) => {
   let filteredSeafood = [];
