@@ -169,6 +169,82 @@ const products = {
       photo: "img/mangojuice.jpg",
     },
   ],
+  fruit: [
+    {
+      id: 18,
+      productName: "Apples",
+      aisles: "fruit",
+      price: 1.23,
+      category: "apple",
+      photo: "img/AppleEmpire.webp",
+    },
+    {
+      id: 19,
+      productName: "Bananas",
+      aisles: "fruit",
+      price: 2.50,
+      category: "banana",
+      photo: "img/banana.webp",
+    },
+    {
+      id: 20,
+      productName: "Dragon Fruits",
+      aisles: "fruit",
+      price: 1.50,
+      category: "Dragon Fruits",
+      photo: "img/dragonfruit.webp",
+    },
+    {
+      id: 21,
+      productName: "Avocado",
+      aisles: "fruit",
+      price: 3.50,
+      category: "Avocado",
+      photo: "img/Avocado.webp",
+    },
+    {
+      id: 22,
+      productName: "Pears",
+      aisles: "fruit",
+      price: 4.50,
+      category: "Pears",
+      photo: "img/pears.webp",
+    },
+    {
+      id: 23,
+      productName: "Peaches",
+      aisles: "fruit",
+      price: 1.50,
+      category: "Peaches",
+      photo: "img/peaches.webp",
+    },
+    {
+      id: 24,
+      productName: "Oranges",
+      aisles: "fruit",
+      price: 0.50,
+      category: "Oranges",
+      photo: "img/oranges.jpg",
+    },
+    {
+      id: 25,
+      productName: "Plums",
+      aisles: "fruit",
+      price: 0.50,
+      category: "Plums",
+      photo: "img/plums.jpg",
+    },
+
+    {
+      id: 26,
+      productName: "Berries",
+      aisles: "fruit",
+      price: 2.40,
+      category: "Berries",
+      photo: "img/berries.jpg",
+    },
+
+  ],
 };
 
 export default products;
