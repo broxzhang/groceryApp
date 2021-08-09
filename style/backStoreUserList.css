@@ -117,8 +117,8 @@
     border: 2px solid black;
     background-color: white;
     color: black;
-    padding: 14px 28px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 10px;
     cursor: pointer;
     text-decoration: none;
   }
@@ -239,11 +239,22 @@ input[type=cancel]:hover {
     text-decoration: none;
   }
 
+header{
+
+  background-image: url("/img/management.jpg");
+  height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}  
+
 h1{
 	background: rgba (0,0, 0, 0.5);
-  background-image: url("backStore.webp");
+  background-image: url("/img/management.jpg");
     text-align: center;
-    color: white;
+    color: rgb(23, 50, 204);
     padding: 50px;
     font-variant: small-caps;
     font-size: 50px;
@@ -257,14 +268,62 @@ h1{
   width: 300px;
   padding: 50px;
 }
-h1{
-	background: rgba (0,0, 0, 0.5);
-  background-image: url("/img/backStore.webp");
+
+/* ======footer========== */
+#footer{
+	background-color: #477cdd;
+	color: whitesmoke;
+    position:relative ;
+    min-height: 100px;
+    margin-top: -100px;
+    clear: both;
+	/* text-align: left; */
+	
+	text-decoration: none;
+}
+
+ a:link {
+  text-decoration: none;
+}
+#end{
+  color: #fff;
+}
+
+.column {
+  text-align:left;
+    float: left;
+    width: 23%;
+    padding: 10px;
+    /* height: 300px; Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .container{
+    margin: 50px 50px 50px 5%;
+    width: 90%;
     text-align: center;
-    color: white;
-    padding: 50px;
-    font-variant: small-caps;
-    font-size: 50px;
-    font-family: fantasy;
-    letter-spacing: 20px;
+}
+.catgegories{
+    width: max-content;
+    margin: 25px;
+    border: 2px solid #eff1f1;
+    border-radius: 0 0 0 0;
+    display:inline-block;
+}
+.catgegories:hover{
+    box-shadow: 0 0 10px 3px #a2bae7;
+
+}
+.item-image{
+    height: 170px;
+    width: 170px;
+    border-radius: 0 0 50px 50px;
+    padding: 40px;
 }
