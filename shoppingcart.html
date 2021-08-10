@@ -6,27 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concordia Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style/p2Style.css" />
-    <!-- <script>
+    <script>
         var total;
         var gst;
         var qst;
         var totaltaxed;
         var p;
         var q;
-        
+
         function removeItem(event) {
             var butclicked = event.target;
             butclicked.parentElement.parentElement.remove();
             updateTotal();
         }
+
         function updateTotal() {
             var itemList = document.getElementsByClassName('list')[0];
             var items = document.getElementsByClassName('product');
             let total = 0;
-            let  numOfItems=0;
+            let numOfItems = 0;
             for (var i = 0; i < items.length; i++) {
                 var item = items[i];
                 var price = item.getElementsByClassName('price')[0];
@@ -34,7 +33,7 @@
                 var p = parseFloat(price.innerText.replace('$', ''));
                 var q = qty.value;
                 total = total + (p * q);
-                numOfItems = numOfItems + q;
+                numOfItems = Number(numOfItems) + Number(q);
             }
             total = (total).toFixed(2);
             var gst = (total * 0.05).toFixed(2);
@@ -54,9 +53,18 @@
             localStorage.totaltaxed = totaltaxed;
             localStorage.p = p;
             localStorage.q = q;
-            localStorage.numOfItems = numOfItems.slice(1);
-        
+            localStorage.numOfItems = numOfItems;
+
             // Retrieve
+            document.getElementById('tot').textContent = '$' + localStorage.total;
+            document.getElementById('gst').textContent = '$' + localStorage.gst;
+            document.getElementById('qst').textContent = '$' + localStorage.qst;
+            document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
+            // document.getElementById('qty').value = localStorage.q;
+            document.getElementById('numOfItems').textContent = localStorage.numOfItems;
+
+        }
+        window.onload = function() {
 
             document.getElementById('tot').textContent = '$' + localStorage.total;
             document.getElementById('gst').textContent = '$' + localStorage.gst;
@@ -64,22 +72,12 @@
             document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
             document.getElementById('qty').value = localStorage.q;
             document.getElementById('numOfItems').textContent = localStorage.numOfItems;
+            updateTotal();
+
 
         }
-        window.onload = function () {
-
-            document.getElementById('tot').textContent = '$' + localStorage.total;
-            document.getElementById('gst').textContent = '$' + localStorage.gst;
-            document.getElementById('qst').textContent = '$' + localStorage.qst;
-            document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
-            document.getElementById('qty').value = localStorage.q;
-            document.getElementById('numOfItems').textContent = localStorage.numOfItems;
-        }
-
-
-    </script> -->
- 
- <style type="text/css">
+    </script>
+    <style type="text/css">
         h1 {
             background: rgba (0, 0, 0, 0.5);
             text-align: center;
@@ -90,35 +88,34 @@
             font-family: fantasy;
             letter-spacing: 0px;
         }
-
+        
         .cart {
             margin-bottom: 200px;
         }
-
-
+        
         .product {
             display: flex;
             border: 1px solid silver;
             margin: 20px 20px 20px 20px;
             border-radius: 10px;
         }
-
+        
         .product>img {
             width: 180px;
             height: 200px;
             object-fit: cover;
         }
-
+        
         .info {
             padding: 20px;
             width: 100%;
         }
-
+        
         .name,
         .price {
             margin-bottom: 20px;
         }
-
+        
         .button {
             font-size: small;
             bottom: 20px;
@@ -128,20 +125,20 @@
             color: white;
             border-radius: 5px;
         }
-
+        
         .button:hover {
             background-color: rgba(255, 0, 0, 0.233);
             color: red;
             font-weight: 600px;
             border: 1px solid red;
         }
-
+        
         .qty>input {
             width: 40px;
             padding: 5px;
             text-align: center;
         }
-
+        
         .refresh {
             text-align: center;
             font-size: medium;
@@ -152,28 +149,28 @@
             text-decoration: none;
             border-radius: 5px;
         }
-
+        
         .refresh:hover {
             background-color: rgba(128, 128, 128, 0.171);
             color: grey;
             font-weight: 600px;
             border: 1px solid grey;
         }
-
+        
         .total {
             margin: 20px 20px 20px 20px;
             padding: 20px 20px 20px 20px;
             border: 1px solid silver;
             border-radius: 10px;
         }
-
+        
         .total p {
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
             font-size: 20px;
         }
-
+        
         .checkout {
             text-align: center;
             font-size: medium;
@@ -184,20 +181,20 @@
             text-decoration: none;
             border-radius: 5px;
         }
-
+        
         .checkout:hover {
             background-color: rgba(172, 221, 73, 0.438);
             color: green;
             font-weight: 600px;
             border: 1px solid green;
         }
-
+        
         .continue {
             display: block;
             margin-right: 20px;
             text-align: right;
         }
-
+        
         .contshop {
             text-align: center;
             font-size: medium;
@@ -208,14 +205,14 @@
             text-decoration: none;
             border-radius: 5px;
         }
-
+        
         .contshop:hover {
             background-color: rgba(128, 128, 128, 0.171);
             color: grey;
             font-weight: 600px;
             border: 1px solid grey;
         }
-
+        
         .qty {
             width: 70px;
             text-align: center;
@@ -228,51 +225,72 @@
 </header> -->
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-        <a class="ms-3 navbar-brand" href="index.html">Concordia Store</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>          
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Aisles
+    <div class="parallax">
+
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="index.html" class="a-menu">
+
+                    <li> <img id="test" src="img/home.png"> Home </li>
+
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="FruitsPage2.html">Fruit</a>
-                  <a class="dropdown-item" href="VegetablesPage2.html">Vegetables</a>
-                  <a class="dropdown-item" href="BeveragesPage2.html">Beverages</a>
-                  <a class="dropdown-item" href="Dairy&EggsP2.html">Dairy & Eggs</a>
-                  <a class="dropdown-item" href="seafood.html"> Seafood</a>
-                  <a class="dropdown-item" href="SnacksPage2.html"> Snacks </a>
-                </div>
-              </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Login
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="log.html">User login</a>
-                <a class="dropdown-item" href="employees.html">employees login</a>
-            </div>
-            </li>
-                <li class="nav-item active">
-                <a class="nav-link" href="shoppingcart.html">Shopping Cart <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="sign-up.html">Sign-up <span class="sr-only">(current)</span></a>
-              </li>
-          </ul>
+                <a href="#" class="a-menu">
+
+                    <li>
+                        <div class="subnav">
+                            <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i
+                                    class="fa fa-caret-down"></i></button>
+
+                            <div class="subnav-content">
+                                <a href="FruitsPage2.html">Fruit</a>
+                                <a href="VegetablesPage2.html">Vegetables</a>
+                                <a href="BeveragesPage2.html">Beverages</a>
+                                <a href="Dairy&EggsP2.html">Dairy & Eggs</a>
+                                <a href="seafood.html"> Seafood</a>
+                                <a href="SnacksPage2.html"> Snacks </a>
+                            </div>
+                        </div>
+                </a>
+
+                <a href="#" class="a-menu">
+
+                    <li>
+                        <div class="subnav">
+                            <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i
+                                    class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a href="log.html">User login</a>
+                                <a href="employees.html">employees login</a>
+
+                            </div>
+                        </div>
+                </a>
+                <a href="shoppingcart.html" class="a-menu">
+                    <li><img id="test" src="img/shopping_cart.png">Shopping cart</li>
+
+                </a>
+                <a href="sign-up.html" class="a-menu">
+                    <li> <img id="test" src="img/sign up.png"> Sign Up</li>
+
+                </a>
+            </ul>
+            <!-- <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search...." name="search" class="search-input" />
+                    <button type="submit">
+                        <img src="img/search.png">
+                    </button>
+                </form>
+            </div> -->
+
         </div>
-      </nav>
+    </div>
+    <br>
     <h1>
-        My Cart (11 items)
+        Shopping cart
+        <hr />
     </h1>
-    
+
     <div class="cart">
         <div id="list">
             <div class="product" id="product">
@@ -286,7 +304,7 @@
                     </h3>
                     <p>
                         Qty:
-                        <input class="qty" id="qty" value="1" type="number" onkeyup="updateTotal()">
+                        <input class="qty" id="qty" value="1" type="number" onclick="updateTotal()" onkeyup="updateTotal()">
                     </p>
                     <button class="button" type="button" onclick="removeItem(event)">
                         Remove this item
@@ -367,7 +385,7 @@
         </div>
 
     </div>
-    <!-- <footer id="footer">
+    <footer id="footer">
 
         <div class="row">
 
@@ -422,11 +440,5 @@
 
             </p>
         </div>
-    </footer> -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="module" src="js/shoppingCart.js"></script>
- 
+    </footer>
 </body>

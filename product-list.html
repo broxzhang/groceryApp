@@ -6,92 +6,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
-    <link rel="stylesheet" type="text/css" href="style/product-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        td {
+            vertical-align: middle;
+        }
+        th {
+            vertical-align: middle;
+        }
+
+
+    </style>
+
 </head>
 
 
 <body>
-    <h1>Back Store Mangement</h1>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="product-list.html">Product List</a>
-        <a href="backStoreUserList.html">User List</a>
-        <a href="backStoreOrderList.html">Order List</a>
-        <div class="subnav">
-            <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
-            <div class="subnav-content">
-                <a href="#company">Company</a>
-                <a href="#team">Team</a>
-                <a href="#">Careers</a>
-                <a href="#">HR</a>
+    <div class="col-12 d-flex flex-column">
+        <div style="  background-image: url(/img/backStore.webp);
+                                text-align: center;
+                                color: white;
+                                padding: 50px;
+                                font-variant: small-caps;
+                                font-size: 50px;
+                                font-family: fantasy;
+                                letter-spacing: 20px;">
+            Back Store Mangement
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="product-list.html">Product List <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="backStoreUserList.html">User List<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="backStoreOrderList.html">Order List<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#company">Company</a>
+                        <a class="dropdown-item" href="#team">Team</a>
+                        <a class="dropdown-item" href="#">Careers</a>
+                        <a class="dropdown-item" href="#">HR</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="shoppingcart.html">Contact<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
             </div>
+        </nav>
+        <div class="d-flex justify-content-center">
+            <div class="col-10">
+            <table class="mt-5 table table-success table-striped">
+            <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Aisles</th>
+                  <th scope="col">price</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="productList">
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+          </table>
+            </div>
+
         </div>
 
-        <a href="#contact">Contact</a>
-    </div>
-    <div class="main-container">
-        <ul class="menu-container">
 
-            <a>Home</a>
-            <a>Order</a>
-            <a>Products</a>
-            <a>Customer</a>
-        </ul>
-        <div class="products-container">
-            <h1>Products</h1>
-            <div style="display: flex; flex-flow: row; justify-content: space-around;">
-                <h4>Export</h4>
-                <h4>Import</h4>
-            </div>
-            <table>
-                <thead>
-                    <th>Product</th>
-                    <th>Aisles</th>
-                    <th>Prices</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Fresh Canadian Atlantic Salmon Fillet</td>
-                        <td>seafood</td>
-                        <td>10.99 / lb</td>
-                    </tr>
-                    <tr>
-                        <td>Fresh Canadian Atlantic Salmon Fillet</td>
-                        <td>seafood</td>
-                        <td>10.99 / lb</td>
-                    </tr>
-                    <tr>
-                        <td>Fresh Canadian Atlantic Salmon Fillet</td>
-                        <td>seafood</td>
-                        <td>10.99 / lb</td>
-                    </tr>
-                    <tr>
-                        <td>Fresh Canadian Atlantic Salmon Fillet</td>
-                        <td>seafood</td>
-                        <td>10.99 / lb</td>
-                    </tr>
-                    <tr>
-                        <td>Fresh Canadian Atlantic Salmon Fillet</td>
-                        <td>seafood</td>
-                        <td>10.99 / lb</td>
-                    </tr>
-                    <tr>
-                        <td>Fresh Canadian Atlantic Salmon Fillet</td>
-                        <td>seafood</td>
-                        <td>10.99 / lb</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div style="display:flex; flex-flow: row; justify-content: space-between;">
-                <button onclick="location.href= 'backStoreEditProduct.html'">Add Product</button>
-                <button onclick="location.href= 'backStoreEditProduct.html'">Edit Product</button>
-                <button>Delete Product</button>
-            </div>
-        </div>
+        <!-- <footer style="background-color: #477cdd; text-align: right; margin-top: 5rem;">
+            all rights reserved.
+        </footer> -->
+
     </div>
-    <footer style="background-color: #477cdd; text-align: right; margin-top: 5rem;">
-        all rights reserved.
-    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="module" src="js/productList.js"></script>
+
 </body>
 
 </html>
