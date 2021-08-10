@@ -50,6 +50,7 @@ const displaySeaFood = (seafood) => {
             </h2>
             <div class="collapse" id="descripExample">
               <div class="card card-body">
+              ${seafood.description}
               </div>
             </div>
       </div>
