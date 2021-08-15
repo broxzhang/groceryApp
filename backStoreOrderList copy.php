@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Concordia Store</title>
+  <link rel="stylesheet" type="text/css" href="style/backStore.css">
+
+</head>
+
+<body>
+
+  <h1>Back Store Mangement</h1>
+
+
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="product-list.html">Product List</a>
+    <a href="backStoreUserList.html">User List</a>
+    <a href="backStoreOrderList.html">Order List</a>
+    <div class="subnav">
+      <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#company">Company</a>
+        <a href="#team">Team</a>
+        <a href="#">Careers</a>
+        <a href="#">HR</a>
+      </div>
+    </div>
+
+
+    <a href="#contact">Contact</a>
+  </div>
+
+
+
+  <!-- editing from here -->
+  <h2>Order Manage</h2>
+
+
+
+ 
+  <br><br>
+  <a href="backStoreOrderProfile.html"><button class="btn Add" > Add Oder</button></a>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names, products, orders.."
+    title="Type in a name">
+
+   
+  <style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+  </style>
+
+
+<!-- php -->
+<?php 
+$doc = new DOMDocument(); 
+$doc->load( 'database/orderlist.xml' ); 
+   
+$employees = $doc->getElementsByTagName( "employee" ); 
+foreach( $employees as $employee ) 
+{ 
+  $names = $employee->getElementsByTagName( "name" ); 
+  $name = $names->item(0)->nodeValue; 
+   
+  $ages= $employee->getElementsByTagName( "age" ); 
+  $age= $ages->item(0)->nodeValue; 
+   
+  $salaries = $employee->getElementsByTagName( "salary" ); 
+  $salary = $salaries->item(0)->nodeValue; 
+   
+  echo "<b>$name - $age - $salary\n</b><br>"; 
+  } 
+?>
+<!-- php end -->
+
+
+  <div style="overflow-x:auto;">
+    <table id="order">
+      <tr>
+       
+        <th>Order #</th>
+        <th>Items</th>
+        
+        <th>Total Prices (CND)</th>
+        <th>Customer ID# </th>
+
+
+
+
+
+      </tr>
+
+      <tr>
+        
+        <td>csf234dfs</td>
+        <td>1. Apples Gala (5); 2. Milk skim (2)</td>
+        <td>12.55</td>
+        <td>caiz1234</td>
+
+        <td>
+
+        <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
+      
+        <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
+
+      </tr>
+
+
+      <tr>
+       
+        <td>asf2sddfs</td>
+        <td>1. Apples Spartan (4); 2. Tomato Cherry Grape (3)</td>
+        <td>18.75</td>
+        <td>jimd445</td>
+
+        <td>
+
+          <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
+        
+          <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
+      </tr>
+      <tr>
+      
+        <td>edd32fad</td>
+        <td>1. Pepsi (3); 2. Popcorn (2)</td>
+        <td>8.0</td>
+        <td>Apol520</td>
+
+        <td>
+
+          <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
+        
+          <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+<!-- javascript -->
+<script src="js/backStoreOrderList.js"></script>
+
+
+
+</body>
+
+
+
+<footer>
+  all rights reserved.
+</footer>
+
+</html>

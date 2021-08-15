@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<orderlist>
+
+ <oder>
+<products>
+  <product>
+  <id>25</id>
+  <productName>Plums</productName>
+  <quantity>10</quantity>
+  </product>
+
+  <product>
+  <id>21</id>
+  <productName>Avocado</productName>
+  <quantity>12</quantity>
+  </product>
+</products>
+ <totalprice>$23</totalprice>
+  </oder>
+
+ <oder>
+<products>
+  <product>
+  <id>1</id>
+  <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
+  <quantity>2</quantity>
+  </product>
+
+  <product>
+  <id>2</id>
+  <productName>Crab flavoured pollock flakes</productName>
+  <quantity>2</quantity>
+  </product>
+</products>
+ <totalprice>$44</totalprice>
+  </oder>
+
+<oder>
+<products>
+  <product>
+  <id>25</id>
+  <productName>Plums</productName>
+  <quantity>10</quantity>
+  </product>
+
+  <product>
+  <id>21</id>
+  <productName>Avocado</productName>
+  <quantity>12</quantity>
+  </product>
+</products>
+ <totalprice>$23</totalprice>
+  </oder>
+  
+</orderlist>
+
+
+
+  
