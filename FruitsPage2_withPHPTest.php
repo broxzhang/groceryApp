@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/p2Style.css" />
-<? require_once("./php/fruit.php");
-?>
+    <? require_once("./php/fruit.php");
+    ?>
 </head>
 <header>
     <h1>Fruits</h1>
 
 
-
 </header>
+
+
 
 <body>
 
@@ -32,8 +33,7 @@
 
                     <li>
                         <div class="subnav">
-                            <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i
-                                    class="fa fa-caret-down"></i></button>
+                            <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i class="fa fa-caret-down"></i></button>
 
                             <div class="subnav-content">
                                 <a href="FruitsPage2.html">Fruit</a>
@@ -50,8 +50,7 @@
 
                     <li>
                         <div class="subnav">
-                            <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i
-                                    class="fa fa-caret-down"></i></button>
+                            <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i class="fa fa-caret-down"></i></button>
                             <div class="subnav-content">
                                 <a href="log.html">User login</a>
                                 <a href="employees.html">employees login</a>
@@ -82,8 +81,46 @@
 
     <!-- -product begining -->
 
-    <div class="container">
+    <?php
+    $doc = new DOMDocument();
+    $doc->load('database/products.xml');
+
+    $products = $doc->getElementsByTagName("fruit");
+    foreach ($products as $fruit) {
+        $names = $fruit->getElementsByTagName("name");
+        $name = $names->item(0)->nodeValue;
+
+        $prices = $employee->getElementsByTagName("price");
+        $price = $prices->item(0)->nodeValue;
+
+        $images = $employee->getElementsByTagName("image");
+        $image = $images->item(0)->nodeValue;
+
+        echo "<b>$name - $price - $image\n</b><br>";
+   
+   
+    echo'
+    
+     <div class="container">
         <a href="p3Apples.html">
+            <form class="catgegories" action="FruitsPage2_withPHPTest.php" method="post">
+                <img src="img/'.$image.'" class="item-image">
+                <div class="iamge-title"> Bananas </div>
+                <div class="item-price"> $2.50 </div>
+                <a href="shoppingcart.html" class="b-menu">
+                    <img id="test" src="img/addToCart.png"> </a>
+            </form>
+        </a>
+        </div>
+        ';
+
+
+    };
+        ?>
+
+
+
+        <!-- <a href="p3Apples.html">
             <form class="catgegories" action="FruitsPage2_withPHPTest.php" method="post">
                 <img src="img/banana.webp" class="item-image">
                 <div class="iamge-title"> Bananas </div>
@@ -92,12 +129,13 @@
                     <img id="test" src="img/addToCart.png"> </a>
             </form>
         </a>
+
         <a href="p3Apples.html">
             <div class="catgegories">
                 <img src="img/apple.webp" class="item-image">
                 <div class="iamge-title"> Apples </div>
                 <div class="item-price" style="color: red;"> $1.23 (On Sale)</div>
-                
+
                 <a href="shoppingcart.html" class="b-menu">
                     <img id="test" src="img/addToCart.png"> </a>
             </div>
@@ -147,7 +185,7 @@
                 <a href="shoppingcart.html" class="b-menu">
                     <img id="test" src="img/addToCart.png"> </a>
             </div>
-        </a>  <a href="p3Apples.html">
+        </a> <a href="p3Apples.html">
             <div class="catgegories">
                 <img src="img/plums.jpg" class="item-image">
                 <div class="iamge-title"> Plums </div>
@@ -164,8 +202,12 @@
                 <a href="shoppingcart.html" class="b-menu">
                     <img id="test" src="img/addToCart.png"> </a>
             </div>
-        </a>
-    </div>
+        </a> -->
+    
+    
+    
+    
+
     <br> <br> <br> <br>
 
     <!-- -product end -->
@@ -212,7 +254,7 @@
             </div>
 
 
-            
+
 
 
         </div>

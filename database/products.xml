@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<products>
+
+  <fruit>
+  <name>Apples</name>
+  <aisles>fruit</aisles>
+  <price>1.23</price>
+  <image>img/AppleEmpire.webp</image>
+  </fruit>
+
+
+  <fruit>
+  <name>Bananas</name>
+  <aisles>fruit</aisles>
+  <price>2.5</price>
+  <image>img/banana.webp</image>
+  </fruit>
+
+<fruit>
+  <name>Dragon_Fruits</name>
+  <aisles>fruit</aisles>
+  <price>1.5</price>
+  <image>img/dragonfruit.webp</image>
+  </fruit>
+
+<fruit>
+  <name>Avocado</name>
+  <aisles>fruit</aisles>
+  <price>3.5</price>
+  <image>img/Avocado.webp</image>
+  </fruit>
+
+<fruit>
+  <name>Pears</name>
+  <aisles>fruit</aisles>
+  <price>1.5</price>
+  <image>img/pears.webp</image>
+  </fruit>
+
+<fruit>
+  <name>Peaches</name>
+  <aisles>fruit</aisles>
+  <price>1.5</price>
+  <image>img/peaches.webp</image>
+  </fruit>
+
+<fruit>
+  <name>Oranges</name>
+  <aisles>fruit</aisles>
+  <price>0.5</price>
+  <image>img/oranges.jpg</image>
+  </fruit>
+
+<fruit>
+  <name>Plums</name>
+  <aisles>fruit</aisles>
+  <price>0.5</price>
+  <image>img/plums.jpg</image>
+  </fruit>
+
+<fruit>
+  <name>Berries</name>
+  <aisles>fruit</aisles>
+  <price>2.4</price>
+  <image>img/berries.jpg</image>
+  </fruit>
+
+
+  </products>
