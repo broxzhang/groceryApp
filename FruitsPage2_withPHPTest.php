@@ -33,7 +33,8 @@
 
                     <li>
                         <div class="subnav">
-                            <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i class="fa fa-caret-down"></i></button>
+                            <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i
+                                    class="fa fa-caret-down"></i></button>
 
                             <div class="subnav-content">
                                 <a href="FruitsPage2.html">Fruit</a>
@@ -50,7 +51,8 @@
 
                     <li>
                         <div class="subnav">
-                            <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i class="fa fa-caret-down"></i></button>
+                            <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i
+                                    class="fa fa-caret-down"></i></button>
                             <div class="subnav-content">
                                 <a href="log.html">User login</a>
                                 <a href="employees.html">employees login</a>
@@ -90,10 +92,10 @@
         $names = $fruit->getElementsByTagName("name");
         $name = $names->item(0)->nodeValue;
 
-        $prices = $employee->getElementsByTagName("price");
+        $prices = $fruit->getElementsByTagName("price");
         $price = $prices->item(0)->nodeValue;
 
-        $images = $employee->getElementsByTagName("image");
+        $images = $fruit->getElementsByTagName("image");
         $image = $images->item(0)->nodeValue;
 
         echo "<b>$name - $price - $image\n</b><br>";
@@ -103,24 +105,26 @@
     
      <div class="container">
         <a href="p3Apples.html">
-            <form class="catgegories" action="FruitsPage2_withPHPTest.php" method="post">
+           
                 <img src="img/'.$image.'" class="item-image">
-                <div class="iamge-title"> Bananas </div>
-                <div class="item-price"> $2.50 </div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
+                <div class=‘iamge-title’>$name</div>
+                <div class=‘item-price’> $.$price </div>
+                <a href=‘shoppingcart.html’ class=‘b-menu’>
+                    <img id=‘test’ src=‘img/addToCart.png’> </a>
             </form>
         </a>
         </div>
+
         ';
 
 
     };
+    
         ?>
 
 
 
-        <!-- <a href="p3Apples.html">
+    <!-- <a href="p3Apples.html">
             <form class="catgegories" action="FruitsPage2_withPHPTest.php" method="post">
                 <img src="img/banana.webp" class="item-image">
                 <div class="iamge-title"> Bananas </div>
@@ -203,10 +207,10 @@
                     <img id="test" src="img/addToCart.png"> </a>
             </div>
         </a> -->
-    
-    
-    
-    
+
+
+
+
 
     <br> <br> <br> <br>
 
