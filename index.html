@@ -44,7 +44,7 @@
                                         class="fa fa-caret-down"></i></button>
     
                                         <div class="subnav-content">
-                                            <a href="FruitsPage2.html">Fruit</a>
+                                            <a href="FruitsPage2_withPHPTest.php">Fruit</a>
                                             <a href="VegetablesPage2.html">Vegetables</a>
                                             <a href="BeveragesPage2.html">Beverages</a>
                                             <a href="Dairy&EggsP2.html">Dairy & Eggs</a>

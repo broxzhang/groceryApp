@@ -116,14 +116,16 @@
     
         echo "
             <div class='container'>
+            
                 <a href='p3Apples.html'>
-                    <img src='".$image."' class='item-image'>
-                    <div class='iamge-title'>$name</div>
-                    <div class='item-price'> $".$price."</div>
-                    <a href='shoppingcart.html' class='b-menu'>
-                        <img id='test' src='img/addToCart.png'>
-                    </a>
-                </form>
+                    <div class='catgegories'>
+                        <img src='".$image."' class='item-image'>
+                        <div class='iamge-title'>$name</div>
+                        <div class='item-price'> $".$price."</div>
+                        <a href='shoppingcart.html' class='b-menu'>
+                            <img id='test' src='img/addToCart.png'>
+                        </a>
+                    </div>
                 </a>
             </div>
         ";
