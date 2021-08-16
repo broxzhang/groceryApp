@@ -85,7 +85,8 @@ echo "
     <th>Total Prices (CND)</th>
     
 
-  </tr>
+  </tr>";
+
     foreach($xml->children() as $ftpxml)
     {
         echo '<td>".$ftpxml->attributes()->id."</td>';
