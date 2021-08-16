@@ -80,6 +80,80 @@
                 <avg />
                 <photo>img/cocacola.jpeg</photo>
             </product>
+            <product id="9">
+            <productName>Pepsi</productName>
+                <aisles>beverages</aisles>
+                <price>3.99</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/pepsi.jpg</photo>
+            </product>
+            <product id="10">
+            <productName>Orange Crush</productName>
+                <aisles>beverages</aisles>
+                <price>3.99</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/orangecrush.JPG</photo>
+            </product><product id="11">
+            <productName>Cream Soda Crush</productName>
+                <aisles>beverages</aisles>
+                <price>7.99</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/creamsoda.jpg</photo>
+            </product><product id="12">
+            <productName>Nestea</productName>
+                <aisles>beverages</aisles>
+                <price>2.50</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/nestea.jpg</photo>
+            </product><product id="13">
+            <productName>Oasis Orange Juice</productName>
+                <aisles>beverages</aisles>
+                <price>1.50</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/orangejuice.jpg</photo>
+            </product><product id="14">
+            <productName>Oasis Pineapple Juice</productName>
+                <aisles>beverages</aisles>
+                <price>1.50</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/pineapplejuice.jpg</photo>
+            </product><product id="15">
+            <productName>Sprite</productName>
+                <aisles>beverages</aisles>
+                <price>1.99</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/sprite.JPG</photo>
+            </product><product id="16">
+            <productName>Eska Water Bottles</productName>
+                <aisles>beverages</aisles>
+                <price>1.99</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/water.jpg</photo>
+            </product><product id="17">
+            <productName>Oasis Mango Juice</productName>
+                <aisles>beverages</aisles>
+                <price>1.50</price>
+                <category>soda</category>
+                <type />
+                <avg />
+                <photo>img/mangojuice.jpg</photo>
+            </product>
         </beverage>
     </products>
 </root>
