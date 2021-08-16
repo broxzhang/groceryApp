@@ -195,7 +195,7 @@ const products = {
     },
     {
       id: 20,
-      productName: "Dragon Fruits",
+      productName: "Dragon_Fruits",
       aisles: "fruit",
       price: 1.5,
       category: "Dragon Fruits",

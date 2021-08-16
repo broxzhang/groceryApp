@@ -14,7 +14,7 @@ body{
 }
 header{
 
-	background-image: url("/img/applesBG.webp");
+	background-image: url("img/applesBG.jpg");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;

@@ -163,13 +163,21 @@ button{
       width: 90%;
       text-align: center;
   }
-  .catgegories{
+  /* .catgegories{
       width: max-content;
       margin: 25px;
       border: 1px solid #184d47;
       border-radius: 0 0 50px 50px;
       display: inline-block;
-  }
+  } */
+
+  /* .catgegories{
+    width: max-content;
+    margin: 25px;
+    border: 1px solid #184d47;
+    border-radius: 0 0 50px 50px;
+    display:inline;
+} */
   .catgegories:hover{
       box-shadow: 0 0 10px 3px #477cdd;
 
@@ -221,7 +229,7 @@ header{
 
 	
     /* put your background here */
-	background-image: url("/img/fruits.gif");
+	background-image: url("img/fruits.jpg");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;
@@ -398,7 +406,7 @@ button{
     margin: 25px;
     border: 2px solid #eff1f1;
     border-radius: 0 0 0 0;
-    display:inline-block;
+    display:inline-table;
 }
 .catgegories:hover{
     box-shadow: 0 0 10px 3px #a2bae7;

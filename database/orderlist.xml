@@ -2,57 +2,58 @@
 
 <orderlist>
 
- <oder>
-<products>
-  <product>
-  <id>25</id>
-  <productName>Plums</productName>
-  <quantity>10</quantity>
-  </product>
+  <oder>
+    <id>1</id>
+    <customerID>jim</customerID>
+    <products>
+      <product>
+        <productName>Plums</productName>
+        <quantity>10</quantity>
+      </product>
 
-  <product>
-  <id>21</id>
-  <productName>Avocado</productName>
-  <quantity>12</quantity>
-  </product>
-</products>
- <totalprice>$23</totalprice>
+      <product>
+        <productName>Avocado</productName>
+        <quantity>12</quantity>
+      </product>
+    </products>
+
+    <totalprice>$23</totalprice>
   </oder>
 
- <oder>
-<products>
-  <product>
-  <id>1</id>
-  <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
-  <quantity>2</quantity>
-  </product>
+  <oder>
+    <id>2</id>
+    <customerID>xav</customerID>
+    <products>
+      <product>
+        <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
+        <quantity>2</quantity>
+      </product>
 
-  <product>
-  <id>2</id>
-  <productName>Crab flavoured pollock flakes</productName>
-  <quantity>2</quantity>
-  </product>
-</products>
- <totalprice>$44</totalprice>
+      <product>
+        <productName>Crab flavoured pollock flakes</productName>
+        <quantity>2</quantity>
+      </product>
+    </products>
+    <totalprice>$44</totalprice>
   </oder>
 
-<oder>
-<products>
-  <product>
-  <id>25</id>
-  <productName>Plums</productName>
-  <quantity>10</quantity>
-  </product>
+  <oder>
+    <id>3</id>
+    <customerID>jane</customerID>
+    <products>
+      <product>
+        <productName>Plums</productName>
+        <quantity>10</quantity>
+      </product>
 
-  <product>
-  <id>21</id>
-  <productName>Avocado</productName>
-  <quantity>12</quantity>
-  </product>
-</products>
- <totalprice>$23</totalprice>
+      <product>
+        <productName>Avocado</productName>
+        <quantity>12</quantity>
+      </product>
+    </products>
+    <totalprice>$23</totalprice>
   </oder>
-  
+
 </orderlist>
 
 
