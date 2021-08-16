@@ -70,99 +70,46 @@
 
 
 <!-- php -->
-<?php 
+<?php
 // Loading the XML file
 $xml = simplexml_load_file("database/orderlist.xml");
-
 echo "
 <div style='overflow-x:auto;'>
-<table id='order'>
+<table border=1 cellpadding=5 id='order' style='border-collapse: collapse;' bordercolor='#DDDDDD'>
   <tr>
    
-    <th>Order #</th>
+    <th>Order #</th>  
     <th>Customer ID# </th>
     <th>Items</th>
     <th>Total Prices (CND)</th>
+    <th>Edit
+    <th>Delete
     
 
-  </tr>";
+</tr>";
+foreach ($xml->oder as $ftpxml) {
+?>
+<tr>
+<td><?php echo $ftpxml->id; ?>
+<td><?php echo $ftpxml->customerID; ?>
+<td>
+    <?php
+    foreach ($ftpxml->products->product as $ftpxml2) {
+        echo $ftpxml2->productName . ", ";
+    } ?>
+<td>
+    <?php echo $ftpxml->totalprice; ?>
 
-    foreach($xml->children() as $ftpxml)
-    {
-        echo '<td>".$ftpxml->attributes()->id."</td>';
-        echo '<td> ".$ftpxml->attributes()->customerID." </td>';
-        echo '<td>".$ftpxml->attributes()->products." </td>';
-        echo '<td>".$ftpxml->attributes()->totalprice." </td>';
-        echo '<a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
-        echo '<button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>';
-    }
-    </table>
-    </div>
-    ";
+<?php
+    echo '<td><a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
+    echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>';
 ?>
 
-<!-- php end -->
-
-
-  <div style="overflow-x:auto;">
-    <table id="order">
-      <tr>
-       
-        <th>Order #</th>
-        <th>Items</th>
-        <th>Customer ID# </th>
-        <th>Total Prices (CND)</th>
-        
+<?php
+} ?>
 
 
 
-
-
-      </tr>
-
-      <tr>
-        
-        <td>csf234dfs</td>
-        <td>1. Apples Gala (5); 2. Milk skim (2)</td>
-        <td>12.55</td>
-        <td>caiz1234</td>
-
-        <td>
-
-        <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
-      
-        <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
-
-      </tr>
-
-
-      <tr>
-       
-        <td>asf2sddfs</td>
-        <td>1. Apples Spartan (4); 2. Tomato Cherry Grape (3)</td>
-        <td>18.75</td>
-        <td>jimd445</td>
-
-        <td>
-
-          <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
-        
-          <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
-      </tr>
-      <tr>
-      
-        <td>edd32fad</td>
-        <td>1. Pepsi (3); 2. Popcorn (2)</td>
-        <td>8.0</td>
-        <td>Apol520</td>
-
-        <td>
-
-          <a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>
-        
-          <button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>
-      </tr>
-   
 
 
 
@@ -173,10 +120,5 @@ echo "
 
 </body>
 
-
-
-<footer>
-  all rights reserved.
-</footer>
 
 </html>
