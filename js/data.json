@@ -1,0 +1,32 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "productName": "Fresh Canadian Atlantic Salmon Fillet",
+            "aisles": "seafood",
+            "price": 10.99,
+            "category": "fish",
+            "type": "fresh",
+            "avg": 7.93,
+            "photo": "img/salmon_fillet.jpeg",
+            "description":
+            "This fresh farmed Atlantic salmon fillet comes from Canada. Farmed salmon is a healthy and nutritious food. It is an oily fish particularly rich in omega 3, which is beneficial for cardiovascular health. It is also a good source of high-quality protein, vitamin D and calcium. Health Canada recommends eating at least two servings of oily fish per week as part of a balanced diet.",
+            "ingredients":
+            "(SALMO SALAR) PROVENANCE: CANADA. METHOD: FARM RAISED, OPEN ENVIRONMENTAQUACULTURE.",
+        },
+        {
+            "id": 2,
+            "productName": "Crab flavoured pollock flakes",
+            "aisles": "seafood",
+            "price": 8.99,
+            "category": "fish",
+            "type": "fresh",
+            "avg": null,
+            "photo": "img/crab-flavored.jpeg",
+            "description": "Product Number: 208052",
+            "ingredients":
+              "Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.",
+          },
+    ]
+}
+
