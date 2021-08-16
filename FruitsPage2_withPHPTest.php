@@ -17,7 +17,23 @@
 </header>
 
 
+    <style type="text/css">
+    header{
 
+	
+        /* put your background here */
+        background-image: url("img/fruits.jpg");
+        height: max-content;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-top: 40px;
+        background-size:auto; */
+        border-radius: 30px;
+        margin-top: 120px;
+    }
+</style>
 <body>
 
     <div class="parallax">
@@ -86,127 +102,37 @@
     <?php
     $doc = new DOMDocument();
     $doc->load('database/products.xml');
-
     $products = $doc->getElementsByTagName("fruit");
+    
     foreach ($products as $fruit) {
         $names = $fruit->getElementsByTagName("name");
         $name = $names->item(0)->nodeValue;
-
         $prices = $fruit->getElementsByTagName("price");
         $price = $prices->item(0)->nodeValue;
-
         $images = $fruit->getElementsByTagName("image");
         $image = $images->item(0)->nodeValue;
-
-        echo "<b>$name - $price - $image\n</b><br>";
-   
-   
-    echo'
     
-     <div class="container">
-        <a href="p3Apples.html">
-           
-                <img src="img/'.$image.'" class="item-image">
-                <div class=‘iamge-title’>$name</div>
-                <div class=‘item-price’> $.$price </div>
-                <a href=‘shoppingcart.html’ class=‘b-menu’>
-                    <img id=‘test’ src=‘img/addToCart.png’> </a>
-            </form>
-        </a>
-        </div>
-
-        ';
-
+        
+    
+        echo "
+            <div class='container'>
+                <a href='p3Apples.html'>
+                    <img src='".$image."' class='item-image'>
+                    <div class='iamge-title'>$name</div>
+                    <div class='item-price'> $".$price."</div>
+                    <a href='shoppingcart.html' class='b-menu'>
+                        <img id='test' src='img/addToCart.png'>
+                    </a>
+                </form>
+                </a>
+            </div>
+        ";
+    
 
     };
     
         ?>
 
-
-
-    <!-- <a href="p3Apples.html">
-            <form class="catgegories" action="FruitsPage2_withPHPTest.php" method="post">
-                <img src="img/banana.webp" class="item-image">
-                <div class="iamge-title"> Bananas </div>
-                <div class="item-price"> $2.50 </div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </form>
-        </a>
-
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/apple.webp" class="item-image">
-                <div class="iamge-title"> Apples </div>
-                <div class="item-price" style="color: red;"> $1.23 (On Sale)</div>
-
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a>
-
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/dragonfruit.webp" class="item-image">
-                <div class="iamge-title"> Dragon Fruits </div>
-                <div class="item-price"> $1.50 </div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a>
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/Avocado.webp" class="item-image">
-                <div class="iamge-title"> Avocado </div>
-                <div class="item-price" style="color: red;"> $3.50 (On Sale)</div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a>
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/pears.webp" class="item-image">
-                <div class="iamge-title"> Pears </div>
-                <div class="item-price"> $4.50 </div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a>
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/peaches.webp" class="item-image">
-                <div class="iamge-title"> Peaches </div>
-                <div class="item-price"> $1.50 </div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a>
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/oranges.jpg" class="item-image">
-                <div class="iamge-title"> Oranges </div>
-                <div class="item-price" style="color: red;"> $0.50 (On Sale)</div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a> <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/plums.jpg" class="item-image">
-                <div class="iamge-title"> Plums </div>
-                <div class="item-price" style="color: red;"> $0.50 (On Sale)</div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a>
-        <a href="p3Apples.html">
-            <div class="catgegories">
-                <img src="img/berries.jpg" class="item-image">
-                <div class="iamge-title"> Berries </div>
-                <div class="item-price"> $2.40 </div>
-                <a href="shoppingcart.html" class="b-menu">
-                    <img id="test" src="img/addToCart.png"> </a>
-            </div>
-        </a> -->
 
 
 

@@ -221,7 +221,7 @@ header{
 
 	
     /* put your background here */
-	background-image: url("/img/fruits.gif");
+	background-image: url("img/fruits.jpg");
 	height: max-content;
     background-attachment: fixed;
     background-position: center;
