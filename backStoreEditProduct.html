@@ -62,55 +62,49 @@
     </h2>
     <div class="info">
         <h4>
+            <form action="php/editProduct.php" method="POST" enctype="multipart/form-data">
             <p>
                 Product Name
-            <form action="">
                 <p>
-                    <textarea name="nme" rows="3" cols="60">
-                Pepsi
-                </textarea>
+                    <input type="text" name="name" id="name" value="Pepsi">
                 </p>
-            </form>
             </p>
             <p>
                 Product Price (CAD$)
-            <form action="">
                 <p>
-                    <textarea name="price" rows="2" cols="30">
-                3.99
-                </textarea>
+                    <input type="text" name="price" id="price" value="3.99">
                 </p>
-            </form>
+            </p>
+            <p>
+                Aisle
+                    <p>
+                        <input type="radio" name="Aisle" value="Fruits">Fruits
+                        <input type="radio" name="Aisle" value="Vegetables">Vegetables
+                        <input type="radio" name="Aisle" value="Beverages" checked="checked">Beverages
+                        <input type="radio" name="Aisle" value="Dairy">Dairy & Eggs
+                        <input type="radio" name="Aisle" value="Seafood">Seafood
+                        <input type="radio" name="Aisle" value="Snacks">Snacks
+                    </p>
             </p>
             <p>
                 Product Size (if applicable)
-            <form action="">
                 <p>
-                    <textarea name="size" rows="2" cols="30">
-                1L
-                </textarea>
+                    <input type="text" name="Size" id="Size" value="1L">
                 </p>
-            </form>
             </p>
             <p>
                 Product Image
-            <form action="">
                 <p>
-                    <img src="img/pepsi.jpg" style="width:500px;height:500px">
+                   <input type="file" name="image" id="image" value="img/pepsi.jpg">                 
                 </p>
-            </form>
+            
             </p>
             <p>
                 Product Description
-            <form action="">
                 <p>
-                    <textarea name="dscrption" rows="20" cols="60">
-                Classic soft drink
-                $0.39 per ml
-                </textarea>
+                    <input type="text" name="Description" id="Description" value="Classic soft drink">
                 </p>
-            </form>
-            </p>
+            </p></form>
             </h3>
     </div>
     <div class="buttons">
