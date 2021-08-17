@@ -62,46 +62,49 @@
     </h2>
     <div class="info">
         <h4>
+            <form action="php/addProduct.php" method="POST" enctype="multipart/form-data">
             <p>
                 Product Name
-            <form action="">
                 <p>
                     <input type="text" name="name" id="name">
                 </p>
-            </form>
             </p>
             <p>
                 Product Price (CAD$)
-            <form action="">
                 <p>
                     <input type="text" name="price" id="price">
                 </p>
-            </form>
+            </p>
+            <p>
+                Aisle
+                    <p>
+                        <input type="radio" name="Aisle" value="Fruits">Fruits
+                        <input type="radio" name="Aisle" value="Vegetables">Vegetables
+                        <input type="radio" name="Aisle" value="Beverages">Beverages
+                        <input type="radio" name="Aisle" value="Dairy">Dairy & Eggs
+                        <input type="radio" name="Aisle" value="Seafood">Seafood
+                        <input type="radio" name="Aisle" value="Snacks">Snacks
+                    </p>
             </p>
             <p>
                 Product Size (if applicable)
-            <form action="">
                 <p>
                     <input type="text" name="Size" id="Size">
                 </p>
-            </form>
             </p>
             <p>
                 Product Image
-            <form action="">
                 <p>
                    <input type="file" name="image" id="image">                 
                 </p>
-            </form>
+            
             </p>
             <p>
                 Product Description
-            <form action="">
                 <p>
                     <input type="text" name="Description" id="Description">
                 </p>
-            </form>
-            </p>
+            </p></form>
             </h3>
     </div>
     <div class="buttons">
