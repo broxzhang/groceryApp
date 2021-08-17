@@ -69,6 +69,7 @@
   </style>
 
 
+<!-- php -->
 <?php
 // Loading the XML file
 $xml = simplexml_load_file("database/orderlist.xml");
@@ -94,7 +95,7 @@ foreach ($xml->oder as $ftpxml) {
 <td>
     <?php
     foreach ($ftpxml->products->product as $ftpxml2) {
-        echo $ftpxml2->productName . " ";
+        echo $ftpxml2->productName . ", ";
     } ?>
 <td>
     <?php echo $ftpxml->totalprice; ?>
@@ -108,24 +109,6 @@ foreach ($xml->oder as $ftpxml) {
 } ?>
 
 
-
-<!-- <script>
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      remove(this);
-    }
-};
-xhttp.open("GET", "books.xml", true);
-xhttp.send();
-
-function remove(xml) {
-    var xmlDoc = xml.responseXML;
-    var y = xmlDoc.getElementsByTagName(".$")[0];
-    var x = xmlDoc.documentElement.removeChild(y);
-   
-}
-</script> -->
 
 
 
