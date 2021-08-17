@@ -95,20 +95,38 @@ foreach ($xml->oder as $ftpxml) {
 <td>
     <?php
     foreach ($ftpxml->products->product as $ftpxml2) {
-        echo $ftpxml2->productName . ", ";
+        echo $ftpxml2->productName . ". qty:";
+        echo $ftpxml2->quantity . "; ";
     } ?>
 <td>
     <?php echo $ftpxml->totalprice; ?>
 
 <?php
     echo '<td><a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
-    echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>';
+    echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit onclick="remove()"> Delete</button></td>';
 ?>
 
 <?php
 } ?>
 
 
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      remove(this);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send();
+
+function remove(xml) {
+    var xmlDoc = xml.responseXML;
+    var y = xmlDoc.getElementsByTagName(".$")[0];
+    var x = xmlDoc.documentElement.removeChild(y);
+   
+}
+</script>
 
 
 
