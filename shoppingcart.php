@@ -8,215 +8,215 @@
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/p2Style.css" />
     <script>
-        var total;
-        var gst;
-        var qst;
-        var totaltaxed;
-        var p;
-        var q;
+    var total;
+    var gst;
+    var qst;
+    var totaltaxed;
+    var p;
+    var q;
 
-        function removeItem(event) {
-            var butclicked = event.target;
-            butclicked.parentElement.parentElement.remove();
-            updateTotal();
+    function removeItem(event) {
+        var butclicked = event.target;
+        butclicked.parentElement.parentElement.remove();
+        updateTotal();
+    }
+
+    function updateTotal() {
+        var itemList = document.getElementsByClassName('list')[0];
+        var items = document.getElementsByClassName('product');
+        let total = 0;
+        let numOfItems = 0;
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            var price = item.getElementsByClassName('price')[0];
+            var qty = item.getElementsByClassName('qty')[0];
+            var p = parseFloat(price.innerText.replace('$', ''));
+            var q = qty.value;
+            total = total + (p * q);
+            numOfItems = Number(numOfItems) + Number(q);
         }
+        total = (total).toFixed(2);
+        var gst = (total * 0.05).toFixed(2);
+        var qst = (total * 0.09975).toFixed(2);
+        var totaltaxed = (total * 1.14975).toFixed(2);
+        // var numOfItems;
+        // document.getElementById('tot').textContent = '$' + total;
+        // document.getElementById('gst').textContent = '$' + gst;
+        // document.getElementById('qst').textContent = '$' + qst;
+        // document.getElementById('totaltaxed').textContent = 'CAD $' + totaltaxed;
 
-        function updateTotal() {
-            var itemList = document.getElementsByClassName('list')[0];
-            var items = document.getElementsByClassName('product');
-            let total = 0;
-            let numOfItems = 0;
-            for (var i = 0; i < items.length; i++) {
-                var item = items[i];
-                var price = item.getElementsByClassName('price')[0];
-                var qty = item.getElementsByClassName('qty')[0];
-                var p = parseFloat(price.innerText.replace('$', ''));
-                var q = qty.value;
-                total = total + (p * q);
-                numOfItems = Number(numOfItems) + Number(q);
-            }
-            total = (total).toFixed(2);
-            var gst = (total * 0.05).toFixed(2);
-            var qst = (total * 0.09975).toFixed(2);
-            var totaltaxed = (total * 1.14975).toFixed(2);
-            // var numOfItems;
-            // document.getElementById('tot').textContent = '$' + total;
-            // document.getElementById('gst').textContent = '$' + gst;
-            // document.getElementById('qst').textContent = '$' + qst;
-            // document.getElementById('totaltaxed').textContent = 'CAD $' + totaltaxed;
+        // Store
 
-            // Store
+        localStorage.total = total;
+        localStorage.gst = gst;
+        localStorage.qst = qst;
+        localStorage.totaltaxed = totaltaxed;
+        localStorage.p = p;
+        localStorage.q = q;
+        localStorage.numOfItems = numOfItems;
 
-            localStorage.total = total;
-            localStorage.gst = gst;
-            localStorage.qst = qst;
-            localStorage.totaltaxed = totaltaxed;
-            localStorage.p = p;
-            localStorage.q = q;
-            localStorage.numOfItems = numOfItems;
+        // Retrieve
+        document.getElementById('tot').textContent = '$' + localStorage.total;
+        document.getElementById('gst').textContent = '$' + localStorage.gst;
+        document.getElementById('qst').textContent = '$' + localStorage.qst;
+        document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
+        // document.getElementById('qty').value = localStorage.q;
+        document.getElementById('numOfItems').textContent = localStorage.numOfItems;
 
-            // Retrieve
-            document.getElementById('tot').textContent = '$' + localStorage.total;
-            document.getElementById('gst').textContent = '$' + localStorage.gst;
-            document.getElementById('qst').textContent = '$' + localStorage.qst;
-            document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
-            // document.getElementById('qty').value = localStorage.q;
-            document.getElementById('numOfItems').textContent = localStorage.numOfItems;
+    }
+    window.onload = function() {
 
-        }
-        window.onload = function() {
-
-            document.getElementById('tot').textContent = '$' + localStorage.total;
-            document.getElementById('gst').textContent = '$' + localStorage.gst;
-            document.getElementById('qst').textContent = '$' + localStorage.qst;
-            document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
-            document.getElementById('qty').value = localStorage.q;
-            document.getElementById('numOfItems').textContent = localStorage.numOfItems;
-            updateTotal();
+        document.getElementById('tot').textContent = '$' + localStorage.total;
+        document.getElementById('gst').textContent = '$' + localStorage.gst;
+        document.getElementById('qst').textContent = '$' + localStorage.qst;
+        document.getElementById('totaltaxed').textContent = 'CAD $' + localStorage.totaltaxed;
+        document.getElementById('qty').value = localStorage.q;
+        document.getElementById('numOfItems').textContent = localStorage.numOfItems;
+        updateTotal();
 
 
-        }
+    }
     </script>
     <style type="text/css">
-        h1 {
-            background: rgba (0, 0, 0, 0.5);
-            text-align: center;
-            color: black;
-            padding: 50px;
-            font-variant: small-caps;
-            font-size: 50px;
-            font-family: fantasy;
-            letter-spacing: 0px;
-        }
-        
-        .cart {
-            margin-bottom: 200px;
-        }
-        
-        .product {
-            display: flex;
-            border: 1px solid silver;
-            margin: 20px 20px 20px 20px;
-            border-radius: 10px;
-        }
-        
-        .product>img {
-            width: 180px;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .info {
-            padding: 20px;
-            width: 100%;
-        }
-        
-        .name,
-        .price {
-            margin-bottom: 20px;
-        }
-        
-        .button {
-            font-size: small;
-            bottom: 20px;
-            right: 20px;
-            padding: 10px 25px;
-            background-color: red;
-            color: white;
-            border-radius: 5px;
-        }
-        
-        .button:hover {
-            background-color: rgba(255, 0, 0, 0.233);
-            color: red;
-            font-weight: 600px;
-            border: 1px solid red;
-        }
-        
-        .qty>input {
-            width: 40px;
-            padding: 5px;
-            text-align: center;
-        }
-        
-        .refresh {
-            text-align: center;
-            font-size: medium;
-            padding: 10px 25px;
-            height: 40px;
-            background-color: grey;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        
-        .refresh:hover {
-            background-color: rgba(128, 128, 128, 0.171);
-            color: grey;
-            font-weight: 600px;
-            border: 1px solid grey;
-        }
-        
-        .total {
-            margin: 20px 20px 20px 20px;
-            padding: 20px 20px 20px 20px;
-            border: 1px solid silver;
-            border-radius: 10px;
-        }
-        
-        .total p {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            font-size: 20px;
-        }
-        
-        .checkout {
-            text-align: center;
-            font-size: medium;
-            padding: 10px 25px;
-            height: 40px;
-            background-color: green;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        
-        .checkout:hover {
-            background-color: rgba(172, 221, 73, 0.438);
-            color: green;
-            font-weight: 600px;
-            border: 1px solid green;
-        }
-        
-        .continue {
-            display: block;
-            margin-right: 20px;
-            text-align: right;
-        }
-        
-        .contshop {
-            text-align: center;
-            font-size: medium;
-            padding: 10px 25px;
-            height: 40px;
-            background-color: grey;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        
-        .contshop:hover {
-            background-color: rgba(128, 128, 128, 0.171);
-            color: grey;
-            font-weight: 600px;
-            border: 1px solid grey;
-        }
-        
-        .qty {
-            width: 70px;
-            text-align: center;
-        }
+    h1 {
+        background: rgba (0, 0, 0, 0.5);
+        text-align: center;
+        color: black;
+        padding: 50px;
+        font-variant: small-caps;
+        font-size: 50px;
+        font-family: fantasy;
+        letter-spacing: 0px;
+    }
+
+    .cart {
+        margin-bottom: 200px;
+    }
+
+    .product {
+        display: flex;
+        border: 1px solid silver;
+        margin: 20px 20px 20px 20px;
+        border-radius: 10px;
+    }
+
+    .product>img {
+        width: 180px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .info {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .name,
+    .price {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        font-size: small;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 25px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: rgba(255, 0, 0, 0.233);
+        color: red;
+        font-weight: 600px;
+        border: 1px solid red;
+    }
+
+    .qty>input {
+        width: 40px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .refresh {
+        text-align: center;
+        font-size: medium;
+        padding: 10px 25px;
+        height: 40px;
+        background-color: grey;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .refresh:hover {
+        background-color: rgba(128, 128, 128, 0.171);
+        color: grey;
+        font-weight: 600px;
+        border: 1px solid grey;
+    }
+
+    .total {
+        margin: 20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
+        border: 1px solid silver;
+        border-radius: 10px;
+    }
+
+    .total p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .checkout {
+        text-align: center;
+        font-size: medium;
+        padding: 10px 25px;
+        height: 40px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .checkout:hover {
+        background-color: rgba(172, 221, 73, 0.438);
+        color: green;
+        font-weight: 600px;
+        border: 1px solid green;
+    }
+
+    .continue {
+        display: block;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    .contshop {
+        text-align: center;
+        font-size: medium;
+        padding: 10px 25px;
+        height: 40px;
+        background-color: grey;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .contshop:hover {
+        background-color: rgba(128, 128, 128, 0.171);
+        color: grey;
+        font-weight: 600px;
+        border: 1px solid grey;
+    }
+
+    .qty {
+        width: 70px;
+        text-align: center;
+    }
     </style>
 
 </head>
@@ -304,7 +304,8 @@
                     </h3>
                     <p>
                         Qty:
-                        <input class="qty" id="qty" value="1" type="number" onclick="updateTotal()" onkeyup="updateTotal()">
+                        <input class="qty" id="qty" value="1" type="number" onclick="updateTotal()"
+                            onkeyup="updateTotal()">
                     </p>
                     <button class="button" type="button" onclick="removeItem(event)">
                         Remove this item

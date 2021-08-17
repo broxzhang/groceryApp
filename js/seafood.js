@@ -71,7 +71,7 @@ const displayFood = (seafood) => {
       </div>`;
   });
   displayFood = displayFood.join("");
-  seafoodSection.innerHTML = displayFood;
+  // seafoodSection.innerHTML = displayFood;
 
   function calculateKg(price) {
     return (price * 2.205).toFixed(2);
