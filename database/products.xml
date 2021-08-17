@@ -1,85 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <products>
-        <seafood>
-            <product id='1'>
-                <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
-                <aisles>seafood</aisles>
-                <price>10.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg>7.93</avg>
-                <photo>img/salmon_fillet.jpeg</photo>
-                <description>This fresh farmed Atlantic salmon fillet comes from Canada. Farmed salmon is a healthy and nutritious food. It is an oily fish particularly rich in omega 3, which is beneficial for cardiovascular health. It is also a good source of high-quality protein, vitamin D and calcium. Health Canada recommends eating at least two servings of oily fish per week as part of a balanced diet.</description>
-                <ingredients>(SALMO SALAR) PROVENANCE: CANADA. METHOD: FARM RAISED, OPEN ENVIRONMENTAQUACULTURE.</ingredients>
-            </product>
-            <product id='2'>
-                <productName>Crab flavoured pollock flakes</productName>
-                <aisles>seafood</aisles>
-                <price>8.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg />
-                <photo>img/crab-flavored.jpeg</photo>
-                <description>Product Number: 208052</description>
-                <ingredients>Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.</ingredients>
-            </product>
-            <product id='3'>
-                <productName>Fresh Atlantic Salmon Steak</productName>
-                <aisles>seafood</aisles>
-                <price>15.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg>8.81</avg>
-                <photo>img/fresh_atlantic.jpeg</photo>
-            </product>
-            <product id='4'>
-                <productName>Pollock and Shrimp Salad</productName>
-                <aisles>seafood</aisles>
-                <price>8.99</price>
-                <category>fish</category>
-                <type>prepared</type>
-                <avg>4.96</avg>
-                <photo>img/pollock-and-srimp-salad.jpeg</photo>
-            </product>
-            <product id='5'>
-                <productName>Salmon Fillet with Rosée Sauce</productName>
-                <aisles>seafood</aisles>
-                <price>12.43</price>
-                <category>fish</category>
-                <type>prepared</type>
-                <avg>9.73</avg>
-                <photo>img/Salmon-Fillet-Rosée-Sauce.jpeg</photo>
-            </product>
-            <product id='6'>
-                <productName>Frozen sliced smoked coho salmon</productName>
-                <aisles>seafood</aisles>
-                <price>21.99</price>
-                <category>fish</category>
-                <type>frozen</type>
-                <avg>21.99</avg>
-                <photo>img/Frozen-sliced-smoked-coho-salmon.jpeg</photo>
-            </product>
-            <product id='7'>
-                <productName>Frozen Uncooked Pacific White Shrimp</productName>
-                <aisles>seafood</aisles>
-                <price>10.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg>7.93</avg>
-                <photo>img/Frozen-Uncooked-Pacific-White-Shrimp.jpeg</photo>
-            </product>
-        </seafood>
-        <beverage>
-            <product id="8">
-                <productName>Coca-cola</productName>
-                <aisles>beverages</aisles>
-                <price>1.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/cocacola.jpeg</photo>
-            </product>
-        </beverage>
+        <product id='1'>
+            <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
+            <aisles>seafood</aisles>
+            <price>10.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg>7.93</avg>
+            <photo>img/salmon_fillet.jpeg</photo>
+            <description>This fresh farmed Atlantic salmon fillet comes from Canada. Farmed salmon is a healthy and nutritious food. It is an oily fish particularly rich in omega 3, which is beneficial for cardiovascular health. It is also a good source of high-quality protein, vitamin D and calcium. Health Canada recommends eating at least two servings of oily fish per week as part of a balanced diet.</description>
+            <ingredients>(SALMO SALAR) PROVENANCE: CANADA. METHOD: FARM RAISED, OPEN ENVIRONMENTAQUACULTURE.</ingredients>
+        </product>
+        <product id='2'>
+            <productName>Crab flavoured pollock flakes</productName>
+            <aisles>seafood</aisles>
+            <price>8.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg />
+            <photo>img/crab-flavored.jpeg</photo>
+            <description>Product Number: 208052</description>
+            <ingredients>Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.</ingredients>
+        </product>
+        <product id='3'>
+            <productName>Fresh Atlantic Salmon Steak</productName>
+            <aisles>seafood</aisles>
+            <price>15.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg>8.81</avg>
+            <photo>img/fresh_atlantic.jpeg</photo>
+        </product>
+        <product id='4'>
+            <productName>Pollock and Shrimp Salad</productName>
+            <aisles>seafood</aisles>
+            <price>8.99</price>
+            <category>fish</category>
+            <type>prepared</type>
+            <avg>4.96</avg>
+            <photo>img/pollock-and-srimp-salad.jpeg</photo>
+        </product>
+        <product id='5'>
+            <productName>Salmon Fillet with Rosée Sauce</productName>
+            <aisles>seafood</aisles>
+            <price>12.43</price>
+            <category>fish</category>
+            <type>prepared</type>
+            <avg>9.73</avg>
+            <photo>img/Salmon-Fillet-Rosée-Sauce.jpeg</photo>
+        </product>
+        <product id='6'>
+            <productName>Frozen sliced smoked coho salmon</productName>
+            <aisles>seafood</aisles>
+            <price>21.99</price>
+            <category>fish</category>
+            <type>frozen</type>
+            <avg>21.99</avg>
+            <photo>img/Frozen-sliced-smoked-coho-salmon.jpeg</photo>
+        </product>
+        <product id='7'>
+            <productName>Frozen Uncooked Pacific White Shrimp</productName>
+            <aisles>seafood</aisles>
+            <price>10.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg>7.93</avg>
+            <photo>img/Frozen-Uncooked-Pacific-White-Shrimp.jpeg</photo>
+        </product>
+        <product id="8">
+            <productName>Coca-cola</productName>
+            <aisles>beverages</aisles>
+            <price>1.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/cocacola.jpeg</photo>
+        </product>
     </products>
 </root>

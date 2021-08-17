@@ -33,13 +33,14 @@
                 <?php
                     $xml = simplexml_load_file("database/products.xml") or die('Cann0t find xml file');
                     // echo($xml->products->seaf00d->product);
-                    $seafood =  $xml->products->seafood;
+                    $seafood =  $xml->products;
                     // print_r($seafood);
-                    foreach ($xml->products->seafood->product as $food) {
+                    foreach ($xml->products->product as $food) {
                         $avgStr = 0;
                         $pizKg = 0;
-                        
-                        echo '<div class="card col-md-4" style="min-width: 250px">
+                        $id = $food['id'];
+                        if($food->aisles == 'seafood'){
+                                echo '<div class="card col-md-4" style="min-width: 250px">
                                     <img class="card-img-top" src="',$food->photo,'" alt="seafood image" >
                                     </a>
                                     <div class="card-body">
@@ -50,12 +51,13 @@
                                     </ul>
                                     </div>
                                     <div class="card-body">
-                                    <a href="shoppingCart.html?itemid=',$food->id,'"> 
+                                    <a href="shoppingCart.php?itemid=',$food['id'],'"> 
                                     <i class="fas fa-shopping-cart">Add To Cart</i>
                                     </a>
                                     </div>
                                 </div>';
-                    }   
+                        }
+                   }   
                 ?>
             </div>
         </div>
