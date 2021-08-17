@@ -95,7 +95,8 @@ foreach ($xml->oder as $ftpxml) {
 <td>
     <?php
     foreach ($ftpxml->products->product as $ftpxml2) {
-        echo $ftpxml2->productName . ", ";
+        echo $ftpxml2->productName . ", qty:";
+        echo $ftpxml2->quantity . "; ";
     } ?>
 <td>
     <?php echo $ftpxml->totalprice; ?>
