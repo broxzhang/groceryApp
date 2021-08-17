@@ -69,7 +69,6 @@
   </style>
 
 
-<!-- php -->
 <?php
 // Loading the XML file
 $xml = simplexml_load_file("database/orderlist.xml");
@@ -95,22 +94,22 @@ foreach ($xml->oder as $ftpxml) {
 <td>
     <?php
     foreach ($ftpxml->products->product as $ftpxml2) {
-        echo $ftpxml2->productName . ". qty:";
-        echo $ftpxml2->quantity . "; ";
+        echo $ftpxml2->productName . " ";
     } ?>
 <td>
     <?php echo $ftpxml->totalprice; ?>
 
 <?php
     echo '<td><a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
-    echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit onclick="remove()"> Delete</button></td>';
+    echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>';
 ?>
 
 <?php
 } ?>
 
 
-<script>
+
+<!-- <script>
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -126,7 +125,7 @@ function remove(xml) {
     var x = xmlDoc.documentElement.removeChild(y);
    
 }
-</script>
+</script> -->
 
 
 
