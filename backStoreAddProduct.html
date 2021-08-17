@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Concordia Store</title>
+    <link rel="stylesheet" type="text/css" href="style/backStore.css">
+    <style type="text/css">
+        .info {
+            background-color: lavender;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .buttons {
+            margin: 20px;
+        }
+
+        input[type=reset] {
+            background-color: #4d52509c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=reset]:hover {
+            background-color: #2b2c2baf;
+        }
+    </style>
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="product-list.html">Product List</a>
+    <a href="backStoreUserList.html">User List</a>
+    <a href="backStoreOrderList.html">Order List</a>
+    <div class="subnav">
+      <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+      <div class="subnav-content">
+        <a href="#company">Company</a>
+        <a href="#team">Team</a>
+        <a href="#">Careers</a>
+        <a href="#">HR</a>
+      </div>
+    </div>
+
+
+
+        <a href="#contact">Contact</a>
+    </div>
+    <h2>
+        Add a product
+        <hr />
+    </h2>
+    <div class="info">
+        <h4>
+            <p>
+                Product Name
+            <form action="">
+                <p>
+                    <input type="text" name="name" id="name">
+                </p>
+            </form>
+            </p>
+            <p>
+                Product Price (CAD$)
+            <form action="">
+                <p>
+                    <input type="text" name="price" id="price">
+                </p>
+            </form>
+            </p>
+            <p>
+                Product Size (if applicable)
+            <form action="">
+                <p>
+                    <input type="text" name="Size" id="Size">
+                </p>
+            </form>
+            </p>
+            <p>
+                Product Image
+            <form action="">
+                <p>
+                   <input type="file" name="image" id="image">                 
+                </p>
+            </form>
+            </p>
+            <p>
+                Product Description
+            <form action="">
+                <p>
+                    <input type="text" name="Description" id="Description">
+                </p>
+            </form>
+            </p>
+            </h3>
+    </div>
+    <div class="buttons">
+        <div class="save">
+            <input type="submit" value="Save">
+        </div>
+        <div class="reset">
+            <input type="reset" value="Reset">
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    all rights reserved.
+</footer>
+
+</html>
