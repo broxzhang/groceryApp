@@ -1,3 +1,30 @@
+<?php
+$errors = array();
+
+
+if (isset($_POST['add'])) {
+
+  $id = $_POST['id'];
+  $customerID = $_POST['customerID'];
+  $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
+  $quantity = $_POST['quantity'];
+  $totalprice = $_POST['totalprice'];
+
+
+
+  $xml = new SimpleXMLElement('<orderlist></orderlist>');
+  $xml->addChild('id', $id);
+  $xml->addChild('customerID', $customerID);
+  $xml->addChild('productName', $productName);
+  $xml->addChild('quantity', $quantity);
+  $xml->addChild('totalprice',  $totalprice);
+  $xml->asXML('productTest/' . $productname . '.xml');
+  $xml->asXML('database/orderlist.xml');
+  // header('Location:backStoreOrderList.php');
+  die;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +66,7 @@
   <h2>Order Profile</h2>
 
   <div class="container">
+
     <form action="" method="post">
 
       <?php
@@ -52,9 +80,7 @@
       ?>
 
       <label for="fname">Order#</label>
-      <input type="text" id="order" order="firstname" placeholder="23e3dfadf" name="id">
-
-
+      <input type="text" id="order" name="id" placeholder="23e3dfadf">
 
       <label for="order">Customer ID#</label>
       <input type="text" id="customer" name="customerID" placeholder="joe234">
@@ -69,48 +95,14 @@
       <input type="number" id="customer" name="totalprice" placeholder="1.00"><br> <br>
 
       <input type="submit" name="add" value="Save">
-
+      <!-- <button type="submit" name="add" value="add product" />add</button> -->
 
   </div>
 
   </form>
   </div>
 
-  <?php
-  $errors = array();
-  if (isset($_POST['add'])) {
 
-    $xml = simplexml_load_file("database/orderlist.xml");
-
-
-    foreach ($xml->oder as $ftpxml) {
-      $id == $ftpxml->id;
-    }
-
-
-
-
-    $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
-
-    $price = $_POST['price'];
-    $category = $_POST['category'];
-
-    $type = $_POST['type'];
-    $color = $_POST['color'];
-
-    $xml = new SimpleXMLElement('<orders></oders>');
-    $xml->addChild('id', $id);
-    $xml->addChild('customerID', $customerID);
-    $xml->addChild('productName', $productName);
-    $xml->addChild('quantity', $quantity);
-    $xml->addChild('totalprice',  $totalprice);
-    $xml->asXML('database/orderlist.xml');
-    header('Location:index.php');
-
-    die;
-    // }
-  }
-  ?>
 
 
 
