@@ -10,15 +10,13 @@ if (isset($_POST['add'])) {
   $quantity = $_POST['quantity'];
   $totalprice = $_POST['totalprice'];
 
-
-
   $xml = new SimpleXMLElement('<orderlist></orderlist>');
   $xml->addChild('id', $id);
   $xml->addChild('customerID', $customerID);
   $xml->addChild('productName', $productName);
   $xml->addChild('quantity', $quantity);
   $xml->addChild('totalprice',  $totalprice);
-  $xml->asXML('productTest/' . $productname . '.xml');
+  $xml->asXML('productTest/orderlist.xml');
   $xml->asXML('database/orderlist.xml');
   // header('Location:backStoreOrderList.php');
   die;
