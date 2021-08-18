@@ -32,7 +32,7 @@
     </div>
 
 
-    <a href="addpro.php">Contact</a>
+    <a href="">Contact</a>
   </div>
 
 
