@@ -1,23 +1,34 @@
 <?php
 $errors = array();
-if(isset($_POST['add'])){
-    $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
+if (isset($_POST['add'])) {
 
-    $price = $_POST['price'];
-    $category = $_POST['category'];
+  $xml = simplexml_load_file("database/orderlist.xml");
 
-    $type = $_POST['type'];
-    $color = $_POST['color'];
 
-        $xml = new SimpleXMLElement('<products></products>');
-        $xml->addChild('productname',$productname);
-        $xml->addChild('price',$price);
-        $xml->addChild('category', $category);
-        $xml->addChild('type',  $type);
-        $xml->addChild('color',$color);
-        $xml->asXML('database/orderlist.xml');
-        header('Location:backStoreOrderList.php');
-        die;
+  foreach ($xml->oder as $ftpxml) {
+    $id == $ftpxml->id;
+  }
+
+
+
+
+  $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
+
+  $price = $_POST['price'];
+  $category = $_POST['category'];
+
+  $type = $_POST['type'];
+  $color = $_POST['color'];
+
+  $xml = new SimpleXMLElement('<orders></oders>');
+  $xml->addChild('id', $id);
+  $xml->addChild('customerID', $customerID);
+  $xml->addChild('productName', $productName);
+  $xml->addChild('quantity', $quantity);
+  $xml->addChild('totalprice',  $totalprice);
+  $xml->asXML('database/orderlist.xml');
+  header('Location:backStoreOrderList.php');
+  die;
   // }
 }
 ?>
@@ -68,7 +79,7 @@ if(isset($_POST['add'])){
     <form action="action_page.php">
 
       <label for="fname">Order#</label>
-      <input type="text" id="order" order="firstname" placeholder="23e3dfadf">
+      <input type="text" id="order" order="firstname" placeholder="23e3dfadf" name="id">
       <!-- <label for="item">Item</label>
       <select id="item" name="Item">
         <option value="vegetable">Vegetables</option>
@@ -87,10 +98,18 @@ if(isset($_POST['add'])){
 
 
       <label for="order">Customer ID#</label>
-      <input type="text" id="customer" name="customer" placeholder="joe234">
+      <input type="text" id="customer" name="customerID" placeholder="joe234">
+
+      <label for="order">Product Name</label>
+      <input type="text" id="customer" name="productName" placeholder="apple">
+
+      <label for="order">Quantity</label>
+      <input type="number" id="customer" name="quantity" placeholder="1">
 
       <label for="order">Total Price $</label>
-      <input type="number" id="customer" name="customer" placeholder="1.00"><br> <br> 
+      <input type="number" id="customer" name="totalprice" placeholder="1.00"><br> <br>
+
+      
 
       <label for="subject">Description</label>
       <textarea id="subject" name="subject" placeholder="Please follow the follow the formate:&#10;1. Apples (Tyepe: Gala; Quantity: 5); &#10;2. Milk (Typel: skim; Quantity:2)&#10;...." style="height:200px"></textarea>
@@ -98,12 +117,12 @@ if(isset($_POST['add'])){
       <!-- <input type="submit" value="Save">
       <input type="reset" value="Reset"> -->
 
-      
+
       <!-- <input type="submit" name="submit" value="Save">
       <input type="reset" name="reset" value="reset"> -->
-      
-      <input type="submit" name="submit" value="Save">
-      
+
+      <input type="submit" name="add" value="Save">
+
 
   </div>
 
