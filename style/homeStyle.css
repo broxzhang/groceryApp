@@ -14,14 +14,14 @@ overflow: auto;
 padding-bottom: 100px;
 } */
 
-.parallax{ 
-  
+.parallax{
+
   height: max-content;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-   
+
 }
 header{
   font-size: small;
@@ -47,7 +47,7 @@ header{
 
 /* Clear floats after the columns */
 .row:after {
-    
+
   content: "";
   display: table;
   clear: both;
@@ -59,14 +59,14 @@ background: rgba (0,0, 0, 0.5);
   padding: 50px;
   font-variant: small-caps;
   font-size: 50px;
-  font-family: fantasy;
+  font-family:fantasy;
   letter-spacing: 15px;
 }
 a:link {
   text-decoration: none;
 }
  h3{
-    
+
    color: azure;
  }
  #end{
@@ -78,69 +78,50 @@ a:link {
   position:fixed;
   top:0;
   width: 100%;
-
+ 
 }
 .menu{
   background: #477cdd;
-  text-align: center;
+  text-align: left;
+  
+  
 }
 .menu-ul{
- 
+
   margin: 0;
   padding: 0;
-  display:inline;
+  display:inline-block;
+  block-size:16mm;
+ 
 }
 .menu-ul li{
-  
-   float: left;
-  padding: 25px 25px 0px 25px;
+
+  padding: 10px 10px 0px 10px;
   display: inline-block;
   list-style: none;
-  font-size: 17px;
-  
+  font-size: 16px;
+ 
+
 }
 .a-menu{
 text-decoration: none;
 color: white;
+
 }
 .menu-ul li:hover{
   background: none;
   transform: scale(1.2);
-
-}
-
-.search-box{
-float: left;
-  border: 1px  solid white;
-border-radius: 50px;
-background: white;
-width:180px;
-display: inline-block;
-margin-top: 13px;
-padding: 0;
-}
-.search-box:hover{
-  box-shadow: white;
-  border: 1px solid #5b8cd5;
-
-}
-.search-input{
-  float: left;
-  width: 90px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
-  margin: 15px  0 0 10px;
   
 }
+
 
 i{
-  font-size: 20px;
+  font-size: 10px;
   margin: 0 10px 0 0;
+  
 }
 button{
-  
+
   background: none;
   border: none;
   outline: none;
@@ -154,7 +135,7 @@ button{
 
 /* Subnav button */
 .subnav .subnavbtn {
-  font-size: 16px; 
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -252,7 +233,7 @@ button{
   }
   .catgegories2:hover{
   box-shadow: 0 0 10px 3px #a2bae7;
-  
+
   }
   .video{
     position: relative;
@@ -264,7 +245,7 @@ button{
     }
     /* <======delete me later===========OFFERS VIDEO============================ --> */
     .center{
-  
+
       position: absolute;
       top: 58%;
       left: 50%;
@@ -275,7 +256,7 @@ button{
       box-shadow: 90px 40px 15px rgba(0,0,0,0.05);
     }
     .center h1{
-    
+
       color: #2184c2;
       text-align: center;
       padding: 20px 0;
@@ -365,4 +346,17 @@ button{
     .signup_link a:hover{
       text-decoration: underline;
     }
-    /* <======delete me later===========OFFERS VIDEO============================ --> */
+    /* <=============================== --> */
+    #video{
+      height:120px ;
+      position: relative;
+    }
+    .top{
+      border-radius: 25px;
+      background-size:contain;
+      width:100%;
+    
+    }
+     
+      
+    

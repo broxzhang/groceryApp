@@ -3,31 +3,12 @@
    padding: 0;
  }
  html,body{
-    background-color: white;
+    /* background-color: white; */
     height: 100%;
  }
- #content2{
- min-height: 100%;
- }
- #sami{
- overflow: auto;
- padding-bottom: 100px;
- }
+ 
  /* Create two equal columns that floats next to each other */
- .column {
-    float: left;
-    width:23%;
-    padding: 10px;
-    text-align:left;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-      
-    content: "";
-    display: table;
-    clear: both;
-  }
+ 
  .parallax{ 
     
     height: max-content;
@@ -37,22 +18,33 @@
     background-size: cover;
      
  }
- header{
-    
- font-size: small;
-  background-image: url("/img/tomatoes3.jpg") ;
-    margin-top:120px;
-    background-size:contain;
-    border-radius: 25px;
+   header{
+      font-size: small;
+       margin-top:110px;
+      background-size:contain;
+      border-radius: 25px;
+    }
+ 
+    .footer {
+      background-color: #2184c2;
+      color: whitesmoke;
+      text-align: center;
+      flex-shrink: 0;
+    }
+  .column {
+   float: left;
+   width:23%;
+   padding: 10px;
+   text-align:left;
  }
- .footer {
-    /* margin-top: -20px; */
-    background-color: #2184c2;
-    color: whitesmoke;
-    text-align: center;
-    flex-shrink:inherit;
-    margin-bottom: 0px;
-  }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+     
+   content: "";
+   display: table;
+   clear: both;
+ }
  
  h1{
    
@@ -76,76 +68,41 @@
     text-align:left ;
     color: #fff;
   }
- 
- /* .page-title{
-    background: rgba (0,0, 0, 0.5);
-    text-align: center;
-    color: white;
-    padding: 50px;
-    font-variant: small-caps;
-    font-size: 50px;
-    font-family: fantasy;
-    letter-spacing: 20px;
- } */
- #sticky{
-    position:fixed;
-    top:0px;
-    width: 100%;
-    z-index: 3;
- 
+  #sticky{
+   z-index: 3;
+   position:fixed;
+   top:0;
+   width: 100%;
  }
  .menu{
-    background: #477cdd;
-    text-align: center;
+   background: #477cdd;
+   text-align: left;
  }
  .menu-ul{
-    margin: 0;
-    padding: 0;
-    display: inline;
+   margin: 0;
+   padding: 0;
+   display:inline-block;
+  block-size:16mm;
  }
  .menu-ul li{
-    float: left;
-    padding: 25px 25px 0px 25px;
-    /* display: inline-block; */
-    list-style: none;
-    font-size: 17px;
-    
- }
+   
+  padding: 10px 10px 0px 10px;
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+}
  .a-menu{
  text-decoration: none;
  color: white;
  }
  .menu-ul li:hover{
     background: none;
-    transform: scale(1.1);
+    transform: scale(1.2);
  
  }
- 
- /* .search-box{
-    border: 1px  solid white;
- border-radius: 50px;
- background: white;
- width: max-content;
- display: inline-block;
- margin: 8px;
- }
- .search-box:hover{
-    box-shadow: white;
-    border: 1px solid #5b8cd5;
- 
- } */
- /* .search-input{
-    width: 250px;
-    border: none;
-    font-size: 16px;
-    outline: none;
-    background: transparent;
-    margin: 15px  0 0 10px;
-    
- } */
  
  i{
-    font-size: 20px;
+    font-size: 10px;
     margin: 0 10px 0 0;
  }
  button{
@@ -157,10 +114,9 @@
  }
  /* The subnavigation menu */
  .subnav {
-    z-index: 1;
-    float: left;
-    overflow: hidden;
-  }
+   float: left;
+   overflow: hidden;
+ }
   
   /* Subnav button */
   .subnav .subnavbtn {
@@ -191,17 +147,16 @@
   
   /* Style the subnav links */
   .subnav-content a {
-    background-color: transparent;
-    float: left;
-    color: #2691d9;
-    text-decoration: none;
-  }
+   float: left;
+   color: rgb(36, 169, 187);
+   text-decoration: none;
+ }
   
   /* Add a grey background color on hover */
   .subnav-content a:hover {
-    background-color: white;
-    color:rgb(45, 214, 236);
-  }
+   background-color: white;
+   color:rgb(36, 169, 187);
+ }
   
   /* When you move the mouse over the subnav container, open the subnav content */
   .subnav:hover .subnav-content {
@@ -328,12 +283,11 @@
        animation: fadeIn 1s;
      }
      
-     /* Add animation (fade in the popup)
+     /* Add animation (fade in the popup) */
      @-webkit-keyframes fadeIn {
-   
        from {opacity: 0;} 
        to {opacity: 1;}
-     } */
+     }
  #input,#input2,#input3{
     width: 50px;
     background-color: rgb(233, 238, 243);
@@ -363,3 +317,16 @@
     filter: grayscale(0);
     transform: scale(1.6);
  }
+ .top{
+   height: 100px ;
+   border-radius: 25px;
+   background-size:contain;
+   width: 100%;
+   
+ }
+
+ h1{
+    color: firebrick;
+ }.cc{
+   color: firebrick;
+}

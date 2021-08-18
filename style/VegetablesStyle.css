@@ -13,23 +13,22 @@ overflow: auto;
 padding-bottom: 100px;
 }
 
-.parallax{ 
-  
+.parallax{
   height: max-content;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-   
 }
-
 header{
   font-size: small;
-   margin-top:120px;
-background-image: url("/img/background.webp") ;
+   margin-top:110px;
+/* background-image: url("/img/background.webp") ; */
   background-size:contain;
   border-radius: 25px;
 }
+
+
 .footer {
   /* margin-top: -20px; */
   background-color: #2184c2;
@@ -53,15 +52,14 @@ background-image: url("/img/background.webp") ;
   clear: both;
 }
 h1{
-   
-  background: rgba (0,0, 0, 0.5);
-    text-align: center;
-    color: whitesmoke;
-    padding: 50px;
-    font-variant: small-caps;
-    font-size: 40px;
-    font-family: fantasy;
-    letter-spacing: 15px;
+background: rgba (0,0, 0, 0.5);
+  text-align: center;
+  color: whitesmoke;
+  padding: 50px;
+  font-variant: small-caps;
+  font-size: 50px;
+  font-family: fantasy;
+  letter-spacing: 15px;
 }
 a:link {
   text-decoration: none;
@@ -83,20 +81,21 @@ a:link {
 }
 .menu{
   background: #477cdd;
-  text-align: center;
+  text-align: left;
 }
 .menu-ul{
  
   margin: 0;
   padding: 0;
-  display:inline;
+  display:inline-block;
+  block-size:16mm;
 }
 .menu-ul li{
-   float: left;
-  padding: 25px 25px 0px 25px;
+   
+  padding: 10px 10px 0px 10px;
   display: inline-block;
   list-style: none;
-  font-size: 17px;
+  font-size: 16px;
   
 }
 .a-menu{
@@ -109,31 +108,8 @@ color: white;
 
 }
 
-/* .search-box{
-  border: 1px  solid white;
-border-radius: 50px;
-background: white;
-width: max-content;
-display: inline-block;
-margin: 8px;
-}
-.search-box:hover{
-  box-shadow: white;
-  border: 1px solid #5b8cd5;
-
-}
-.search-input{
-  width: 250px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
-  margin: 15px  0 0 10px;
-  
-} */
-
 i{
-  font-size: 20px;
+  font-size: 10px;
   margin: 0 10px 0 0;
 }
 button{
@@ -256,4 +232,9 @@ button{
     pointer-events: none;
     border-radius: 25px 25px  25px  25px ;
     }
-    /* <======delete me later===========OFFERS VIDEO============================ --> */
+    .top{
+      border-radius: 25px;
+      background-size:contain;
+      width: 100%;
+    
+    }

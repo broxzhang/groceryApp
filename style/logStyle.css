@@ -4,33 +4,32 @@
 }
 /* new */
 html,body{
-  background-image: url("/img/bananaLog.png") ; 
-  height: 100%;
+  background-image: url("img/bananaLog.png") ;
+  /* height: 100%; */
 }
 
-#content2{
+/* #content2{
 min-height: 100%;
-}
-/* #sami{
-overflow: auto;
-padding-bottom: 100px;
 } */
-
-
-/* header{
-  font-size: small;
-   margin-top:110px;
-
-  background-size:contain;
-  border-radius: 25px;
-}  */
 .footer {
+  /* margin-top: -20px; */
+  background-color: #2184c2;
+  color: whitesmoke;
+  text-align: center;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+  /* margin-top: 1100%; */
+  margin-top: 1000px;
+  /* min-height: 100%; */
+}
+/* .footer {
   margin-top: -50px;
   background-color: #2184c2;
   color: whitesmoke;
   text-align: center;
   flex-shrink: 0;
-}
+  margin-bottom: 0px;
+} */
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
@@ -41,7 +40,7 @@ padding-bottom: 100px;
 
 /* Clear floats after the columns */
 .row:after {
-    
+
   content: "";
   display: table;
   clear: both;
@@ -60,7 +59,7 @@ a:link {
   text-decoration: none;
 }
  h3{
-    
+
    color: azure;
  }
  #end{
@@ -76,21 +75,22 @@ a:link {
 }
 .menu{
   background: #477cdd;
-  text-align: center;
+  text-align: left;
 }
 .menu-ul{
- 
+
   margin: 0;
   padding: 0;
-  display:inline;
+  display:inline-block;
+  block-size:16mm;
 }
 .menu-ul li{
-   float: left;
-  padding: 25px 25px 0px 25px;
+  
+  padding: 10px 10px 0px 10px;
   display: inline-block;
   list-style: none;
-  font-size: 17px;
-  
+  font-size: 16px;
+
 }
 .a-menu{
 text-decoration: none;
@@ -102,35 +102,14 @@ color: white;
 
 }
 
-/* .search-box{
-  border: 1px  solid white;
-border-radius: 50px;
-background: white;
-width: max-content;
-display: inline-block;
-margin: 8px;
-}
-.search-box:hover{
-  box-shadow: white;
-  border: 1px solid #5b8cd5;
 
-}
-.search-input{
-  width: 250px;
-  border: none;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
-  margin: 15px  0 0 10px;
-  
-} */
 
 i{
-  font-size: 20px;
+  font-size: 10px;
   margin: 0 10px 0 0;
 }
 button{
-  
+
   background: none;
   border: none;
   outline: none;
@@ -144,7 +123,7 @@ button{
 
 /* Subnav button */
 .subnav .subnavbtn {
-  font-size: 16px; 
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -204,7 +183,7 @@ button{
       box-shadow: 90px 40px 15px rgba(96, 111, 124, 0.05);
     }
     .center h1{
-    
+
       color: #2184c2;
       text-align: center;
       padding: 20px 0;
@@ -228,6 +207,7 @@ button{
       border: none;
       background: none;
       outline: none;
+      text-align:center;
     }
     .txt_field label{
       position: absolute;
@@ -259,12 +239,12 @@ button{
       width: 100%;
     }
     .pass{
-      margin: -6px 0 50px 5px;
+      margin: 10px 0 50px 5px;
       color: #a6a6a6;
       cursor: pointer;
     }
     .pass:hover{
-      text-decoration: underline;
+      text-decoration:underline;
     }
     input[type="submit"]{
       text-align: center;
@@ -296,4 +276,3 @@ button{
     .signup_link a:hover{
       text-decoration: underline;
     }
-   
