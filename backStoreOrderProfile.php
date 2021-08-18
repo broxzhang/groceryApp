@@ -1,40 +1,3 @@
-<?php
-$errors = array();
-if (isset($_POST['add'])) {
-
-  $xml = simplexml_load_file("database/orderlist.xml");
-
-
-  foreach ($xml->oder as $ftpxml) {
-    $id == $ftpxml->id;
-  }
-
-
-
-
-  $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
-
-  $price = $_POST['price'];
-  $category = $_POST['category'];
-
-  $type = $_POST['type'];
-  $color = $_POST['color'];
-
-  $xml = new SimpleXMLElement('<orders></oders>');
-  $xml->addChild('id', $id);
-  $xml->addChild('customerID', $customerID);
-  $xml->addChild('productName', $productName);
-  $xml->addChild('quantity', $quantity);
-  $xml->addChild('totalprice',  $totalprice);
-  $xml->asXML('database/orderlist.xml');
-  header('Location:backStoreOrderList.php');
-  die;
-  // }
-}
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,25 +39,21 @@ if (isset($_POST['add'])) {
   <h2>Order Profile</h2>
 
   <div class="container">
-    <form action="action_page.php">
+    <form action="" method="post">
+
+      <?php
+      // if(count($errors) > 0){
+      echo '<ul>';
+      foreach ($errors as $e) {
+        echo '<li>' . $e . '</li>';
+      }
+      echo '</ul>';
+      // }
+      ?>
 
       <label for="fname">Order#</label>
       <input type="text" id="order" order="firstname" placeholder="23e3dfadf" name="id">
-      <!-- <label for="item">Item</label>
-      <select id="item" name="Item">
-        <option value="vegetable">Vegetables</option>
-        <option value="fruits">Fruits</option>
-        <option value="beverages">Beverages</option>
-        <option value="dairy">Dairy & Eggs</option>
-        <option value="eggs">Eggs</option>
-        <option value="eggs">Snacks</option>
-      </select>
-      <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
-      <br><br> -->
 
-      <!-- <label for="Vendor">Vendor</label>
-      <input type="text" id="lname" name="Vendor" placeholder="Condordia"> -->
 
 
       <label for="order">Customer ID#</label>
@@ -109,18 +68,6 @@ if (isset($_POST['add'])) {
       <label for="order">Total Price $</label>
       <input type="number" id="customer" name="totalprice" placeholder="1.00"><br> <br>
 
-      
-
-      <label for="subject">Description</label>
-      <textarea id="subject" name="subject" placeholder="Please follow the follow the formate:&#10;1. Apples (Tyepe: Gala; Quantity: 5); &#10;2. Milk (Typel: skim; Quantity:2)&#10;...." style="height:200px"></textarea>
-
-      <!-- <input type="submit" value="Save">
-      <input type="reset" value="Reset"> -->
-
-
-      <!-- <input type="submit" name="submit" value="Save">
-      <input type="reset" name="reset" value="reset"> -->
-
       <input type="submit" name="add" value="Save">
 
 
@@ -129,7 +76,41 @@ if (isset($_POST['add'])) {
   </form>
   </div>
 
+  <?php
+  $errors = array();
+  if (isset($_POST['add'])) {
 
+    $xml = simplexml_load_file("database/orderlist.xml");
+
+
+    foreach ($xml->oder as $ftpxml) {
+      $id == $ftpxml->id;
+    }
+
+
+
+
+    $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
+
+    $price = $_POST['price'];
+    $category = $_POST['category'];
+
+    $type = $_POST['type'];
+    $color = $_POST['color'];
+
+    $xml = new SimpleXMLElement('<orders></oders>');
+    $xml->addChild('id', $id);
+    $xml->addChild('customerID', $customerID);
+    $xml->addChild('productName', $productName);
+    $xml->addChild('quantity', $quantity);
+    $xml->addChild('totalprice',  $totalprice);
+    $xml->asXML('database/orderlist.xml');
+    header('Location:index.php');
+
+    die;
+    // }
+  }
+  ?>
 
 
 

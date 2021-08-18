@@ -20,7 +20,7 @@
     <a href="index.html">Home</a>
     <a href="product-list.html">Product List</a>
     <a href="backStoreUserList.html">User List</a>
-    <a href="backStoreOrderList.html">Order List</a>
+    <a href="backStoreOrderList.php">Order List</a>
     <div class="subnav">
       <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
@@ -44,7 +44,7 @@
 
  
   <br><br>
-  <a href="backStoreOrderProfile.html"><button class="btn Add" > Add Oder</button></a>
+  <a href="backStoreOrderProfile.php"><button class="btn Add" > Add Oder</button></a>
   <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names, products, orders.."
     title="Type in a name"> -->
 
@@ -102,7 +102,7 @@ foreach ($xml->oder as $ftpxml) {
     <?php echo $ftpxml->totalprice; ?>
 
 <?php
-    echo '<td><a href="backStoreOrderProfile.html" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
+    echo '<td><a href="backStoreOrderProfile.php" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
     echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>';
 ?>
 
