@@ -37,7 +37,7 @@ if(isset($_POST['add'])){
         $xml->addChild('type',  $type);
         $xml->addChild('color',$color);
         $xml->asXML('productTest/'. $productname . '.xml');
-        header('Location:index.php');
+        header('backstoreMain.html');
         die;
   // }
 }
