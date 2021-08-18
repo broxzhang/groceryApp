@@ -1,3 +1,29 @@
+<?php
+$errors = array();
+if(isset($_POST['add'])){
+    $productname = preg_replace('/[^A-Za-z0-9]/', '', $_POST['productname']);
+
+    $price = $_POST['price'];
+    $category = $_POST['category'];
+
+    $type = $_POST['type'];
+    $color = $_POST['color'];
+
+        $xml = new SimpleXMLElement('<products></products>');
+        $xml->addChild('productname',$productname);
+        $xml->addChild('price',$price);
+        $xml->addChild('category', $category);
+        $xml->addChild('type',  $type);
+        $xml->addChild('color',$color);
+        $xml->asXML('database/orderlist.xml');
+        header('Location:backStoreOrderList.php');
+        die;
+  // }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 

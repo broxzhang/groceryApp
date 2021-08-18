@@ -2,7 +2,7 @@
 
 <orderlist>
 
-  <oder>
+  <oder id='1'>
     <id>1</id>
     <customerID>jim</customerID>
     <products>
@@ -20,7 +20,7 @@
     <totalprice>$23</totalprice>
   </oder>
 
-  <oder>
+  <oder id='2'>
     <id>2</id>
     <customerID>xav</customerID>
     <products>
@@ -37,7 +37,7 @@
     <totalprice>$44</totalprice>
   </oder>
 
-  <oder>
+  <oder id='3'>
     <id>3</id>
     <customerID>jane</customerID>
     <products>
