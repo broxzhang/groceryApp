@@ -1,166 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="products.xsd">
     <products>
-        <seafood>
-            <product id='1'>
-                <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
-                <aisles>seafood</aisles>
-                <price>10.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg>7.93</avg>
-                <photo>img/salmon_fillet.jpeg</photo>
-                <description>This fresh farmed Atlantic salmon fillet comes from Canada. Farmed salmon is a healthy and nutritious food. It is an oily fish particularly rich in omega 3, which is beneficial for cardiovascular health. It is also a good source of high-quality protein, vitamin D and calcium. Health Canada recommends eating at least two servings of oily fish per week as part of a balanced diet.</description>
-                <ingredients>(SALMO SALAR) PROVENANCE: CANADA. METHOD: FARM RAISED, OPEN ENVIRONMENTAQUACULTURE.</ingredients>
-            </product>
-            <product id='2'>
-                <productName>Crab flavoured pollock flakes</productName>
-                <aisles>seafood</aisles>
-                <price>8.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg />
-                <photo>img/crab-flavored.jpeg</photo>
-                <description>Product Number: 208052</description>
-                <ingredients>Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.</ingredients>
-            </product>
-            <product id='3'>
-                <productName>Fresh Atlantic Salmon Steak</productName>
-                <aisles>seafood</aisles>
-                <price>15.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg>8.81</avg>
-                <photo>img/fresh_atlantic.jpeg</photo>
-            </product>
-            <product id='4'>
-                <productName>Pollock and Shrimp Salad</productName>
-                <aisles>seafood</aisles>
-                <price>8.99</price>
-                <category>fish</category>
-                <type>prepared</type>
-                <avg>4.96</avg>
-                <photo>img/pollock-and-srimp-salad.jpeg</photo>
-            </product>
-            <product id='5'>
-                <productName>Salmon Fillet with Rosée Sauce</productName>
-                <aisles>seafood</aisles>
-                <price>12.43</price>
-                <category>fish</category>
-                <type>prepared</type>
-                <avg>9.73</avg>
-                <photo>img/Salmon-Fillet-Rosée-Sauce.jpeg</photo>
-            </product>
-            <product id='6'>
-                <productName>Frozen sliced smoked coho salmon</productName>
-                <aisles>seafood</aisles>
-                <price>21.99</price>
-                <category>fish</category>
-                <type>frozen</type>
-                <avg>21.99</avg>
-                <photo>img/Frozen-sliced-smoked-coho-salmon.jpeg</photo>
-            </product>
-            <product id='7'>
-                <productName>Frozen Uncooked Pacific White Shrimp</productName>
-                <aisles>seafood</aisles>
-                <price>10.99</price>
-                <category>fish</category>
-                <type>fresh</type>
-                <avg>7.93</avg>
-                <photo>img/Frozen-Uncooked-Pacific-White-Shrimp.jpeg</photo>
-            </product>
-        </seafood>
-        <beverage>
-            <product id="8">
-                <productName>Coca-cola</productName>
-                <aisles>beverages</aisles>
-                <price>1.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/cocacola.jpeg</photo>
-            </product>
-            <product id="9">
-                <productName>Pepsi</productName>
-                <aisles>beverages</aisles>
-                <price>3.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/pepsi.jpg</photo>
-            </product>
-            <product id="10">
-                <productName>Orange Crush</productName>
-                <aisles>beverages</aisles>
-                <price>3.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/orangecrush.JPG</photo>
-            </product>
-            <product id="11">
-                <productName>Cream Soda Crush</productName>
-                <aisles>beverages</aisles>
-                <price>7.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/creamsoda.jpg</photo>
-            </product>
-            <product id="12">
-                <productName>Nestea</productName>
-                <aisles>beverages</aisles>
-                <price>2.50</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/nestea.jpg</photo>
-            </product>
-            <product id="13">
-                <productName>Oasis Orange Juice</productName>
-                <aisles>beverages</aisles>
-                <price>1.50</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/orangejuice.jpg</photo>
-            </product>
-            <product id="14">
-                <productName>Oasis Pineapple Juice</productName>
-                <aisles>beverages</aisles>
-                <price>1.50</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/pineapplejuice.jpg</photo>
-            </product>
-            <product id="15">
-                <productName>Sprite</productName>
-                <aisles>beverages</aisles>
-                <price>1.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/sprite.JPG</photo>
-            </product>
-            <product id="16">
-                <productName>Eska Water Bottles</productName>
-                <aisles>beverages</aisles>
-                <price>1.99</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/water.jpg</photo>
-            </product>
-            <product id="17">
-                <productName>Oasis Mango Juice</productName>
-                <aisles>beverages</aisles>
-                <price>1.50</price>
-                <category>soda</category>
-                <type />
-                <avg />
-                <photo>img/mangojuice.jpg</photo>
-            </product>
-        </beverage>
+        <product id='1'>
+            <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
+            <aisles>seafood</aisles>
+            <price>10.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg>7.93</avg>
+            <photo>img/salmon_fillet.jpeg</photo>
+            <description>This fresh farmed Atlantic salmon fillet comes from Canada. Farmed salmon is a healthy and nutritious food. It is an oily fish particularly rich in omega 3, which is beneficial for cardiovascular health. It is also a good source of high-quality protein, vitamin D and calcium. Health Canada recommends eating at least two servings of oily fish per week as part of a balanced diet.</description>
+            <ingredients>(SALMO SALAR) PROVENANCE: CANADA. METHOD: FARM RAISED, OPEN ENVIRONMENTAQUACULTURE.</ingredients>
+        </product>
+        <product id='2'>
+            <productName>Crab flavoured pollock flakes</productName>
+            <aisles>seafood</aisles>
+            <price>8.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg />
+            <photo>img/crab-flavored.jpeg</photo>
+            <description>Product Number: 208052</description>
+            <ingredients>Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.</ingredients>
+        </product>
+        <product id='3'>
+            <productName>Fresh Atlantic Salmon Steak</productName>
+            <aisles>seafood</aisles>
+            <price>15.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg>8.81</avg>
+            <photo>img/fresh_atlantic.jpeg</photo>
+        </product>
+        <product id='4'>
+            <productName>Pollock and Shrimp Salad</productName>
+            <aisles>seafood</aisles>
+            <price>8.99</price>
+            <category>fish</category>
+            <type>prepared</type>
+            <avg>4.96</avg>
+            <photo>img/pollock-and-srimp-salad.jpeg</photo>
+        </product>
+        <product id='5'>
+            <productName>Salmon Fillet with Rosée Sauce</productName>
+            <aisles>seafood</aisles>
+            <price>12.43</price>
+            <category>fish</category>
+            <type>prepared</type>
+            <avg>9.73</avg>
+            <photo>img/Salmon-Fillet-Rosée-Sauce.jpeg</photo>
+        </product>
+        <product id='6'>
+            <productName>Frozen sliced smoked coho salmon</productName>
+            <aisles>seafood</aisles>
+            <price>21.99</price>
+            <category>fish</category>
+            <type>frozen</type>
+            <avg>21.99</avg>
+            <photo>img/Frozen-sliced-smoked-coho-salmon.jpeg</photo>
+        </product>
+        <product id='7'>
+            <productName>Frozen Uncooked Pacific White Shrimp</productName>
+            <aisles>seafood</aisles>
+            <price>10.99</price>
+            <category>fish</category>
+            <type>fresh</type>
+            <avg>7.93</avg>
+            <photo>img/Frozen-Uncooked-Pacific-White-Shrimp.jpeg</photo>
+        </product>
+
+        <product id="8">
+            <productName>Coca-cola</productName>
+            <aisles>beverages</aisles>
+            <price>1.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/cocacola.jpeg</photo>
+        </product>
+        <product id="9">
+            <productName>Pepsi</productName>
+            <aisles>beverages</aisles>
+            <price>3.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/pepsi.jpg</photo>
+        </product>
+        <product id="10">
+            <productName>Orange Crush</productName>
+            <aisles>beverages</aisles>
+            <price>3.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/orangecrush.JPG</photo>
+        </product>
+        <product id="11">
+            <productName>Cream Soda Crush</productName>
+            <aisles>beverages</aisles>
+            <price>7.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/creamsoda.jpg</photo>
+        </product>
+        <product id="12">
+            <productName>Nestea</productName>
+            <aisles>beverages</aisles>
+            <price>2.50</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/nestea.jpg</photo>
+        </product>
+        <product id="13">
+            <productName>Oasis Orange Juice</productName>
+            <aisles>beverages</aisles>
+            <price>1.50</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/orangejuice.jpg</photo>
+        </product>
+        <product id="14">
+            <productName>Oasis Pineapple Juice</productName>
+            <aisles>beverages</aisles>
+            <price>1.50</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/pineapplejuice.jpg</photo>
+        </product>
+        <product id="15">
+            <productName>Sprite</productName>
+            <aisles>beverages</aisles>
+            <price>1.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/sprite.JPG</photo>
+        </product>
+        <product id="16">
+            <productName>Eska Water Bottles</productName>
+            <aisles>beverages</aisles>
+            <price>1.99</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/water.jpg</photo>
+        </product>
+        <product id="17">
+            <productName>Oasis Mango Juice</productName>
+            <aisles>beverages</aisles>
+            <price>1.50</price>
+            <category>soda</category>
+            <type />
+            <avg />
+            <photo>img/mangojuice.jpg</photo>
+        </product>
+
+        <product id="18">
+            <productName>Apples</productName>
+            <aisles>fruit</aisles>
+            <price>1.23</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/AppleEmpire.webp</photo>
+        </product>
+        <product id="19">
+            <productName>Bananas</productName>
+            <aisles>fruit</aisles>
+            <price>2.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/banana.webp</photo>
+        </product>
+        <product id="20">
+            <productName>Dragon Fruits</productName>
+            <aisles>fruit</aisles>
+            <price>1.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/dragonfruit.webp</photo>
+        </product>
+        <product id="21">
+            <productName>Avocado</productName>
+            <aisles>fruit</aisles>
+            <price>3.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/Avocado.webp</photo>
+        </product>
+        <product id="22">
+            <productName>Pears</productName>
+            <aisles>fruit</aisles>
+            <price>1.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/pears.webp</photo>
+        </product>
+        <product id="23">
+            <productName>Peaches</productName>
+            <aisles>fruit</aisles>
+            <price>1.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/peaches.webp</photo>
+        </product>
+        <product id="24">
+            <productName>Oranges</productName>
+            <aisles>fruit</aisles>
+            <price>1.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/oranges.jpg</photo>
+        </product>
+        <product id="25">
+            <productName>Plums</productName>
+            <aisles>fruit</aisles>
+            <price>1.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/plums.jpg</photo>
+        </product>
+        <product id="26">
+            <productName>Berries</productName>
+            <aisles>fruit</aisles>
+            <price>1.5</price>
+            <category>fruit</category>
+            <type />
+            <avg />
+            <photo>img/berries.jpg</photo>
+        </product>
+
+        <product id="27">
+            <productName>Lay's Stax Chips</productName>
+            <aisles>snack</aisles>
+            <price>2.29</price>
+            <category>Chips</category>
+            <type />
+            <avg />
+            <photo>img/laysstax.jpg</photo>
+            <description>Stax® crunchy thin potato chips are the ideal snack to share at the family barbecue and at any party! This product contains 0 trans fat.</description>
+        </product>
+
+        <product id="28">
+            <productName>Cracker Jack Caramel and Peanuts Coated Popcorn</productName>
+            <aisles>snack</aisles>
+            <price>3.39</price>
+            <category>snack</category>
+            <type />
+            <avg />
+            <photo>img/popcorn.jpg</photo>
+        </product>
+
+        <product id="29">
+            <productName>Mars Snackers Chocolate Bar</productName>
+            <aisles>snack</aisles>
+            <price>1.39</price>
+            <category>snack</category>
+            <type />
+            <avg />
+            <photo>img/snickers.jpg</photo>
+            <description>
+                Snickers™ bars are made with peanuts, smooth caramel and chewy nougat all coated with milk chocolate. A bar contains 250 calories.
+                MILK CHOCOLATE (SUGAR, COCOA BUTTER, CHOCOLATE, SKIM MILK, LACTOSE, MILKFAT, SOY LECITHIN, ARTIFICIAL FLAVOR), PEANUTS, CORN SYRUP, SUGAR, PALM OIL, SKIM MILK, LACTOSE, PARTIALLY HYDROGENATED SOYBEAN OIL, SALT, EGG WHITES, ARTIFICIAL FLAVOR. ALLERGY INFORMATION: CONTAINS PEANUTS, MILK, EGG AND SOY. MAY CONTAIN TREE NUTS.
+            </description>
+        </product>
+
+        <product id="30">
+            <productName>PLANTERS Praline nut mix 450 G</productName>
+            <aisles>snack</aisles>
+            <price>7.39</price>
+            <category>snack</category>
+            <type />
+            <avg />
+            <photo>img/nuts.jpg</photo>
+        </product>
+
+        <product id="31">
+            <productName>Oreo Chocolate Cookies</productName>
+            <aisles>snack</aisles>
+            <price>7.39</price>
+            <category>snack</category>
+            <type />
+            <avg />
+            <photo>img/oreo.jpg</photo>
+            <description>The Original chocolate sandwich cookies family size, Oreo 500g</description>
+        </product>
+
+
     </products>
 </root>

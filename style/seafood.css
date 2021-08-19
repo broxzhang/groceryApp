@@ -39,19 +39,6 @@ html body {
   flex-flow: row wrap;
 }
 
-.fa-shopping-cart {
-  cursor: pointer;
-  width: 22px;
-  height: 22px;
-  overflow: hidden;
-  transition: width 1s ease;
-}
-
-.fa-shopping-cart:hover {
-  width: 300px;
-  color: red;
-}
-
 .product {
   border-top: 1px solid rgb(37, 37, 37);
   border-bottom: 1px solid rgb(37, 37, 37);
