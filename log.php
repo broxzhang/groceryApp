@@ -2,18 +2,18 @@
 <?php
 $error = false;
 
-if(isset($_POST['login'])){
+if (isset($_POST['login'])) {
 
     $username = preg_replace('/[^A-Za-z0-9]/', '', $_POST['username']);
     $password = $_POST['password'];
-    if(file_exists('users/' . $username . '.xml')){
+    if (file_exists('users/' . $username . '.xml')) {
         $xml = new SimpleXMLElement('users/' . $username . '.xml', 0, true);
-        if($password == $xml->password){
+        if ($password == $xml->password) {
             session_start();
             session_unset();
             session_destroy();
             session_start();
-            
+
             $_SESSION['username'] = $username;
             header('Location: index.php?logged');
 
@@ -21,7 +21,6 @@ if(isset($_POST['login'])){
         }
     }
     $error = true;
-
 }
 
 ?>
@@ -33,6 +32,7 @@ if(isset($_POST['login'])){
 <!DOCTYPE html>
 <html lang="en">
 <!-- new -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,8 +47,9 @@ if(isset($_POST['login'])){
     <div id="content2">
         <!-- <div id="sami"> -->
 
+        <?php include('html/header.html')  ?>
 
-          <div class="parallax">
+        <!-- <div class="parallax">
 
             <div class="menu" id="sticky">
                 <ul class="menu-ul">
@@ -99,91 +100,97 @@ if(isset($_POST['login'])){
                 </ul>
 
             </div>
-        </div>
-    <!-- </div> --></div>
-        <div class="center">
+        </div> -->
+        <!-- </div> -->
+    </div>
+    <div class="center">
 
 
-            <h1>User Login</h1>
-            <form method="post" action="">
-              <div class="txt_field">
+        <h1>User Login</h1>
+        <form method="post" action="">
+            <div class="txt_field">
                 <!-- <input type="text" required> -->
                 <input type="text" required name="username" size="20" />
                 <label>Username</label>
-              </div>
-              <div class="txt_field">
+            </div>
+            <div class="txt_field">
                 <input type="password" required name="password" size="20" />
                 <!-- <input type="Password" required> -->
                 <label>Password</label>
-              </div>
-              <?php
-              if($error){
-                  echo '<p>Invalid username and/or password</p>';
-                  // header('Refresh: 2; URL = up.php');
-              }
+            </div>
+            <?php
+            if ($error) {
+                echo '<p>Invalid username and/or password</p>';
+                // header('Refresh: 2; URL = up.php');
+            }
 
-              ?>
-              <!-- <a href="home.php"> -->
-             <p><input type="submit"  value="Login" name="login" /></p>
-        <!-- <a href="up.php"><input type="button" value="Login"> </a><br> -->
+            ?>
+            <!-- <a href="home.php"> -->
+            <p><input type="submit" value="Login" name="login" /></p>
+            <!-- <a href="up.php"><input type="button" value="Login"> </a><br> -->
 
-                     <div class="pass"><a href="sign-up.php">Sign up</a></div>
-            </form>
-          </div>
-
-
+            <div class="pass"><a href="sign-up.php">Sign up</a></div>
+        </form>
+    </div>
 
 
 
 
-<!-- =================footer=========================== -->
-<footer class="footer">
+
+
+    <!-- =================footer=========================== -->
+    <footer class="footer">
 
 
         <div class="row">
 
 
-         <div class="column" style="background-color:none;">
-             <h3>Get to Know Us</h3>
-             <p>
-            <a href="VegetablesPage2.html"> Supplier Relations</a><br><br>
-            <a href="VegetablesPage2.html"> Corporate Site</a><br><br>
-            <a href="aboutMission.html">   About Mission<br> <br></a>
-            <a href="ContactUs.html"> Contact Us</a><br><br>
-         </p></div>
-           <div class="column" style="background-color:none;">
-             <h3>What we offer?</h3>
-             <p>
-                 <a href="VegetablesPage2.html"> Gift Card<br><br>
-                     <a href="VegetablesPage2.html">  Online grocery<br><br>
-                         <a href="VegetablesPage2.html"> Our partners<br><br>
-                             <a href="VegetablesPage2.html"> Our Private Brands
-                             </p></div>
-                             <div class="column" style="background-color:none;">
-                                 <h3>My concordia</h3>
-                                 <p>
-                                   <a href="VegetablesPage2.html">  Products to Discover<br><br>
-                                       <a href="VegetablesPage2.html"> Online Grocery Services<br><br>
-                                           <a href="VegetablesPage2.html">  Flyer<br><br>
-                                               <a href="VegetablesPage2.html">  Coupons
-                                               </p> </div>
-                             <div class="column" style="background-color:none;">
-                               <h3>Like us on social media</h3>
-                               <p>
-                                   <a href="VegetablesPage2.html">   <img id="test" src="img/facebook.png">  Facebook<br>
-                                       <a href="VegetablesPage2.html">   <img id="test" src="img/instagram.png"> Instagram<br>
-                                           <a href="VegetablesPage2.html"><img id="test" src="img/twitter.png">   twitter<br>
-                                               <a href="VegetablesPage2.html">  <img id="test" src="img/tiktok.png">  tiktok
-                               </p>  </div>
+            <div class="column" style="background-color:none;">
+                <h3>Get to Know Us</h3>
+                <p>
+                    <a href="VegetablesPage2.html"> Supplier Relations</a><br><br>
+                    <a href="VegetablesPage2.html"> Corporate Site</a><br><br>
+                    <a href="aboutMission.html"> About Mission<br> <br></a>
+                    <a href="ContactUs.html"> Contact Us</a><br><br>
+                </p>
+            </div>
+            <div class="column" style="background-color:none;">
+                <h3>What we offer?</h3>
+                <p>
+                    <a href="VegetablesPage2.html"> Gift Card<br><br>
+                        <a href="VegetablesPage2.html"> Online grocery<br><br>
+                            <a href="VegetablesPage2.html"> Our partners<br><br>
+                                <a href="VegetablesPage2.html"> Our Private Brands
+                </p>
+            </div>
+            <div class="column" style="background-color:none;">
+                <h3>My concordia</h3>
+                <p>
+                    <a href="VegetablesPage2.html"> Products to Discover<br><br>
+                        <a href="VegetablesPage2.html"> Online Grocery Services<br><br>
+                            <a href="VegetablesPage2.html"> Flyer<br><br>
+                                <a href="VegetablesPage2.html"> Coupons
+                </p>
+            </div>
+            <div class="column" style="background-color:none;">
+                <h3>Like us on social media</h3>
+                <p>
+                    <a href="VegetablesPage2.html"> <img id="test" src="img/facebook.png"> Facebook<br>
+                        <a href="VegetablesPage2.html"> <img id="test" src="img/instagram.png"> Instagram<br>
+                            <a href="VegetablesPage2.html"><img id="test" src="img/twitter.png"> twitter<br>
+                                <a href="VegetablesPage2.html"> <img id="test" src="img/tiktok.png"> tiktok
+                </p>
+            </div>
 
-       </div>
-       <div id="end">
-        &nbsp;&nbsp;&nbsp Newsletter<br>
-        &nbsp;&nbsp;&nbsp  Sign up to Concordia.ca to receive offers and much more! Learn more
-      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;  All rights resrved    <img id="test" src="img/copyrights.png"> <br><br>
+        </div>
+        <div id="end">
+            &nbsp;&nbsp;&nbsp Newsletter<br>
+            &nbsp;&nbsp;&nbsp Sign up to Concordia.ca to receive offers and much more! Learn more
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; All rights resrved <img id="test" src="img/copyrights.png"> <br><br>
 
-      </p></div>
+            </p>
+        </div>
 
 
 

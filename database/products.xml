@@ -252,7 +252,6 @@
             <photo>img/laysstax.jpg</photo>
             <description>Stax® crunchy thin potato chips are the ideal snack to share at the family barbecue and at any party! This product contains 0 trans fat.</description>
         </product>
-
         <product id="28">
             <productName>Cracker Jack Caramel and Peanuts Coated Popcorn</productName>
             <aisles>snack</aisles>
@@ -262,7 +261,6 @@
             <avg />
             <photo>img/popcorn.jpg</photo>
         </product>
-
         <product id="29">
             <productName>Mars Snackers Chocolate Bar</productName>
             <aisles>snack</aisles>
@@ -276,7 +274,6 @@
                 MILK CHOCOLATE (SUGAR, COCOA BUTTER, CHOCOLATE, SKIM MILK, LACTOSE, MILKFAT, SOY LECITHIN, ARTIFICIAL FLAVOR), PEANUTS, CORN SYRUP, SUGAR, PALM OIL, SKIM MILK, LACTOSE, PARTIALLY HYDROGENATED SOYBEAN OIL, SALT, EGG WHITES, ARTIFICIAL FLAVOR. ALLERGY INFORMATION: CONTAINS PEANUTS, MILK, EGG AND SOY. MAY CONTAIN TREE NUTS.
             </description>
         </product>
-
         <product id="30">
             <productName>PLANTERS Praline nut mix 450 G</productName>
             <aisles>snack</aisles>
@@ -285,8 +282,8 @@
             <type />
             <avg />
             <photo>img/nuts.jpg</photo>
+            <description>The peanuts, pecans &amp; cashews praline nut mix brings together your three favorite nuts with a sweet and savoury taste!</description>
         </product>
-
         <product id="31">
             <productName>Oreo Chocolate Cookies</productName>
             <aisles>snack</aisles>
@@ -296,6 +293,65 @@
             <avg />
             <photo>img/oreo.jpg</photo>
             <description>The Original chocolate sandwich cookies family size, Oreo 500g</description>
+        </product>
+
+        <product id="32">
+            <productName>Milk</productName>
+            <aisles>dairy</aisles>
+            <price>2.50</price>
+            <category>dairy</category>
+            <type />
+            <avg />
+            <photo>img/Milk.jpeg</photo>
+            <!-- <option value="Whole Milk">Whole Milk</option>
+            <option value="10%">10%</option>
+            <option value="2%">2%</option>
+            <option value="Almond">Almond (Lactose-Free)</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Strawberry">Strawberry</option>            -->
+            <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
+        </product>
+        <product id="33">
+            <productName>Eggs</productName>
+            <aisles>dairy</aisles>
+            <price>2.50</price>
+            <category>dairy</category>
+            <type />
+            <!-- white/bown -->
+            <avg />
+            <photo>img/Eggs.jpeg</photo>
+            <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
+        </product>
+        <product id="34">
+            <productName>Yogurt</productName>
+            <aisles>dairy</aisles>
+            <price>2.50</price>
+            <!-- <option value="Strawberry">Strawberry</option>
+            <option value="Blueberry">Blueberry</option>
+            <option value="Banana">Banana</option>
+            <option value="GreekV">Greek (Vanilla)</option>
+            <option value="GreekH">Greek (Honey)</option>  -->
+            <category>dairy</category>
+            <type />
+            <avg />
+            <photo>img/Yogurt.jpg</photo>
+
+            <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
+        </product>
+        <product id="35">
+            <productName>Cheese</productName>
+            <aisles>dairy</aisles>
+            <price>2.50</price>
+            <!-- <option value="Cheddar">Cheddar</option>
+            <option value="Gouda">Gouda</option>
+            <option value="Swiss">Swiss</option>
+            <option value="Parmesan">Parmesan</option> -->
+            <category>dairy</category>
+            <type />
+            <avg />
+            <photo>img/Cheese.jpeg</photo>
+            <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
         </product>
 
 
