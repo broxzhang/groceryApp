@@ -22,6 +22,8 @@
             <photo>img/crab-flavored.jpeg</photo>
             <description>Product Number: 208052</description>
             <ingredients>Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.</ingredients>
+            <onsale>true</onsale>
+
         </product>
         <product id='3'>
             <productName>Fresh Atlantic Salmon Steak</productName>
@@ -140,6 +142,7 @@
             <type />
             <avg />
             <photo>img/sprite.JPG</photo>
+            <onsale>true</onsale>
         </product>
         <product id="16">
             <productName>Eska Water Bottles</productName>
@@ -186,6 +189,7 @@
             <type />
             <avg />
             <photo>img/dragonfruit.webp</photo>
+            <onsale>true</onsale>
         </product>
         <product id="21">
             <productName>Avocado</productName>
@@ -231,6 +235,8 @@
             <type />
             <avg />
             <photo>img/plums.jpg</photo>
+            <onsale>true</onsale>
+
         </product>
         <product id="26">
             <productName>Berries</productName>
@@ -293,6 +299,8 @@
             <avg />
             <photo>img/oreo.jpg</photo>
             <description>The Original chocolate sandwich cookies family size, Oreo 500g</description>
+            <onsale>true</onsale>
+
         </product>
 
         <product id="32">
@@ -352,6 +360,7 @@
             <avg />
             <photo>img/Cheese.jpeg</photo>
             <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
+            <onsale>true</onsale>
         </product>
 
 

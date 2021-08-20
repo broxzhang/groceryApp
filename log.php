@@ -47,7 +47,7 @@ if (isset($_POST['login'])) {
     <div id="content2">
         <!-- <div id="sami"> -->
 
-        <?php include('html/header.html')  ?>
+        <?php include('html/header.php')  ?>
 
         <!-- <div class="parallax">
 

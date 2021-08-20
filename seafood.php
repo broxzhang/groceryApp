@@ -11,36 +11,36 @@
 
 <body>
     <div class="seafood-container">
-        <?php include('html/header.html')  ?>
+        <?php include('html/header.php')  ?>
         <div class="main-container col-10">
             <div class="mt-5 d-flex flex-row flex-wrap">
                 <?php
-                    $xml = simplexml_load_file("database/products.xml") or die('Cann0t find xml file');
-                    // echo($xml->products->seaf00d->product);
-                    $seafood =  $xml->products;
-                    // print_r($seafood);
-                    foreach ($xml->products->product as $food) {
-                        $avgStr = 0;
-                        $pizKg = 0;
-                        $id = $food['id'];
-                        if($food->aisles == 'beverages'){
-                                echo '<div class="card col-md-3 border" style="min-width: 250px">
-                                    <img class="card-img-top border-bottom" src="',$food->photo,'" alt="seafood image" >
+                $xml = simplexml_load_file("database/products.xml") or die('Cann0t find xml file');
+                // echo($xml->products->seaf00d->product);
+                $seafood =  $xml->products;
+                // print_r($seafood);
+                foreach ($xml->products->product as $food) {
+                    $avgStr = 0;
+                    $pizKg = 0;
+                    $id = $food['id'];
+                    if ($food->aisles == 'beverages') {
+                        echo '<div class="card col-md-3 border" style="min-width: 250px">
+                                    <img class="card-img-top border-bottom" src="', $food->photo, '" alt="seafood image" >
                                     </a>
                                     <div class="card-body">
-                                    <h5 class="card-title">',$food->productName,'</h5>
+                                    <h5 class="card-title">', $food->productName, '</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">',$food->price,'/lb</li>
+                                        <li class="list-group-item">', $food->price, '/lb</li>
                                     </ul>
                                     </div>
                                     <div class="card-body">
-                                    <a href="shoppingCart.php?itemid=',$food['id'],'"> 
+                                    <a href="shoppingCart.php?itemid=', $food['id'], '"> 
                                     <i class="fas fa-shopping-cart">Add To Cart</i>
                                     </a>
                                     </div>
                                 </div>';
-                        }
-                   }   
+                    }
+                }
                 ?>
             </div>
         </div>

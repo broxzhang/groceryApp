@@ -18,6 +18,7 @@
                     <xs:element name="photo" type="xs:string" />
                     <xs:element name="description" minOccurs="0" type="xs:string" />
                     <xs:element name="ingredients" minOccurs="0" type="xs:string" />
+                    <xs:element name="onsale" minOccurs="0" type="xs:boolean" />
                   </xs:sequence>
                   <xs:attribute name="id" type="xs:integer" use="required" />
                 </xs:complexType>
