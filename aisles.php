@@ -24,7 +24,7 @@
 
                     if ($item->aisles == $parameter) {
                         echo '<div class="card col-md-3 border d-flex flex-column justify-content-lg-between" style="min-width: 250px">
-                                        <a href="seafood-detail.html?itemid=', $item['id'], '">
+                                        <a href="aisles-detail.php?', $item['id'], '">
                                                 <img class="card-img-top border-bottom" style="width: 250px; height: 250px" src="', $item->photo, '" alt="seafood image" >
                                         </a>
                                         <div class="d-flex flex-column card-body justify-content-between">
@@ -45,6 +45,8 @@
             </div>
         </div>
 
+
+        <?php include('html/footer.html') ?>
     </div>
 </body>
 
