@@ -2,60 +2,33 @@
 
 <orderlist>
 
-  <oder id=1>
-    <id >1</id>
+  <oder id='1'>
+    <id>1</id>
     <customerID>jim</customerID>
     <products>
-      <product>
-        <productName>Plums</productName>
-        <quantity>10</quantity>
-      </product>
-
-      <product>
-        <productName>Avocado</productName>
-        <quantity>12</quantity>
-      </product>
+     Plums (qty): 10;
+      Avocado (qty): 12;
     </products>
-
     <totalprice>$23</totalprice>
   </oder>
-
-  <oder id=2>
-    <id >2</id>
+  <oder id='2'>
+    <id>2</id>
     <customerID>xav</customerID>
     <products>
-      <product>
-        <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
-        <quantity>2</quantity>
-      </product>
-
-      <product>
-        <productName>Crab flavoured pollock flakes</productName>
-        <quantity>2</quantity>
-      </product>
+      Fresh Canadian Atlantic Salmon Fillet (qty): 2;
+      Crab flavoured pollock flakes (qty): 2;
     </products>
     <totalprice>$44</totalprice>
   </oder>
 
-  <oder id=3>
+  <oder id='3'>
     <id>3</id>
     <customerID>jane</customerID>
     <products>
-      <product>
-        <productName>Plums</productName>
-        <quantity>10</quantity>
-      </product>
-
-      <product>
-        <productName>Avocado</productName>
-        <quantity>12</quantity>
-      </product>
+      Plums (qty): 10;
+      Avocado (qty): 12;
     </products>
     <totalprice>$23</totalprice>
   </oder>
 
 </orderlist>
-
-
-
-  
