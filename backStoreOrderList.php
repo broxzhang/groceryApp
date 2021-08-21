@@ -1,3 +1,69 @@
+
+<!-- this will delete a specific product from the xml file if the file exsists,
+and it will echo a msg if the file doesnt exsist.-->
+
+<?php
+
+
+$errors = array();
+if(isset($_POST['remove'])){
+    $name = preg_replace('/[^A-Za-z0-9]/', '', $_POST['name']);
+
+    $id =  $_POST['id'];
+    // $price = $_POST['price'];
+
+     if($name == ''){
+        $errors[] = 'product Name is blank';}
+        if($id == ''){
+           $errors[] = 'product id is blank';}
+     //    if($price == ''){
+     //       $errors[] = 'price is blank';
+     // }
+
+     if(count($errors) == 0){
+   if(file_exists('pro.xml')){
+
+$xml1 = simplexml_load_file('pro.xml');
+
+function delete($id,$filename='pro.xml'){
+
+  $data = simplexml_load_file($filename);
+  for ($i=0,$length = count($data->product);$i<$length; $i++){
+
+    if($data->product[$i]->name==$id){
+  unset($data->product[$i]);
+  echo" product ". $_POST['name'] . " has been deleted sucsessfully!!";
+    header('Refresh:3;url=test.php');//new
+    break;
+  }
+else{
+    echo" the product that you are trying to delete doesnt exsist in this folder!!";
+    header('Refresh:3;url=test.php');//new
+      break;
+}
+
+
+}//end of for loop.
+file_put_contents($filename,$data->saveXML());
+
+}// end of function delete.
+delete($_POST['name']);
+
+
+
+    die;//new
+}// for this  if(file_exists('pro.xml').
+else{
+    echo" the file you are trying to delete from doesnt exsist!!";
+}
+}// for this    if(count($errors) == 0).
+}// if(isset($_POST['remove']).
+ ?>
+
+<!-- =============    end of deletion from xml file    ============= -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,7 +169,7 @@ foreach ($xml->oder as $ftpxml) {
 
 <?php
     echo '<td><a href="backStoreOrderProfile.php" ><button class="btn Edit" id="btn" input value="Check" type=submit > Edit </button></a>';
-    echo '<td><button class="btn Delete" id="btn" input value="Check" type=submit > Delete</button></td>';
+    echo '<td><button class="btn Delete" id="btn" name="remove" input value="Check" type=submit > Delete </button></td>';
 ?>
 
 <?php
@@ -117,7 +183,13 @@ foreach ($xml->oder as $ftpxml) {
 <!-- javascript -->
 <script src="js/backStoreOrderList.js"></script>
 
+<script>
+  function remove() {
+  var myobj = document.getElementById("demo");
+  
+}
 
+</script>
 
 </body>
 
