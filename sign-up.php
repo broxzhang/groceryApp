@@ -91,7 +91,7 @@ if (isset($_POST['signup'])) {
             $xml->save('users.xml');
 
             echo " user  \"" . $_POST['username'] . " \" has been added sucsessfully!!";
-            header('Refresh:5;url=userLogNew.php');
+            header('Refresh:4;url=log.php');
             //die;
         } // for if.
         else { //new
@@ -132,7 +132,7 @@ if (isset($_POST['signup'])) {
 
             echo " new users file has been added, and<br>"; //new
             echo " user  \"" . $_POST['username'] . " \" has been added sucsessfully!!";
-            header('Refresh:5;url=userLogNew.php'); //new
+            header('Refresh:4;url=log.php'); //new
             // die;//new
         } //new for else.
     }
