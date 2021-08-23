@@ -44,6 +44,7 @@ if (isset($_POST['login'])) {
                     $password = $_POST['password'];
                     $_SESSION['username'] = "Admin " . $username;
                     header('Refresh:1;url=backstoreMain.php?logged');
+                    
                     die;
                 }
             } //end of for loop.
