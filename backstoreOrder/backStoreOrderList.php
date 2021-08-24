@@ -17,7 +17,7 @@
 
 
     <div class="navbar">
-        <a href="index.html">Home</a>
+        <a href="index.php">Home</a>
         <a href="product-list.html">Product List</a>
         <a href="backStoreUserList.html">User List</a>
         <a href="backStoreOrderList.php">Order List</a>
