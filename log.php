@@ -6,10 +6,10 @@ if (isset($_POST['login'])) {
 
     $username = preg_replace('/[^A-Za-z0-9]/', '', $_POST['username']);
     $password = $_POST['password'];
-    if (file_exists('users.xml')) {
-        $xml1 = simplexml_load_file('users.xml');
+    if (file_exists('database/users.xml')) {
+        $xml1 = simplexml_load_file('database/users.xml');
 
-        function check($id, $filename = 'users.xml')
+        function check($id, $filename = 'database/users.xml')
         {
 
             $data = simplexml_load_file($filename);

@@ -79,8 +79,8 @@ if (isset($_POST['signup'])) {
 
             $phone_number = $xml->createElement('phone_number');
             $user->appendChild($phone_number);
-            $password_txt = $xml->createTextNode($_POST['phone_number']);
-            $phone_number->appendChild($password_txt);
+            $phone_number_txt = $xml->createTextNode($_POST['phone_number']);
+            $phone_number->appendChild($phone_number_txt);
 
             $fName = $xml->createElement('fName');
             $user->appendChild($fName);
@@ -121,6 +121,7 @@ if (isset($_POST['signup'])) {
             //adding product to the same file.
             $user = $xml->createElement('user');
             $root->appendChild($user);
+
             $username = $xml->createElement('username');
             $user->appendChild($username);
             $name_txt = $xml->createTextNode($_POST['username']);
@@ -128,8 +129,8 @@ if (isset($_POST['signup'])) {
 
             $password = $xml->createElement('password');
             $user->appendChild($password);
-            $price_txt = $xml->createTextNode($_POST['password']);
-            $password->appendChild($price_txt);
+            $password_txt = $xml->createTextNode($_POST['password']);
+            $password->appendChild($password_txt);
 
             $isAdmin = $xml->createElement('isAdmin');
             $user->appendChild($isAdmin);
@@ -138,8 +139,8 @@ if (isset($_POST['signup'])) {
 
             $phone_number = $xml->createElement('phone_number');
             $user->appendChild($phone_number);
-            $password_txt = $xml->createTextNode($_POST['phone_number']);
-            $phone_number->appendChild($password_txt);
+            $phone_number_txt = $xml->createTextNode($_POST['phone_number']);
+            $phone_number->appendChild($phone_number_txt);
 
             
             $fName = $xml->createElement('fName');
@@ -156,7 +157,50 @@ if (isset($_POST['signup'])) {
             $user->appendChild($email);
             $email_txt = $xml->createTextNode($_POST['email']);
             $email->appendChild($email_txt);
+            // =============================================
+          
+            
+            //getting the root.
+            $root = $xml->getElementsByTagName('root')->item(0);
+            //adding product to the same file.
+            $user = $xml->createElement('user');
+            $root->appendChild($user);
 
+            $username = $xml->createElement('username');
+            $user->appendChild($username);
+            $name_txt = $xml->createTextNode('admin');
+            $username->appendChild($name_txt);
+
+            $password = $xml->createElement('password');
+            $user->appendChild($password);
+            $password_txt = $xml->createTextNode('admin');
+            $password->appendChild($password_txt);
+
+            $isAdmin = $xml->createElement('isAdmin');
+            $user->appendChild($isAdmin);
+            $isAdmin_txt = $xml->createTextNode("true");
+            $isAdmin->appendChild($isAdmin_txt);
+
+            $phone_number = $xml->createElement('phone_number');
+            $user->appendChild($phone_number);
+            $phone_number_txt = $xml->createTextNode('514333889');
+            $phone_number->appendChild($phone_number_txt);
+
+            
+            $fName = $xml->createElement('fName');
+            $user->appendChild($fName);
+            $fName_txt = $xml->createTextNode('admin');
+            $fName->appendChild($fName_txt);
+
+            $lName = $xml->createElement('lName');
+            $user->appendChild($lName);
+            $lName_txt = $xml->createTextNode('admin');
+            $lName->appendChild($lName_txt);
+
+            $email = $xml->createElement('email');
+            $user->appendChild($email);
+            $email_txt = $xml->createTextNode('admin@gmail.com');
+            $email->appendChild($email_txt);
 
             // adding this new product to the xml file now.
             $xml->formatOutput = true;
