@@ -39,4 +39,4 @@
     <products>fish (qty): 10;</products>
     <totalprice>22</totalprice>
   </order>
-<order><id>122</id><customer>qwe</customer><products>apples</products><totalprice>12</totalprice></order></orderlist>
+<order><id>122</id><customer>qwe</customer><products>apples</products><totalprice>12</totalprice></order><order><id>12</id><customer>dfadsf</customer><products>apples</products><totalprice>111</totalprice></order></orderlist>

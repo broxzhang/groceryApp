@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/backStore.css">
-    <link rel="stylesheet" type="text/css" href="backstoreOrder/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
 
 <body>
@@ -87,7 +87,7 @@
                                     <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
                                     <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
                                 </td>
-                                <?php include('backstoreOrder/edit_delete_modal.php'); ?>
+                                <?php include('edit_delete_modal.php'); ?>
                             </tr>
                         <?php
                         }
@@ -98,9 +98,9 @@
             </div>
         </div>
     </div>
-    <?php include('backstoreOrder/add_modal.php'); ?>
-    <script src="backstoreOrder/jquery.min.js"></script>
-    <script src="backstoreOrder/bootstrap/js/bootstrap.min.js"></script>
+    <?php include('add_modal.php'); ?>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

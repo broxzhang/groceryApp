@@ -18,7 +18,7 @@
     <a href="index.html">Home</a>
     <a href="backStoreProductList.php">Product List</a>
     <a href="backStoreUserList.html">User List</a>
-    <a href="backStoreOrderList.php">Order List</a>
+    <a href="backstoreOrder/backStoreOrderList.php">Order List</a>
     <div class="subnav">
       <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
