@@ -19,7 +19,7 @@
 	unset($orderlist->order[$index]);
 	file_put_contents('database/orderlist.xml', $orderlist->asXML());
 
-	$_SESSION['message'] = 'Member deleted successfully';
+	$_SESSION['message'] = 'Order deleted successfully';
 	header('location: backStoreOrderList.php');
 
 ?>
