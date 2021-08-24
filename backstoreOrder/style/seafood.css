@@ -1,0 +1,108 @@
+html body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.seafood-container {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-flow: column;
+}
+
+.card {
+  border: none;
+}
+
+.card-title {
+  height: 3rem;
+}
+
+.main-container {
+  margin-top: 20px;
+  max-width: 1196px;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: row;
+}
+
+.menu-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.products-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  transition: width 1s ease;
+}
+
+.fa-shopping-cart:hover {
+  width: 300px;
+  color: red;
+}
+
+.product {
+  border-top: 1px solid rgb(37, 37, 37);
+  border-bottom: 1px solid rgb(37, 37, 37);
+  width: 240px;
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.product-img {
+  margin: 20px 0 5px 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.img-container {
+  display: flex;
+  flex: 2;
+}
+
+.product-info-container {
+  display: flex;
+  flex-flow: column;
+  flex: 3;
+  justify-content: start;
+}
+
+.filter {
+  font-weight: 100;
+  color: black;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.filter:hover {
+  margin-left: 5px;
+  color: red;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-flow: column;
+  }
+}

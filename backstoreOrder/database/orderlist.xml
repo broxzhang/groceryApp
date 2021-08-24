@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<orderlist>
+
+  <order id="11">
+    <id>12</id>
+    <customer>sddad</customer>
+    <products>apples</products>
+    <totalprice>12</totalprice>
+  </order>
+
+  <order id="1">
+    <id>1</id>
+    <customer>jim</customer>
+    <products>
+     Plums (qty): 10;
+      Avocado (qty): 12;
+    </products>
+    <totalprice>23</totalprice>
+  </order>
+
+  
+
+  <order id="3">
+    <id>3</id>
+    <customer>jane</customer>
+    <products>
+      Plums (qty): 10;
+      Avocado (qty): 12;
+    </products>
+    <totalprice>23</totalprice>
+  </order>
+
+
+
+
+  <order id="11">
+    <id>11</id>
+    <customer>dfadsf</customer>
+    <products>fish (qty): 10;</products>
+    <totalprice>22</totalprice>
+  </order>
+<order><id>122</id><customer>qwe</customer><products>apples</products><totalprice>12</totalprice></order></orderlist>

@@ -1,0 +1,365 @@
+*{
+   margin: 0;
+   padding: 0;
+ }
+ html,body{
+    background-color: white;
+    height: 100%;
+ }
+ #content2{
+ min-height: 100%;
+ }
+ #sami{
+ overflow: auto;
+ padding-bottom: 100px;
+ }
+ /* Create two equal columns that floats next to each other */
+ .column {
+    float: left;
+    width:23%;
+    padding: 10px;
+    text-align:left;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+      
+    content: "";
+    display: table;
+    clear: both;
+  }
+ .parallax{ 
+    
+    height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+ }
+ header{
+    
+ font-size: small;
+  background-image: url("/img/tomatoes3.jpg") ;
+    margin-top:120px;
+    background-size:contain;
+    border-radius: 25px;
+ }
+ .footer {
+    /* margin-top: -20px; */
+    background-color: #2184c2;
+    color: whitesmoke;
+    text-align: center;
+    flex-shrink:inherit;
+    margin-bottom: 0px;
+  }
+ 
+ h1{
+   
+  background: rgba (0,0, 0, 0.5);
+    text-align: center;
+    color: whitesmoke;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 40px;
+    font-family: fantasy;
+    letter-spacing: 15px;
+ }
+ a:link {
+    text-decoration: none;
+  }
+   h3{
+      
+     color: azure;
+   }
+   #end{
+    text-align:left ;
+    color: #fff;
+  }
+ 
+ /* .page-title{
+    background: rgba (0,0, 0, 0.5);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 50px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+ } */
+ #sticky{
+    position:fixed;
+    top:0px;
+    width: 100%;
+    z-index: 3;
+ 
+ }
+ .menu{
+    background: #477cdd;
+    text-align: center;
+ }
+ .menu-ul{
+    margin: 0;
+    padding: 0;
+    display: inline;
+ }
+ .menu-ul li{
+    float: left;
+    padding: 25px 25px 0px 25px;
+    /* display: inline-block; */
+    list-style: none;
+    font-size: 17px;
+    
+ }
+ .a-menu{
+ text-decoration: none;
+ color: white;
+ }
+ .menu-ul li:hover{
+    background: none;
+    transform: scale(1.1);
+ 
+ }
+ 
+ /* .search-box{
+    border: 1px  solid white;
+ border-radius: 50px;
+ background: white;
+ width: max-content;
+ display: inline-block;
+ margin: 8px;
+ }
+ .search-box:hover{
+    box-shadow: white;
+    border: 1px solid #5b8cd5;
+ 
+ } */
+ /* .search-input{
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 15px  0 0 10px;
+    
+ } */
+ 
+ i{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+ }
+ button{
+    
+    background: none;
+    border: none;
+    outline: none;
+ 
+ }
+ /* The subnavigation menu */
+ .subnav {
+    z-index: 1;
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0;
+    background-color: none;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color:none;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:white;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    background-color: transparent;
+    float: left;
+    color: #2691d9;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: white;
+    color:rgb(45, 214, 236);
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display:grid;
+  
+  }
+  
+ 
+  .container{
+      margin: 2px 50px 50px 20px;
+      width: 100%;
+      text-align:center;
+  }
+  .catgegories{
+  
+      width:350px;
+      margin: 9px;
+      border: 2px solid #eff1f1;
+      border-radius:25px 25px 25px 25px;
+      display:inline-block;
+  }
+  .catgegories:hover{
+      box-shadow: 0 0 10px 4px #a2bae7;
+ 
+  }
+  .item-image{
+     align-items: flex-start;
+      height:70px;
+      width: 70px;
+      border-radius: 0 0 0 0;
+      padding: 10px;
+     
+      
+    }
+ 
+ 
+  /* ======product=description===================== */
+ 
+  .product-info-container {
+    display:flex;
+    flex-flow: column;
+    flex: 3;
+    justify-content: start;
+ }
+ 
+ .product-des-container {
+    text-align: left;
+    height: 30px;
+    width: 500px;
+    overflow:hidden;
+    transition: height .6s ease;
+ }
+ 
+ .product-des-container:hover {
+    height:100px;
+ }
+ 
+ .ingredients-container {
+    height: 50px;
+    width: 500px;
+    overflow: hidden;
+    transition: height .6s ease;
+ }
+ 
+ .ingredients-container:hover {
+    height: 100px;
+ }
+ .iamge-title{
+    text-align: left;
+    font-weight: bolder;
+    color: red;
+ }
+ .iamge-title h5{
+    color: black;
+    text-align:center;
+ }
+ .inputAndTotal{
+    text-align:left;
+ }/*====================================description stuff=======================================*/
+    /* Popup container - can be anything you want */
+    .popup {
+      
+       position: relative;
+       display:inline-block;
+       cursor:crosshair;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+     }
+     
+     /* The actual popup */
+     .popup .popuptext {
+       visibility: hidden;
+       width: 310px;
+       background-color: rgb(166, 219, 219);
+       color: #fff;
+       text-align:left;
+       border-radius: 6px;
+       padding: 8px 8px;
+       position:absolute;
+       z-index: 1;
+       bottom: 125%;
+       left: 50%;
+       margin-left: -190px;
+     }
+     
+     /* Popup arrow */
+     .popup .popuptext::after {
+       content: "";
+       position: absolute;
+       top: 100%;
+       left: 50%;
+       margin-left: -5px;
+       border-width: 5px;
+       border-style: solid;
+       border-color: #555 transparent transparent transparent;
+     }
+     
+     /* Toggle this class - hide and show the popup */
+     .popup .show {
+       visibility: visible;
+       -webkit-animation: fadeIn 1s;
+       animation: fadeIn 1s;
+     }
+     
+     /* Add animation (fade in the popup)
+     @-webkit-keyframes fadeIn {
+   
+       from {opacity: 0;} 
+       to {opacity: 1;}
+     } */
+ #input,#input2,#input3{
+    width: 50px;
+    background-color: rgb(233, 238, 243);
+    align-self:flex-start;
+    border-radius:25px 25px 25px 25px;
+    text-align: center;
+ }
+ #totalPrice,#totalPrice2, #totalPrice3 ,#totalPrice4{
+    width: 50px;
+    background-color: rgb(233, 238, 243);
+    border-radius:25px 25px 25px 25px;
+    text-align: left;
+ }
+ .Quantity-title{
+    text-align: left;
+ }/* ======gallery===================== */
+ .gallery{
+    margin: 10px 50px;
+ }
+ .gallery img{
+    width: 210px;
+    padding: 5px;
+   filter: grayscale(40%);
+   transition: 1s;
+ }
+ .gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.6);
+ }
