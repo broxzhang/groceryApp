@@ -7,8 +7,9 @@ if (isset($_POST['signup'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $c_password = $_POST['c_password'];
-    // $street_No = $_POST['street_No'];
-    $postal_code = $_POST['postal_code'];
+    $fName = $_POST['fName'];
+    $lName = $_POST['lName'];
+    $phone_number = $_POST['phone_number'];
     $isAdmin = false;
     if ($username == '') {
         $errors[] = 'Username is blank';
@@ -23,49 +24,38 @@ if (isset($_POST['signup'])) {
         $errors[] = 'Passwords do not match';
     }
 
-    if ($postal_code == '') {
-        $errors[] = 'Postal Code is blank';
+    if ($phone_number == '') {
+        $errors[] = 'phone numberis blank';
+    }
+    if ($fName == '') {
+        $errors[] = 'First Nameis blank';
+    }
+    if ($lName == '') {
+        $errors[] = 'Last Name is blank';
     }
 
-    if (file_exists('users.xml')) {
+    if (file_exists('database/users.xml')) {
 
-        $xml1 = simplexml_load_file('users.xml');
+        $xml1 = simplexml_load_file('database/users.xml');
 
         // function check($id,$filename='users.xml'){
 
-        $data = simplexml_load_file('users.xml');
+        $data = simplexml_load_file('database/users.xml');
         for ($i = 0, $length = count($data->user); $i < $length; $i++) {
 
             if ($data->user[$i]->username == $_POST['username']) {
                 $errors[] = 'user name is used';
-                // $isused=true;
-
-                // =====================================================
-                // echo" user name \" ". $_POST['username'] . " \" is already used!! <br>
-                //  Please try to sign up with a different user name";
-                //   $errors[] = 'is already used!!';
-                //   header('Refresh:4;url=signupTest.php');
-                //  die;
-                // ====================================
-                // break;
+               
             }
         } //end of for loop.
-
-        // }// end of function delete.
-        // check($_POST['username']);
-        //die;//new
     } // for this  if(file_exists('pro.xml').
 
-    // if($isused){
-    //     $errors[] = 'user name is used';
-    // }
-
     if (count($errors) == 0) {
-        if (file_exists('users.xml')) { //new
+        if (file_exists('database/users.xml')) { //new
 
             //open an already exsisted xml file
             $xml = new DOMDocument();
-            $xml->load('users.xml');
+            $xml->load('database/users.xml');
             //getting the root.
             $root = $xml->getElementsByTagName('root')->item(0);
             //adding product to the same file.
@@ -86,12 +76,33 @@ if (isset($_POST['signup'])) {
             $isAdmin_txt = $xml->createTextNode("false");
             $isAdmin->appendChild($isAdmin_txt);
 
+
+            $phone_number = $xml->createElement('phone_number');
+            $user->appendChild($phone_number);
+            $password_txt = $xml->createTextNode($_POST['phone_number']);
+            $phone_number->appendChild($password_txt);
+
+            $fName = $xml->createElement('fName');
+            $user->appendChild($fName);
+            $fName_txt = $xml->createTextNode($_POST['fName']);
+            $fName->appendChild($fName_txt);
+
+            $lName = $xml->createElement('lName');
+            $user->appendChild($lName);
+            $lName_txt = $xml->createTextNode($_POST['lName']);
+            $lName->appendChild($lName_txt);
+
+            $email = $xml->createElement('email');
+            $user->appendChild($email);
+            $email_txt = $xml->createTextNode($_POST['email']);
+            $email->appendChild($email_txt);
+
             // adding this new product to the xml file now.
             $xml->formatOutput = true;
-            $xml->save('users.xml');
+            $xml->save('database/users.xml');
 
             echo " user  \"" . $_POST['username'] . " \" has been added sucsessfully!!";
-            header('Refresh:4;url=log.php');
+            header('Refresh:3;url=log.php');
             //die;
         } // for if.
         else { //new
@@ -100,11 +111,11 @@ if (isset($_POST['signup'])) {
             $root = $xml->createElement('root');
             $xml->appendChild($root);
             $xml->formatOutput = true;
-            $xml->save('users.xml');
+            $xml->save('database/users.xml');
 
             //open an already exsisted xml file
             $xml = new DOMDocument();
-            $xml->load('users.xml');
+            $xml->load('database/users.xml');
             //getting the root.
             $root = $xml->getElementsByTagName('root')->item(0);
             //adding product to the same file.
@@ -125,15 +136,37 @@ if (isset($_POST['signup'])) {
             $isAdmin_txt = $xml->createTextNode("false");
             $isAdmin->appendChild($isAdmin_txt);
 
+            $phone_number = $xml->createElement('phone_number');
+            $user->appendChild($phone_number);
+            $password_txt = $xml->createTextNode($_POST['phone_number']);
+            $phone_number->appendChild($password_txt);
+
+            
+            $fName = $xml->createElement('fName');
+            $user->appendChild($fName);
+            $fName_txt = $xml->createTextNode($_POST['fName']);
+            $fName->appendChild($fName_txt);
+
+            $lName = $xml->createElement('lName');
+            $user->appendChild($lName);
+            $lName_txt = $xml->createTextNode($_POST['lName']);
+            $lName->appendChild($lName_txt);
+
+            $email = $xml->createElement('email');
+            $user->appendChild($email);
+            $email_txt = $xml->createTextNode($_POST['email']);
+            $email->appendChild($email_txt);
+
+
             // adding this new product to the xml file now.
             $xml->formatOutput = true;
-            $xml->save('users.xml');
+            $xml->save('database/users.xml');
 
 
             echo " new users file has been added, and<br>"; //new
             echo " user  \"" . $_POST['username'] . " \" has been added sucsessfully!!";
-            header('Refresh:4;url=log.php'); //new
-            // die;//new
+            header('Refresh:3;url=log.php'); //new
+            
         } //new for else.
     }
 }
@@ -149,7 +182,7 @@ if (isset($_POST['signup'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>CS Store</title>
-    <!-- <link rel="stylesheet" type="text/css" href="style/logStyle.css" /> -->
+   
 </head>
 
 <body>
@@ -232,35 +265,41 @@ if (isset($_POST['signup'])) {
 
             ?>
             <div class="txt_field">
-                <!-- <input type="text" required> -->
+           
+                <input type="text" required name="fName" size="20" />
+                <label>First Name</label>
+            </div>
+            <div class="txt_field">
+            
+                <input type="text" required name="lName" size="20" />
+                <label>Last Name</label>
+            </div>
+            <div class="txt_field">
+           
                 <input type="text" required name="username" size="20" />
-                <label>Username</label>
+                <label>User Name</label>
             </div>
             <div class="txt_field">
+           
                 <input type="password" required name="password" size="20" />
-                <!-- <input type="Password" required> -->
-                <label>Password</label>
+                <label>Password </label>
             </div>
+           
             <div class="txt_field">
-                <!-- <input type="text" required> -->
                 <input type="password" required name="c_password" size="20" />
                 <label>Confirm password</label>
             </div>
             <div class="txt_field">
-                <!-- <input type="text" required> -->
-                <input type="text" required name="email" size="20" />
+                <input type="email" required name="email" size="20" />
                 <label>Email</label>
             </div>
             <div class="txt_field">
-                <!-- <input type="text" required> -->
-                <input type="text" required name="postal_code" size="20" />
-                <label>Postal Code</label>
+                <input type="number" required name="phone_number" size="20" />
+                <label>Phone Number</label>
             </div>
 
 
-            <!-- <a href="home.php"> -->
             <p><input type="submit" value="Sign up" name="signup" /></p>
-            <!-- <a href="up.php"><input type="button" value="Login"> </a><br> -->
 
             <div class="pass"><a href="index.php">home</a></div>
         </form>
@@ -517,13 +556,14 @@ if (isset($_POST['signup'])) {
             background-Color: rgba(255, 255, 255, 0.5);
             border-radius: 30px;
             box-shadow: 90px 40px 15px rgba(96, 111, 124, 0.05);
+           
         }
 
         .center h1 {
 
             color: #2184c2;
             text-align: center;
-            padding: 20px 0;
+            padding: 5px 0;
             border-bottom: 1px solid silver;
         }
 
@@ -536,7 +576,8 @@ if (isset($_POST['signup'])) {
         form .txt_field {
             position: relative;
             border-bottom: 2px solid #adadad;
-            margin: 20px 0;
+            margin: 14px 0;
+            text-align: center;
         }
 
         .txt_field input {
@@ -546,8 +587,10 @@ if (isset($_POST['signup'])) {
             font-size: 16px;
             border: none;
             background: none;
+            background-color: none;
             outline: none;
             text-align: center;
+            
         }
 
         .txt_field label {
@@ -559,6 +602,8 @@ if (isset($_POST['signup'])) {
             font-size: 23px;
             pointer-events: none;
             transition: .3s;
+            text-align: center;
+            
         }
 
         .txt_field span::before {
