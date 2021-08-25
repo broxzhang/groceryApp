@@ -71,6 +71,7 @@ session_start();
                 ?>
                 <table class="table table-bordered table-striped" style="margin-top:20px;">
                     <thead>
+                        <th>Product ID</th>
                         <th>Product Name</th>
                         <th>Aisle</th>
                         <th>Price</th>
@@ -85,15 +86,14 @@ session_start();
                         foreach ($xml->products->product as $row) {
                         ?>
                             <tr>
-
-
+                                <td><?php echo $row->id; ?></td>
                                 <td><?php echo $row->productName; ?></td>
                                 <td><?php echo $row->aisles; ?></td>
                                 <td><?php echo $row->price; ?></td>
 
                                 <td>
-                                    <a href="#edit_<?php echo $row->productName; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
-                                    <a href="#delete_<?php echo $row->productName; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+                                    <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+                                    <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
                                 </td>
                                 <?php include('edit_delete_modal.php'); ?>
                             </tr>
