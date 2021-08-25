@@ -68,8 +68,8 @@
             </ul>
             <div>
                 <?php
-                echo $_SESSION["username"] ? $_SESSION["username"] : "";
-                echo $_SESSION["adminname"] ? $_SESSION["adminname"] : "";
+                echo isset($_SESSION["username"]) ? $_SESSION["username"] : "";
+                echo isset($_SESSION["adminname"]) ? $_SESSION["adminname"] : "";
                 ?>
                 <a type="button" class="btn btn-primary" href="shoppingcart.php">
                     <i class="fas fa-shopping-cart" style="overflow: unset;"></i>
