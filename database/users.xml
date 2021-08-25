@@ -1,14 +1,6 @@
 <?xml version="1.0"?>
 <root>
-  <user>
-    <username>caizhangbin</username>
-    <password>1</password>
-    <isAdmin>false</isAdmin>
-    <phone_number>2044303900</phone_number>
-    <fName>Zhangbin</fName>
-    <lName>Cai</lName>
-    <email>caizhangbin@gmail.com</email>
-  </user>
+  
   <user>
     <username>admin</username>
     <password>admin</password>
@@ -18,4 +10,4 @@
     <lName>admin</lName>
     <email>admin@gmail.com</email>
   </user>
-</root>
+<user><username>a</username><password>a</password><isAdmin>false</isAdmin><phone_number>2044303900</phone_number><fName>Zhangbin</fName><lName>Cai</lName><email>caizhangbin@gmail.com</email></user><user><username>caizhangbin</username><password>1</password><isAdmin>false</isAdmin><fName>Zhangbin</fName><lName>Cai</lName><phone_number>2044303900</phone_number><email>caizhangbin@gmail.com</email></user></root>

@@ -49,11 +49,13 @@
                         <?php
                         if (isset($_SESSION['username'])) {
                             echo "<a class='dropdown-item' href='logout.php'>Logout</a>";
+                            // echo "<a class='nav-link' href='index.php'>Home <span class='sr-only'>(current)</span></a>";
                         } else if (isset($_SESSION['adminname'])) {
                             // modify here if you change it to backstoreMain.html
                             echo '<a class="dropdown-item" href="backstoreMain.php">Back Store</a>';
+                            echo "<a class='dropdown-item' href='logout.php'>Logout</a>";
                         } else {
-                            echo '<a class="dropdown-item" href="log.php">User login</a>';
+                            echo '<a class="dropdown-item" href="log.php">Login</a>';
                         }
                         ?>
                     </div>

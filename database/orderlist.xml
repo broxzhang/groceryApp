@@ -10,11 +10,8 @@
 
   <order id="1">
     <id>1</id>
-    <customer>jim</customer>
-    <products>
-     Plums (qty): 10;
-      Avocado (qty): 12;
-    </products>
+    <customer>jimff</customer>
+    <products>     Plums (qty): 10;      Avocado (qty): 12;    </products>
     <totalprice>23</totalprice>
   </order>
 

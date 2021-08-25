@@ -81,56 +81,7 @@ if (isset($_POST['login'])) {
         <!-- <div id="sami"> -->
 
 
-        <div class="parallax">
-
-            <div class="menu" id="sticky">
-                <ul class="menu-ul">
-                    <a href="index.php" class="a-menu">
-
-                        <li> <img id="test" src="img/home.png"> Home </li>
-
-                    </a>
-                    <a href="#" class="a-menu">
-
-                        <li>
-                            <div class="subnav">
-                                <button class="subnavbtn"> Aisles <img id="test" src="img/arrow_down.png"><i class="fa fa-caret-down"></i></button>
-
-                                <div class="subnav-content">
-                                    <a href="FruitsPage2.html">Fruit</a>
-                                    <a href="VegetablesPage2.php">Vegetables</a>
-                                    <a href="BeveragesPage2.html">Beverages</a>
-                                    <a href="Dairy&EggsP2.html">Dairy & Eggs</a>
-                                    <a href="seafood.html"> Seafood</a>
-                                    <a href="SnacksPage2.html"> Snacks </a>
-                                </div>
-                            </div>
-                    </a>
-
-                    <a href="#" class="a-menu">
-
-                        <li>
-                            <div class="subnav">
-                                <button class="subnavbtn"> Login <img id="test" src="img/login.png"><i class="fa fa-caret-down"></i></button>
-                                <div class="subnav-content">
-                                    <a href="log.php">User login</a>
-                                    <a href="employees-log.php">employees login</a>
-
-                                </div>
-                            </div>
-                    </a>
-                    <a href="shoppingcart.html" class="a-menu">
-                        <li><img id="test" src="img/shopping_cart.png">Shopping cart</li>
-
-                    </a>
-                    <a href="sign-up.php" class="a-menu">
-                        <li> <img id="test" src="img/sign up.png"> Sign Up</li>
-
-                    </a>
-                </ul>
-
-            </div>
-        </div>
+        
     </div>
     <div class="center">
         <h1>Login</h1>
@@ -154,58 +105,11 @@ if (isset($_POST['login'])) {
 
             <p><input type="submit" value="Login" name="login" /></p>
             <div class="pass"><a href="sign-up.php">Sign up</a></div>
+            <div class="pass"><a href="index.php">home</a></div>
         </form>
     </div>
-    <!-- =================footer=========================== -->
-    <footer class="footer">
-        <div class="row">
-            <div class="column" style="background-color:none;">
-                <h3>Get to Know Us</h3>
-                <p>
-                    <a href="VegetablesPage2.html"> Supplier Relations</a><br><br>
-                    <a href="VegetablesPage2.html"> Corporate Site</a><br><br>
-                    <a href="aboutMission.html"> About Mission<br> <br></a>
-                    <a href="ContactUs.html"> Contact Us</a><br><br>
-                </p>
-            </div>
-            <div class="column" style="background-color:none;">
-                <h3>What we offer?</h3>
-                <p>
-                    <a href="VegetablesPage2.html"> Gift Card<br><br>
-                        <a href="VegetablesPage2.html"> Online grocery<br><br>
-                            <a href="VegetablesPage2.html"> Our partners<br><br>
-                                <a href="VegetablesPage2.html"> Our Private Brands
-                </p>
-            </div>
-            <div class="column" style="background-color:none;">
-                <h3>My concordia</h3>
-                <p>
-                    <a href="VegetablesPage2.html"> Products to Discover<br><br>
-                        <a href="VegetablesPage2.html"> Online Grocery Services<br><br>
-                            <a href="VegetablesPage2.html"> Flyer<br><br>
-                                <a href="VegetablesPage2.html"> Coupons
-                </p>
-            </div>
-            <div class="column" style="background-color:none;">
-                <h3>Like us on social media</h3>
-                <p>
-                    <a href="VegetablesPage2.html"> <img id="test" src="img/facebook.png"> Facebook<br>
-                        <a href="VegetablesPage2.html"> <img id="test" src="img/instagram.png"> Instagram<br>
-                            <a href="VegetablesPage2.html"><img id="test" src="img/twitter.png"> twitter<br>
-                                <a href="VegetablesPage2.html"> <img id="test" src="img/tiktok.png"> tiktok
-                </p>
-            </div>
-
-        </div>
-        <div id="end">
-            &nbsp;&nbsp;&nbsp Newsletter<br>
-            &nbsp;&nbsp;&nbsp Sign up to Concordia.ca to receive offers and much more! Learn more
-            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp; All rights resrved <img id="test" src="img/copyrights.png"> <br><br>
-
-            </p>
-        </div>
-    </footer>
+    
+     
     <style>
         * {
             margin: 0;
