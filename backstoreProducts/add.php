@@ -5,7 +5,6 @@
 		$productslist = simplexml_load_file('../database/products.xml');
 		$products = $productslist->products;
 		$product = $products->addChild('product');
-		$product->addChild('id', $_POST['id']);
 		$product->addChild('productName', $_POST['productName']);
 		$product->addChild('aisles', $_POST['aisles']);
 		$product->addChild('price', $_POST['price']);
