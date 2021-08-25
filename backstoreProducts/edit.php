@@ -3,7 +3,8 @@
 	if(isset($_POST['edit'])){
 		$productslist = simplexml_load_file('../database/products.xml');
 		foreach($productslist->products->product as $product){
-			if($product->productName == $_POST['productName']{
+			if($product->id == $_POST['id']){				
+				$product->productName = $_POST['productName'];
 				$product->aisles = $_POST['aisles'];
 				$product->price = $_POST['price'];
 				$product->category = $_POST['category'];
