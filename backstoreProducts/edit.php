@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(isset($_POST['edit'])){
-		$productslist = simplexml_load_file('database/products.xml');
+		$productslist = simplexml_load_file('../database/products.xml');
 		foreach($productslist->product as $product){
 			if($product->id == $_POST['id'] && $order->customer = $_POST['id']){
 				$product->productName = $_POST['productName'];
@@ -16,7 +16,7 @@
 			}
 		}
 
-		file_put_contents('database/products.xml', $productslist->asXML());
+		file_put_contents('../database/products.xml', $productslist->asXML());
 		$_SESSION['message'] = 'Product updated successfully';
 		header('location: backStoreProductsList.php');
 	}
