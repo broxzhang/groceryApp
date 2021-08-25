@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -33,6 +37,14 @@
 
 
         <a href="">Contact</a>
+
+        <?php
+        if (isset($_SESSION['adminname'])) {
+            $admin2 = $_SESSION['adminname'];
+            echo "<h2 align='left'> <font color= #red font face='mambo' size='5pt'>
+    &nbsp;&nbsp;&nbsp;&nbsp; $admin2 is logged in</font> </h2>";
+        }
+        ?>
     </div>
 
 
@@ -48,7 +60,7 @@
             <div class="col-sm-8 col-sm-offset-2">
                 <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New</a>
                 <?php
-                session_start();
+                
                 if (isset($_SESSION['message'])) {
                 ?>
                     <div class="alert alert-info text-center" style="margin-top:20px;">
