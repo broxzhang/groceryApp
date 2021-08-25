@@ -70,7 +70,7 @@
                     <tbody>
                         <?php
                         //load xml file
-                        $xml = simplexml_load_file('../database/products.xml');
+                        $xml = simplexml_load_file('../database/products.xml') or die('cannot load xml');
 
                         foreach ($xml->products->product as $row) {
                         ?>
