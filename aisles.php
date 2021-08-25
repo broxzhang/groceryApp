@@ -41,7 +41,7 @@
                 // echo $parameter;
                 $xml = simplexml_load_file('database/products.xml') or die('cannot load xml');
                 // $items = $xml->products;
-                foreach ($xml->products->product as $item) {
+                foreach ($xml->product as $item) {
                     $itemId = $item['id'];
 
                     if ($item->aisles == $parameter) {

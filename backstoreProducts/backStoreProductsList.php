@@ -83,7 +83,7 @@ session_start();
                         //load xml file
                         $xml = simplexml_load_file('../database/products.xml') or die('cannot load xml');
 
-                        foreach ($xml->products->product as $row) {
+                        foreach ($xml->product as $row) {
                         ?>
                             <tr>
                                 <td><?php echo $row->id; ?></td>

@@ -61,7 +61,7 @@
                                         $total = 0;
                                         $itemStr = '';
                                         $xml = simplexml_load_file('database/products.xml') or die('cannot load xml');
-                                        foreach ($xml->products->product as $item) {
+                                        foreach ($xml->product as $item) {
                                             foreach ($ids as $key => $value) {
                                                 if ($item['id'] == $key) {
                                                     echo '<tr>
