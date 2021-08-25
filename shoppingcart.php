@@ -74,7 +74,7 @@
                                                             </tr>';
 
                                                     $total += $item->price * $value;
-                                                    $itemStr += $item->productName . ' (qty): ' . $value . ';';
+                                                    $itemStr .= $item->productName . ' (qty): ' . $value . ';';
                                                 }
                                             }
                                         }
@@ -93,7 +93,7 @@
                         <div>QST: <?php echo round($total * .0998, 2) ?></div>
                         <div>Estimated Total: <?php echo round($total * 1.1498, 2) ?></div>
                         <div>
-                            <button class="btn btn-primary" onclick="checkout(<?php echo $_SESSION['username'] ?>,<?php echo $itemStr ?>,<?php echo round($total * 1.1498, 2) ?>)">Check Out</button>
+                            <button class="btn btn-primary" onclick="checkout(<?php echo $_SESSION['username'] ?>,'<?php echo $itemStr ?>',<?php echo round($total * 1.1498, 2) ?>)">Check Out</button>
                         </div>
                         <div>
                             <a class="btn btn-primary" href="index.php">Continue Shopping</a>
@@ -110,6 +110,7 @@
 </body>
 <script>
     function checkout(username, items, price) {
+        console.log(items);
         let post = {
             customer: username,
             products: items,
@@ -119,7 +120,7 @@
         $.ajax({
             url: "backstoreOrder/add.php",
             type: "post",
-            data: obj,
+            data: post,
             success: function(res) {
                 console.log(res);
             }
