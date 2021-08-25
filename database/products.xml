@@ -2,6 +2,7 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="products.xsd">
     <products>
         <product id='1'>
+            <id>1</id>
             <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
             <aisles>seafood</aisles>
             <price>10.99</price>
