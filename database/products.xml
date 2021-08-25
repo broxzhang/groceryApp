@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="products.xsd">
     <products>
-        <product id='1'>
+        <product id="1">
             <id>1</id>
             <productName>Fresh Canadian Atlantic Salmon Fillet</productName>
             <aisles>seafood</aisles>
-            <price>10.99</price>
+            <price>10</price>
             <category>fish</category>
             <type>fresh</type>
             <avg>7.93</avg>
@@ -13,21 +13,21 @@
             <description>This fresh farmed Atlantic salmon fillet comes from Canada. Farmed salmon is a healthy and nutritious food. It is an oily fish particularly rich in omega 3, which is beneficial for cardiovascular health. It is also a good source of high-quality protein, vitamin D and calcium. Health Canada recommends eating at least two servings of oily fish per week as part of a balanced diet.</description>
             <ingredients>(SALMO SALAR) PROVENANCE: CANADA. METHOD: FARM RAISED, OPEN ENVIRONMENTAQUACULTURE.</ingredients>
         </product>
-        <product id='2'>
+        <product id="2">
             <id>2</id>
             <productName>Crab flavoured pollock flakes</productName>
             <aisles>seafood</aisles>
             <price>8.99</price>
             <category>fish</category>
             <type>fresh</type>
-            <avg />
+            <avg/>
             <photo>img/crab-flavored.jpeg</photo>
             <description>Product Number: 208052</description>
             <ingredients>Ing: POLLOCK, WATER, WHEAT STARCH, SORBITOL, LIQUID EGG-WHITES, SUGAR,POTATO STARCH, MIRIN WINE (RICE, WATER, SAKE YEAST, SUGAR, SALT),SOYBEAN OIL, SALT, NATURAL AND ARTIFICIAL FLAVOUR, POTASSIUM CHLORIDE,SODIUM PHOSPHATES, COLOUR. (GADUS CHALCOGRAMMUS) ORIGIN: NORTHEASTPACIFIC, ALASKA. FISHING TYPE: WILD, TRAWL..***CONTAINS: POLLOCK, WHEAT,EGGS, SOY AND CRAB.</ingredients>
             <onsale>true</onsale>
 
         </product>
-        <product id='3'>
+        <product id="3">
             <id>3</id>
             <productName>Fresh Atlantic Salmon Steak</productName>
             <aisles>seafood</aisles>
@@ -37,7 +37,7 @@
             <avg>8.81</avg>
             <photo>img/fresh_atlantic.jpeg</photo>
         </product>
-        <product id='4'>
+        <product id="4">
             <id>4</id>
             <productName>Pollock and Shrimp Salad</productName>
             <aisles>seafood</aisles>
@@ -47,7 +47,7 @@
             <avg>4.96</avg>
             <photo>img/pollock-and-srimp-salad.jpeg</photo>
         </product>
-        <product id='5'>
+        <product id="5">
             <id>5</id>
             <productName>Salmon Fillet with Rosée Sauce</productName>
             <aisles>seafood</aisles>
@@ -57,7 +57,7 @@
             <avg>9.73</avg>
             <photo>img/Salmon-Fillet-Rosée-Sauce.jpeg</photo>
         </product>
-        <product id='6'>
+        <product id="6">
             <id>6</id>
             <productName>Frozen sliced smoked coho salmon</productName>
             <aisles>seafood</aisles>
@@ -67,7 +67,7 @@
             <avg>21.99</avg>
             <photo>img/Frozen-sliced-smoked-coho-salmon.jpeg</photo>
         </product>
-        <product id='7'>
+        <product id="7">
             <id>7</id>
             <productName>Frozen Uncooked Pacific White Shrimp</productName>
             <aisles>seafood</aisles>
@@ -84,8 +84,8 @@
             <aisles>beverages</aisles>
             <price>1.99</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/cocacola.jpeg</photo>
         </product>
         <product id="9">
@@ -94,8 +94,8 @@
             <aisles>beverages</aisles>
             <price>3.99</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/pepsi.jpg</photo>
         </product>
         <product id="10">
@@ -104,8 +104,8 @@
             <aisles>beverages</aisles>
             <price>3.99</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/orangecrush.JPG</photo>
         </product>
         <product id="11">
@@ -114,8 +114,8 @@
             <aisles>beverages</aisles>
             <price>7.99</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/creamsoda.jpg</photo>
         </product>
         <product id="12">
@@ -124,8 +124,8 @@
             <aisles>beverages</aisles>
             <price>2.50</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/nestea.jpg</photo>
         </product>
         <product id="13">
@@ -134,8 +134,8 @@
             <aisles>beverages</aisles>
             <price>1.50</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/orangejuice.jpg</photo>
         </product>
         <product id="14">
@@ -144,8 +144,8 @@
             <aisles>beverages</aisles>
             <price>1.50</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/pineapplejuice.jpg</photo>
         </product>
         <product id="15">
@@ -154,8 +154,8 @@
             <aisles>beverages</aisles>
             <price>1.99</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/sprite.JPG</photo>
             <onsale>true</onsale>
         </product>
@@ -165,8 +165,8 @@
             <aisles>beverages</aisles>
             <price>1.99</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/water.jpg</photo>
         </product>
         <product id="17">
@@ -175,8 +175,8 @@
             <aisles>beverages</aisles>
             <price>1.50</price>
             <category>soda</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/mangojuice.jpg</photo>
         </product>
 
@@ -186,8 +186,8 @@
             <aisles>fruit</aisles>
             <price>1.23</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/AppleEmpire.webp</photo>
         </product>
         <product id="19">
@@ -196,8 +196,8 @@
             <aisles>fruit</aisles>
             <price>2.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/banana.webp</photo>
         </product>
         <product id="20">
@@ -206,8 +206,8 @@
             <aisles>fruit</aisles>
             <price>1.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/dragonfruit.webp</photo>
             <onsale>true</onsale>
         </product>
@@ -217,8 +217,8 @@
             <aisles>fruit</aisles>
             <price>3.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/Avocado.webp</photo>
         </product>
         <product id="22">
@@ -227,8 +227,8 @@
             <aisles>fruit</aisles>
             <price>1.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/pears.webp</photo>
         </product>
         <product id="23">
@@ -237,8 +237,8 @@
             <aisles>fruit</aisles>
             <price>1.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/peaches.webp</photo>
         </product>
         <product id="24">
@@ -247,8 +247,8 @@
             <aisles>fruit</aisles>
             <price>1.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/oranges.jpg</photo>
         </product>
         <product id="25">
@@ -257,8 +257,8 @@
             <aisles>fruit</aisles>
             <price>1.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/plums.jpg</photo>
             <onsale>true</onsale>
 
@@ -269,8 +269,8 @@
             <aisles>fruit</aisles>
             <price>1.5</price>
             <category>fruit</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/berries.jpg</photo>
         </product>
 
@@ -280,8 +280,8 @@
             <aisles>snack</aisles>
             <price>2.29</price>
             <category>Chips</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/laysstax.jpg</photo>
             <description>Stax® crunchy thin potato chips are the ideal snack to share at the family barbecue and at any party! This product contains 0 trans fat.</description>
         </product>
@@ -291,8 +291,8 @@
             <aisles>snack</aisles>
             <price>3.39</price>
             <category>snack</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/popcorn.jpg</photo>
         </product>
         <product id="29">
@@ -301,8 +301,8 @@
             <aisles>snack</aisles>
             <price>1.39</price>
             <category>snack</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/snickers.jpg</photo>
             <description>
                 Snickers™ bars are made with peanuts, smooth caramel and chewy nougat all coated with milk chocolate. A bar contains 250 calories.
@@ -315,8 +315,8 @@
             <aisles>snack</aisles>
             <price>7.39</price>
             <category>snack</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/nuts.jpg</photo>
             <description>The peanuts, pecans &amp; cashews praline nut mix brings together your three favorite nuts with a sweet and savoury taste!</description>
         </product>
@@ -326,8 +326,8 @@
             <aisles>snack</aisles>
             <price>7.39</price>
             <category>snack</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/oreo.jpg</photo>
             <description>The Original chocolate sandwich cookies family size, Oreo 500g</description>
             <onsale>true</onsale>
@@ -340,8 +340,8 @@
             <aisles>dairy</aisles>
             <price>2.50</price>
             <category>dairy</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/Milk.jpeg</photo>
             <!-- <option value="Whole Milk">Whole Milk</option>
             <option value="10%">10%</option>
@@ -358,9 +358,9 @@
             <aisles>dairy</aisles>
             <price>2.50</price>
             <category>dairy</category>
-            <type />
+            <type/>
             <!-- white/bown -->
-            <avg />
+            <avg/>
             <photo>img/Eggs.jpeg</photo>
             <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
         </product>
@@ -375,8 +375,8 @@
             <option value="GreekV">Greek (Vanilla)</option>
             <option value="GreekH">Greek (Honey)</option>  -->
             <category>dairy</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/Yogurt.jpg</photo>
 
             <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
@@ -391,8 +391,8 @@
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
             <category>dairy</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/Cheese.jpeg</photo>
             <description>All of our Dairy products are produced and packaged by local Canadian farmers. Ideal for customers who stck to an all-organic diet! Price: $2.50/lb</description>
             <onsale>true</onsale>
@@ -410,8 +410,8 @@
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/tomatoes.jpg</photo>
             <description>The best Canadian Tomatoes</description>
             <onsale>true</onsale>
@@ -427,8 +427,8 @@
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/cucumbers.jpg</photo>
             <description>The best Canadian Cucumbers</description>
             <onsale>true</onsale>
@@ -443,8 +443,8 @@
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/BROCCOLI.webp</photo>
             <description>The best Canadian Broccoli</description>
             <onsale>true</onsale>
@@ -460,8 +460,8 @@
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/Onions.jpg</photo>
             <description>The best Canadian Onions</description>
             <onsale>true</onsale>
@@ -474,8 +474,8 @@
             <price>1.38</price>
 
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/carrots.png</photo>
             <description>The best Canadian Carrots</description>
             <onsale>true</onsale>
@@ -487,8 +487,8 @@
             <price>1.39</price>
 
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/corn.jpg</photo>
             <description>The best Canadian Corn</description>
             <onsale>true</onsale>
@@ -500,8 +500,8 @@
             <price>1.40</price>
 
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/letuce.jpg</photo>
             <description>The best Canadian Letuce</description>
             <onsale>true</onsale>
@@ -513,8 +513,8 @@
             <price>1.41</price>
 
             <category>Vegetables</category>
-            <type />
-            <avg />
+            <type/>
+            <avg/>
             <photo>img/MUSHROOMS.jpg</photo>
             <description>The best Canadian Mushrooms</description>
             <onsale>true</onsale>
@@ -522,4 +522,4 @@
 
 
     </products>
-</root>
+<product><id>113</id><productName>apple</productName><aisles>fruit</aisles><price>10</price><category>fresh</category><type>aa</type><avg>3323</avg><photo>non</photo><description>hoihp</description></product></root>
