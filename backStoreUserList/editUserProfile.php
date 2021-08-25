@@ -19,6 +19,7 @@
 	else{
 		$_SESSION['message'] = 'Select a User to edit';
 		header('location: backStoreUserList.php');
+		
 	}
 
 ?>
