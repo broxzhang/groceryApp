@@ -18,9 +18,10 @@
 
     <div class="navbar">
         <a href="../index.php">Home</a>
-        <a href="product-list.html">Product List</a>
+        <a href="backstoreProducts/backStoreProductsList.php">Product List</a>
         <a href="backStoreUserList.php">User List</a>
-        <a href="backStoreOrderList.php">Order List</a>
+        <a href="backstoreOrder/backStoreOrderList.php">Order List</a>
+
         <div class="subnav">
             <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
@@ -38,7 +39,7 @@
 
 
     <!-- editing from here -->
-   
+
 
 
 

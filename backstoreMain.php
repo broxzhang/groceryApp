@@ -8,10 +8,12 @@
   <title>Concordia Store</title>
   <link rel="stylesheet" type="text/css" href="style/backStore.css">
 </head>
+
 <body>
   <h1>Back Store Mangement</h1>
   <div class="navbar">
     <a href="index.php">Home</a>
+    
     <a href="backstoreProducts/backStoreProductsList.php">Product List</a>
     <a href="backStoreUserList/backStoreUserList.php">User List</a>
     <a href="backstoreOrder/backStoreOrderList.php">Order List</a>
@@ -31,4 +33,5 @@
 <footer>
   all rights reserved.
 </footer>
+
 </html>
