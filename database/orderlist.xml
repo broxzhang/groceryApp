@@ -47,4 +47,4 @@
     <products>fish (qty): 10;</products>
     <totalprice>22</totalprice>
   </order>
-</orderlist>
+<order><id>22</id><customer>dfadsf</customer><products>cheese (qty):1</products><totalprice>1</totalprice></order></orderlist>

@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="style/backStore.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
+<style type="text/css">
+h1{
+    color: red;
+}
+
+</style>
 
 <body>
 
@@ -38,7 +44,7 @@
 
 
     <!-- editing from here -->
-   
+
 
 
 
