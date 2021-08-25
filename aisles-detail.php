@@ -40,7 +40,7 @@
                             <button class="btn btn-primary" onclick="minusOne()">-</button>
                         </div>
                         
-                        <button type="button" class="btn btn-danger mt-5">
+                        <button type="button" class="btn btn-danger mt-5" onclick="addItemToCart()">
                             <i class="fa fa-shopping-cart"></i>Add
                         </button>
                         <hr />
@@ -113,6 +113,26 @@
         $('#priceContainer').html('$' + (price * qty))
         localStorage.setItem('qty', qty)
         localStorage.setItem('totalPrice', price * qty)
+    }
+
+    function addItemToCart(id) {
+        let queryString = window.location.search;
+        queryString = queryString.replace('?', '');
+        const qty = localStorage.getItem('qty') ? localStorage.getItem('qty') : 1;
+        // console.log(id);
+        let obj = {
+            itemId: queryString,
+            numberOfItem: qty
+        }
+        $.ajax({
+            url: "php/addToCart.php",
+            type: "post",
+            data: obj,
+            success: function(res) {
+                location.reload();
+                console.log(res);
+            }
+        })
     }
 </script>
 

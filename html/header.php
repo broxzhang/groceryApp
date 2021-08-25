@@ -70,14 +70,14 @@
                 <?php
                 echo $_SESSION["username"] ? $_SESSION["username"] : ""
                 ?>
-                <div type="button" class="btn btn-primary">
+                <a type="button" class="btn btn-primary" href="shoppingcart.php">
                     <i class="fas fa-shopping-cart" style="overflow: unset;"></i>
                     <span class="badge badge-light">
                         <?php
-                        echo isset($_SESSION["Cart"]) ? count($_SESSION["Cart"]) : ""
+                        echo $_SESSION["numberOfItems"] ? $_SESSION["numberOfItems"] : ""
                         ?>
                     </span>
-                </div>
+                </a>
             </div>
         </div>
     </nav>

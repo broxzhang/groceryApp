@@ -52,7 +52,3 @@ function appendVal($value, $parent)
      
       $xml->formatOutput=true;
       $xml->save("products.xml");
-      
-
-
-?>

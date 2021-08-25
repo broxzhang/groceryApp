@@ -367,13 +367,13 @@
         <!-- veges -->
         <product id="36">
             <productName>Tomatoes</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.34</price>
             <!-- <option value="Cheddar">Cheddar</option>
             <option value="Gouda">Gouda</option>
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/tomatoes.jpg</photo>
@@ -383,13 +383,13 @@
 
         <product id="37">
             <productName>Cucumbers</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.35</price>
             <!-- <option value="Cheddar">Cheddar</option>
             <option value="Gouda">Gouda</option>
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/cucumbers.jpg</photo>
@@ -398,13 +398,13 @@
         </product>
         <product id="38">
             <productName>Broccoli</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.36</price>
             <!-- <option value="Cheddar">Cheddar</option>
             <option value="Gouda">Gouda</option>
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/BROCCOLI.webp</photo>
@@ -414,13 +414,13 @@
 
         <product id="39">
             <productName>Onions</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.37</price>
             <!-- <option value="Cheddar">Cheddar</option>
             <option value="Gouda">Gouda</option>
             <option value="Swiss">Swiss</option>
             <option value="Parmesan">Parmesan</option> -->
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/Onions.jpg</photo>
@@ -430,10 +430,10 @@
 
         <product id="40">
             <productName>Carrots</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.38</price>
 
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/carrots.png</photo>
@@ -442,10 +442,10 @@
         </product>
         <product id="41">
             <productName>Corn</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.39</price>
 
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/corn.jpg</photo>
@@ -454,10 +454,10 @@
         </product>
         <product id="42">
             <productName>Letuce</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.40</price>
 
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/letuce.jpg</photo>
@@ -466,10 +466,10 @@
         </product>
         <product id="43">
             <productName>Mushrooms</productName>
-            <aisles>vegetables</aisles>
+            <aisles>Vegetables</aisles>
             <price>1.41</price>
 
-            <category>vegetables</category>
+            <category>Vegetables</category>
             <type />
             <avg />
             <photo>img/MUSHROOMS.jpg</photo>
