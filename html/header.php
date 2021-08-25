@@ -53,8 +53,7 @@
                             // modify here if you change it to backstoreMain.html
                             echo '<a class="dropdown-item" href="backstoreMain.php">Back Store</a>';
                         } else {
-                            echo '<a class="dropdown-item" href="log.php">User login</a>',
-                            '<a class="dropdown-item" href="employees.php">employees login</a>';
+                            echo '<a class="dropdown-item" href="log.php">User login</a>';
                         }
                         ?>
                     </div>
