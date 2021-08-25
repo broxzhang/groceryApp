@@ -20,6 +20,22 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Password</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="password">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Admin</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="isAdmin">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
 						<label class="control-label" style="position:relative; top:7px;">First Name</label>
 					</div>
 					<div class="col-sm-10">
@@ -54,7 +70,7 @@
 			</div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                <button type="submit" name="add" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</a>
+                <button type="submit" name="adduser" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</a>
 			</form>
             </div>
         </div>
