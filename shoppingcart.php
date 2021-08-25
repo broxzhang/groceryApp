@@ -59,6 +59,7 @@
                                             }
                                         }
                                         $total = 0;
+                                        $itemStr = '';
                                         $xml = simplexml_load_file('database/products.xml') or die('cannot load xml');
                                         foreach ($xml->products->product as $item) {
                                             foreach ($ids as $key => $value) {
@@ -73,6 +74,7 @@
                                                             </tr>';
 
                                                     $total += $item->price * $value;
+                                                    $itemStr += $item->productName . ' (qty): ' . $value . ';';
                                                 }
                                             }
                                         }
@@ -91,14 +93,13 @@
                         <div>QST: <?php echo round($total * .0998, 2) ?></div>
                         <div>Estimated Total: <?php echo round($total * 1.1498, 2) ?></div>
                         <div>
-                            <button class="btn btn-primary" onclick="checkout()">Check Out</button>
+                            <button class="btn btn-primary" onclick="checkout(<?php echo $_SESSION['username'] ?>,<?php echo $itemStr ?>,<?php echo round($total * 1.1498, 2) ?>)">Check Out</button>
                         </div>
                         <div>
                             <a class="btn btn-primary" href="index.php">Continue Shopping</a>
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -107,5 +108,23 @@
     </div>
 
 </body>
+<script>
+    function checkout(username, items, price) {
+        let post = {
+            customer: username,
+            products: items,
+            totalprice: price
+        }
+
+        $.ajax({
+            url: "backstoreOrder/add.php",
+            type: "post",
+            data: obj,
+            success: function(res) {
+                console.log(res);
+            }
+        })
+    }
+</script>
 
 </html>
