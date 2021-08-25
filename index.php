@@ -14,10 +14,10 @@
 </head>
 
 <style>
-    .item-container {
+   .item-container {
         box-sizing: content-box;
-        box-shadow: 3px 2px 2px blue;
-        border: solid #000000 5px !important;
+        box-shadow: 1px 1px 1px  1px gray;
+        border: none !important;
         margin: 20px;
         width: 250px;
     }
@@ -25,12 +25,15 @@
     .item-image {
         width: 250px;
         height: 250px;
-        filter: grayscale(100%) contrast(25%);
-        transition: filter 0.5s ease;
+        filter: grayscale(40%) contrast(100%);
+        transition: filter 1s ease;
+
+
     }
 
     .item-image:hover {
         filter: grayscale(0) contrast(100%);
+        transform: scale(1.07);
     }
 </style>
 
