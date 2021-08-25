@@ -73,7 +73,7 @@
                         //load xml file
                         $xml = simplexml_load_file('../database/products.xml');
 
-                        foreach ($xml->order as $row) {
+                        foreach ($xml->product as $row) {
                         ?>
                             <tr>
 
