@@ -14,7 +14,7 @@
 						<label class="control-label" style="position:relative; top:7px;">Product ID:</label>
 					</div>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" name="id" value="<?php echo $row->id; ?>">
+						<input type="text" class="form-control" name="id" value="<?php echo $row->id; ?>" readonly>
 					</div>
 				</div>
 				<div class="row form-group">
