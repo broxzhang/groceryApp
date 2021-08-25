@@ -48,7 +48,7 @@
 
 
     <div class="container">
-        <h1 class="page-header text-center" style="color:red;">Order Manage</h1>
+        <h2 class="page-header text-center" style="color:red;">Order Manage</h2>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New</a>
