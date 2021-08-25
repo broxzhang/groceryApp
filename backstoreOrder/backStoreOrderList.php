@@ -10,15 +10,14 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
 <style type="text/css">
-h1{
-    color: red;
-}
+
+
 
 </style>
 
 <body>
 
-    <h1>Back Store Mangement</h1>
+    <h1 style="color:red;">Back Store Mangement</h1>
 
 
 
@@ -49,7 +48,7 @@ h1{
 
 
     <div class="container">
-        <h1 class="page-header text-center">Order Manage</h1>
+        <h1 class="page-header text-center" style="color:red;">Order Manage</h1>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> New</a>
