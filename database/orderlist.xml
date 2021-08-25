@@ -3,9 +3,9 @@
 
   <order id="11">
     <id>12</id>
-    <customer>asdf</customer>
-    <products>milk (qty): 10;</products>
-    <totalprice>11</totalprice>
+    <customer>qqasdf</customer>
+    <products>milk (qty): 100;</products>
+    <totalprice>110</totalprice>
   </order>
 
   <order id="1">

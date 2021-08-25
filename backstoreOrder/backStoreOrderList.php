@@ -17,9 +17,9 @@
 
 
     <div class="navbar">
-        <a href="index.php">Home</a>
-        <a href="product-list.html">Product List</a>
-        <a href="backStoreUserList.html">User List</a>
+        <a href="../index.php">Home</a>
+        <a href="../product-list.html">Product List</a>
+        <a href="../backStoreUserList.html">User List</a>
         <a href="backStoreOrderList.php">Order List</a>
         <div class="subnav">
             <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
@@ -71,7 +71,7 @@
                     <tbody>
                         <?php
                         //load xml file
-                        $xml = simplexml_load_file('database/orderlist.xml');
+                        $xml = simplexml_load_file('../database/orderlist.xml');
 
                         foreach ($xml->order as $row) {
                         ?>
