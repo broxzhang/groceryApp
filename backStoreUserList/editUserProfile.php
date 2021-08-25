@@ -1,9 +1,9 @@
 <?php
 	session_start();
 	if(isset($_POST['edit'])){
-		$userlist = simplexml_load_file('database/users.xml');
-		foreach($userlist->user as $user){
-			if($user->userid == $_POST['username'] && $user->customer = $_POST['username']){
+		$root = simplexml_load_file('../database/users.xml');
+		foreach($root->user as $user){
+			if($user->username == $_POST['username']){
 				$user->fName = $_POST['fName'];
 				$user->lName = $_POST['lName'];
 				$user->phone_number = $_POST['phone_number'];
@@ -12,7 +12,7 @@
 			}
 		}
 
-		file_put_contents('database/users.xml', $userlist->asXML());
+		file_put_contents('../database/users.xml', $root->asXML());
 		$_SESSION['message'] = 'User edit successfully';
 		header('location: backStoreUserList.php');
 	}

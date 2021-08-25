@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Concordia Store</title>
     <link rel="stylesheet" type="text/css" href="style/backStore.css">
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
 
     <div class="navbar">
-        <a href="index.php">Home</a>
+        <a href="../index.php">Home</a>
         <a href="product-list.html">Product List</a>
         <a href="backStoreUserList.php">User List</a>
         <a href="backStoreOrderList.php">Order List</a>
@@ -72,7 +72,7 @@
                     <tbody>
                         <?php
                         //load xml file
-                        $xml = simplexml_load_file('database/users.xml');
+                        $xml = simplexml_load_file('../database/users.xml');
 
                         foreach ($xml->user as $row) {
                         ?>
@@ -100,8 +100,8 @@
         </div>
     </div>
     <?php include('adduser_modal.php'); ?>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
