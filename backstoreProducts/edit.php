@@ -2,7 +2,7 @@
 	session_start();
 	if(isset($_POST['edit'])){
 		$productslist = simplexml_load_file('../database/products.xml');
-		foreach($productslist->product as $product){
+		foreach($productslist->products->product as $product){
 			if($product->id == $_POST['id'] && $order->customer = $_POST['id']){
 				$product->productName = $_POST['productName'];
 				$product->aisles = $_POST['aisles'];
