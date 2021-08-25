@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -38,6 +42,13 @@
 
 
         <a href="">Contact</a>
+        <?php
+        if (isset($_SESSION['adminname'])) {
+            $admin2 = $_SESSION['adminname'];
+            echo "<h2 align='left'> <font color= #red font face='mambo' size='5pt'>
+    &nbsp;&nbsp;&nbsp;&nbsp; $admin2 is logged in</font> </h2>";
+        }
+        ?>
     </div>
 
 

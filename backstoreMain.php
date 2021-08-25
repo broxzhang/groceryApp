@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +16,7 @@
   <h1>Back Store Mangement</h1>
   <div class="navbar">
     <a href="index.php">Home</a>
-    
+
     <a href="backstoreProducts/backStoreProductsList.php">Product List</a>
     <a href="backStoreUserList/backStoreUserList.php">User List</a>
     <a href="backstoreOrder/backStoreOrderList.php">Order List</a>
@@ -27,6 +30,13 @@
       </div>
     </div>
     <a href="#contact">Contact</a>
+    <?php
+    if (isset($_SESSION['adminname'])) {
+       $admin2 = $_SESSION['adminname'];
+      echo "<h2 align='left'> <font color= #red font face='mambo' size='5pt'>
+    &nbsp;&nbsp;&nbsp;&nbsp; $admin2 is logged in</font> </h2>";
+    }
+    ?>
   </div>
   <!-- editing from here -->
 </body>
