@@ -1,5 +1,5 @@
 <!-- Edit -->
-<div class="modal fade" id="edit_<?php echo $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit_<?php echo $row->productName; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -8,15 +8,7 @@
             </div>
             <div class="modal-body">
 			<div class="container-fluid">
-			<form method="POST" action="editProduct.php">
-				<div class="row form-group">
-					<div class="col-sm-2">
-						<label class="control-label" style="position:relative; top:7px;">Product ID:</label>
-					</div>
-					<div class="col-sm-10">
-						<input type="text" class="form-control" name="id" value="<?php echo $row->id; ?>" readonly>
-					</div>
-				</div>
+			<form method="POST" action="edit.php">
 				<div class="row form-group">
 					<div class="col-sm-2">
 						<label class="control-label" style="position:relative; top:7px;">Product Name:</label>
