@@ -62,6 +62,8 @@
                 <table class="table table-bordered table-striped" style="margin-top:20px;">
                     <thead>
                         <th>UserName</th>
+                        <th>Password</th>
+                        <th>Admin</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Phone Number</th>
@@ -80,13 +82,15 @@
 
                                 <td><?php echo $row->username; ?></td>
                                 <td><?php echo $row->fName; ?></td>
+                                <td><?php echo $row->password; ?></td>
+                                <td><?php echo $row->isAdmin; ?></td>
                                 <td><?php echo $row->lName; ?></td>
                                 <td><?php echo $row->phone_number; ?></td>
                                 <td><?php echo $row->email; ?></td>
 
                                 <td>
-                                    <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
-                                    <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+                                    <a href="#edit_<?php echo $row->username; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+                                    <a href="#delete_<?php echo $row->username; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
                                 </td>
                                 <?php include('edituser_modal.php'); ?>
                             </tr>

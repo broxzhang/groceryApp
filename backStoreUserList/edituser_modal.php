@@ -1,5 +1,5 @@
 <!-- Edit -->
-<div class="modal fade" id="edit_<?php echo $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit_<?php echo $row->username; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -15,6 +15,22 @@
 					</div>
 					<div class="col-sm-10">
 						<input type="text" class="form-control" name="username" value="<?php echo $row->username; ?>" >
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Password</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="password" value="<?php echo $row->password; ?>" >
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Admin</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="isAdmin" value="<?php echo $row->isAdmin; ?>" >
 					</div>
 				</div>
 				<div class="row form-group">
@@ -62,7 +78,7 @@
 </div>
 
 <!-- Delete -->
-<div class="modal fade" username="delete_<?php echo $row->username; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="delete_<?php echo $row->username; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
