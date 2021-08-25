@@ -51,7 +51,7 @@
                             echo "<a class='dropdown-item' href='logout.php'>Logout</a>";
                         } else if (isset($_SESSION['adminname'])) {
                             // modify here if you change it to backstoreMain.html
-                            echo '<a class="dropdown-item" href="backstoreMain.html">Back Store</a>';
+                            echo '<a class="dropdown-item" href="backstoreMain.php">Back Store</a>';
                         } else {
                             echo '<a class="dropdown-item" href="log.php">User login</a>',
                             '<a class="dropdown-item" href="employees.php">employees login</a>';
@@ -68,7 +68,8 @@
             </ul>
             <div>
                 <?php
-                echo $_SESSION["username"] ? $_SESSION["username"] : ""
+                echo $_SESSION["username"] ? $_SESSION["username"] : "";
+                echo $_SESSION["adminname"] ? $_SESSION["adminname"] : "";
                 ?>
                 <a type="button" class="btn btn-primary" href="shoppingcart.php">
                     <i class="fas fa-shopping-cart" style="overflow: unset;"></i>
