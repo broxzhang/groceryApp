@@ -100,5 +100,26 @@
 
 
 </body>
+<script>
+    function addItemToCart(id) {
+        console.log(id);
+
+        let obj = {
+            itemId: id,
+            numberOfItem: 1
+        }
+
+        $.ajax({
+            url: "php/addToCart.php",
+            type: "post",
+            data: obj,
+            success: function(res) {
+                location.reload();
+                console.log(res);
+            }
+        })
+
+    }
+</script>
 
 </html>

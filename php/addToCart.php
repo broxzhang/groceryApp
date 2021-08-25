@@ -17,15 +17,6 @@ $combinedCart = array();
 
 $_SESSION["Cart"] = $cart;
 
-
-
-// function sum($carry, $item)
-// {
-//     print_r($item->numberOfItem);
-//     $carry += intval($item->numberOfItem);
-//     return $carry;
-// }
-// $numOfItem = array_reduce($cart, "sum");
 $numOfItem = 0;
 
 foreach ($cart as $item) {
