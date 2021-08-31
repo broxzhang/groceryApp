@@ -4,7 +4,7 @@ session_start();
  
  //on the second page you check if that session is true, else redirect to the login page  
   if($_SESSION['loggedIn']){
-    $_SESSION['loggedIn'] = true;  
+    session_start();
 
   }
       //allow
