@@ -37,8 +37,8 @@
 
         <div class="d-flex flex-column col-10" style="margin: 80px auto">
             <h3>My Cart (<?php echo $_SESSION['numberOfItems']  ?> products)</h3>
-            <div class="d-flex flex-row">
-                <div class="d-flex flex-column col-7 bg-white ">
+            <div class="d-flex flex-row flex-wrap">
+                <div class="d-flex flex-column col-7 bg-white " style="min-width: 750px;">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -48,10 +48,6 @@
                                         $cart = $_SESSION['Cart'];
                                         $ids = array();
                                         foreach ($cart as $item) {
-                                            // echo array_key_exists($item->itemId, $ids);
-                                            // echo $item->itemId;
-                                            // print_r($ids);
-                                            // echo '<br />';
                                             if (array_key_exists($item->itemId, $ids)) {
                                                 $ids[$item->itemId] = (intval($ids[$item->itemId]) + intval($item->numberOfItem));
                                             } else {
@@ -65,13 +61,22 @@
                                             foreach ($ids as $key => $value) {
                                                 if ($item['id'] == $key) {
                                                     echo '<tr>
-                                                                <td class="w-25">
-                                                                    <img src="', $item->photo, '" class="img-fluid img-thumbnail" alt="Sheep">
-                                                                </td>
-                                                                <td class=" text-center">', $item->productName, '</td>
-                                                                <td class=" text-center">$ ', $item->price, '</td>
-                                                                <td class=" text-center">', $value, '</td>
-                                                            </tr>';
+                                                                    <td class="w-25">
+                                                                        <img src="', $item->photo, '" class="img-fluid img-thumbnail" alt="Sheep">
+                                                                    </td>
+                                                                    <td class=" text-center">', $item->productName, '</td>
+                                                                    <td class=" text-center d-flex flex-row">
+                                                                        <button class="btn btn-primary" onclick="addOne(', $item['id'], ')">+</button>
+                                                                        <input id="item-', $item['id'], '" class=" text-center" style="width: 80px; margin: 0 20px" value="', $value, '" onchange="changeQuantity(', $item['id'], ')"/>
+                                                                        <button class="btn btn-primary" onclick="minusOne(', $item['id'], ')">-</button>
+                                                                    </td>
+                                                                    <td class=" text-center" style="margin-top: 5px" >$', $item->price, '</td>
+                                                                    <td><button class="btn btn-primary" onclick="removeItem(', $item['id'], ')">
+                                                                    <i class="fas  fa-recycle" style="overflow: unset;"></i>
+
+                                                                    </button></td>
+                                                                    
+                                                                </tr>';
 
                                                     $total += $item->price * $value;
                                                     $itemStr .= $item->productName . ' (qty): ' . $value . ';';
@@ -112,6 +117,7 @@
     function checkout(username, items, price) {
         console.log(items);
         let post = {
+            id: 100,
             customer: username,
             products: items,
             totalprice: price
@@ -122,6 +128,66 @@
             type: "post",
             data: post,
             success: function(res) {
+                console.log(res);
+            }
+        })
+    }
+
+    function addOne(id) {
+        const idstring = "#item-" + id;
+        input = document.querySelector(idstring);
+        console.log(input.value);
+        input.value = Number(input.value) + 1;
+
+        changeQuantity(id);
+    }
+
+    function changeQuantity(id) {
+        const idstring = "#item-" + id;
+        input = document.querySelector(idstring);
+        value = Number(input.value);
+        let obj = {
+            itemId: id,
+            numberOfItem: value
+        }
+        $.ajax({
+            url: "php/modify-cart.php",
+            type: "post",
+            data: obj,
+            success: function(res) {
+                location.reload();
+                console.log(res);
+            }
+        })
+    }
+
+    function minusOne(id) {
+        const idstring = "#item-" + id;
+        input = document.querySelector(idstring);
+        console.log(input.value);
+        if (input.value > 1) {
+            input.value = Number(input.value) - 1;
+
+        }
+
+        if (input.value == 1) {
+            removeItem(id);
+            return;
+        }
+        changeQuantity(id);
+    }
+
+    function removeItem(id) {
+        let obj = {
+            itemId: id,
+            numberOfItem: 0
+        }
+        $.ajax({
+            url: "php/modify-cart.php",
+            type: "post",
+            data: obj,
+            success: function(res) {
+                location.reload();
                 console.log(res);
             }
         })
