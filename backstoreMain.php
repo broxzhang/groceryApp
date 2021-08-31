@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
  //set the session on the login page
  
  //on the second page you check if that session is true, else redirect to the login page  
