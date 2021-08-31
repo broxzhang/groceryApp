@@ -532,4 +532,4 @@
         <photo>non</photo>
         <description>hoihp</description>
     </product>
-<products><product/></products><root><product/></root></root>
+<products><product/></products><root><product/></root><product><id>122</id><productName>apples</productName><aisles>fruit</aisles><price>1</price><category>gg</category><type>fresh</type><avg>23</avg><photo>none</photo><description>apples</description></product></root>
