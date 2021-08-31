@@ -1,17 +1,17 @@
 <?php
-// session_start();
+ session_start();
  //set the session on the login page
  
  //on the second page you check if that session is true, else redirect to the login page  
-  if($_SESSION['loggedIn']){
-    session_start();
+  // if($_SESSION['loggedIn']){
+  //   session_start();
 
-  }
-      //allow
-  else{
-      //redirect to the login page
-      header('Location: /login.html'); 
-    }
+  // }
+  //     //allow
+  // else{
+  //     //redirect to the login page
+  //     header('Location: /login.html'); 
+  //   }
 ?>
 
 <!DOCTYPE html>
